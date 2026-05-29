@@ -105,6 +105,11 @@ class PersonnelController extends Controller
     {
         $personnel->load(['department', 'medicalRecord', 'treatments.treatedBy', 'medicineLogs.medicine', 'personnelDocuments']);
 
+        // Explicitly map treated_by_user to avoid serialization clash
+        foreach ($personnel->treatments as $t) {
+            $t->treated_by_user = $t->treatedBy;
+        }
+
         return Inertia::render('Personnel/Show', [
             'personnel' => $personnel,
         ]);

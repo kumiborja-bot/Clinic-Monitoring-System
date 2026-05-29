@@ -131,6 +131,11 @@ class StudentController extends Controller
     {
         $student->load(['department', 'course', 'medicalRecord', 'treatments.treatedBy', 'medicineLogs.medicine', 'maritimeDocuments']);
 
+        // Explicitly map treated_by_user to avoid serialization clash
+        foreach ($student->treatments as $t) {
+            $t->treated_by_user = $t->treatedBy;
+        }
+
         return Inertia::render('Students/Show', [
             'student' => $student,
         ]);

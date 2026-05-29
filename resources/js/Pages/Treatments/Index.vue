@@ -28,6 +28,12 @@ let t;
 watch(search, () => { clearTimeout(t); t = setTimeout(applyFilters, 400); });
 
 const deleteTreatment = (id) => { if (confirm('Delete this treatment record?')) router.delete(route('treatments.destroy', id)); };
+
+const isFollowUpDue = (dateStr) => {
+    if (!dateStr) return false;
+    const today = new Date().toISOString().split('T')[0];
+    return dateStr <= today;
+};
 </script>
 
 <template>
@@ -65,7 +71,7 @@ const deleteTreatment = (id) => { if (confirm('Delete this treatment record?')) 
                                 <th class="px-4 py-3 text-left font-medium text-xs uppercase">Type</th>
                                 <th class="px-4 py-3 text-left font-medium text-xs uppercase">Diagnosis</th>
                                 <th class="px-4 py-3 text-left font-medium text-xs uppercase">Treatment</th>
-                                <th class="px-4 py-3 text-left font-medium text-xs uppercase">Nurse</th>
+                                <th class="px-4 py-3 text-left font-medium text-xs uppercase">Treated By</th>
                                 <th class="px-4 py-3 text-left font-medium text-xs uppercase">Status</th>
                                 <th class="px-4 py-3 text-center font-medium text-xs uppercase">Actions</th>
                             </tr>
@@ -78,7 +84,15 @@ const deleteTreatment = (id) => { if (confirm('Delete this treatment record?')) 
                                 <td class="px-4 py-3 text-gray-700">{{ t.diagnosis }}</td>
                                 <td class="px-4 py-3 text-gray-600 text-xs truncate max-w-xs">{{ t.treatment_given || '-' }}</td>
                                 <td class="px-4 py-3 text-gray-600 text-xs">{{ t.treated_by_user?.name || '-' }}</td>
-                                <td class="px-4 py-3"><span :class="t.status === 'completed' ? 'bg-green-100 text-green-700' : 'bg-amber-100 text-amber-700'" class="px-2 py-0.5 text-xs rounded-full font-medium capitalize">{{ t.status }}</span></td>
+                                <td class="px-4 py-3">
+                                    <div class="flex flex-col gap-1 items-start">
+                                        <span :class="t.status === 'completed' ? 'bg-green-100 text-green-700' : 'bg-amber-100 text-amber-700'" class="px-2 py-0.5 text-xs rounded-full font-medium capitalize">{{ t.status }}</span>
+                                        <span v-if="t.status === 'follow-up' && t.follow_up_date" class="text-[10px] font-medium text-gray-500">Due: {{ t.follow_up_date }}</span>
+                                        <span v-if="t.status === 'follow-up' && isFollowUpDue(t.follow_up_date)" class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-red-50 text-red-700 animate-pulse">
+                                            ⚠️ Due Today
+                                        </span>
+                                    </div>
+                                </td>
                                 <td class="px-4 py-3 text-center">
                                     <div class="flex items-center justify-center gap-1">
                                         <Link :href="route('treatments.show', t.id)" class="px-2 py-1 text-xs font-semibold rounded hover:bg-[#0E4362] hover:text-white text-[#095D86] border border-[#095D86] transition-colors">View</Link>

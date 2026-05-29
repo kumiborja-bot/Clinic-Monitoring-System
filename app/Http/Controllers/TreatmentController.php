@@ -26,6 +26,7 @@ class TreatmentController extends Controller
                 $patient = $t->patient;
                 $t->patient_name = $patient ? $patient->name : 'Unknown';
                 $t->patient_type_label = str_contains($t->patient_type, 'Student') ? 'Student' : 'Personnel';
+                $t->treated_by_user = $t->treatedBy;
                 return $t;
             });
 
@@ -57,6 +58,7 @@ class TreatmentController extends Controller
             'medication_given' => 'nullable|string',
             'notes' => 'nullable|string',
             'status' => 'required|in:completed,follow-up',
+            'follow_up_date' => 'nullable|date',
         ]);
 
         $patientType = $request->patient_type === 'student'
@@ -71,6 +73,7 @@ class TreatmentController extends Controller
             'medication_given' => $request->medication_given,
             'notes' => $request->notes,
             'status' => $request->status,
+            'follow_up_date' => $request->follow_up_date,
             'treated_by' => auth()->id(),
             'treated_at' => now(),
         ]);
@@ -84,6 +87,7 @@ class TreatmentController extends Controller
         $patient = $treatment->patient;
         $treatment->patient_name = $patient ? $patient->name : 'Unknown';
         $treatment->patient_type_label = str_contains($treatment->patient_type, 'Student') ? 'Student' : 'Personnel';
+        $treatment->treated_by_user = $treatment->treatedBy;
 
         return Inertia::render('Treatments/Show', [
             'treatment' => $treatment,

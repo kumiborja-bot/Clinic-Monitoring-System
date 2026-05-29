@@ -23,6 +23,7 @@ const form = useForm({
     medication_given: '',
     notes: '',
     status: 'completed',
+    follow_up_date: '',
 });
 
 const patientList = computed(() => form.patient_type === 'student' ? props.students : props.personnel);
@@ -58,6 +59,24 @@ const getDssSuggestion = async () => {
                     form.notes = (form.notes ? form.notes + '\n' : '') + 'Follow-up: ' + match.follow_up;
                     if (match.follow_up.toLowerCase() !== 'no') {
                         form.status = 'follow-up';
+                        // Auto-calculate follow-up date based on DSS rules
+                        if (match.duration_value && match.duration_unit) {
+                            const date = new Date();
+                            const val = parseInt(match.duration_value);
+                            if (match.duration_unit === 'days') {
+                                date.setDate(date.getDate() + val);
+                            } else if (match.duration_unit === 'weeks') {
+                                date.setDate(date.getDate() + val * 7);
+                            } else if (match.duration_unit === 'hours') {
+                                date.setHours(date.getHours() + val);
+                            }
+                            form.follow_up_date = date.toISOString().split('T')[0];
+                        } else {
+                            // Default to next day if no duration given
+                            const tomorrow = new Date();
+                            tomorrow.setDate(tomorrow.getDate() + 1);
+                            form.follow_up_date = tomorrow.toISOString().split('T')[0];
+                        }
                     }
                 }
                 alert('DSS suggestion applied.');
@@ -140,12 +159,19 @@ const getDssSuggestion = async () => {
                         <label class="block text-xs font-semibold text-gray-600 mb-1">Notes</label>
                         <textarea v-model="form.notes" rows="2" class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500"></textarea>
                     </div>
-                    <div>
-                        <label class="block text-xs font-semibold text-gray-600 mb-1">Status</label>
-                        <select v-model="form.status" class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500">
-                            <option value="completed">Completed</option>
-                            <option value="follow-up">Follow-up Required</option>
-                        </select>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-600 mb-1">Status</label>
+                            <select v-model="form.status" class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500">
+                                <option value="completed">Completed</option>
+                                <option value="follow-up">Follow-up Required</option>
+                            </select>
+                        </div>
+                        <div v-if="form.status === 'follow-up'" class="transition-all duration-300">
+                            <label class="block text-xs font-semibold text-gray-600 mb-1">Follow-up Date *</label>
+                            <input v-model="form.follow_up_date" type="date" required class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500" />
+                            <p class="text-[10px] text-gray-400 mt-1">This will trigger a system follow-up alert when due.</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -14,13 +14,14 @@ class Treatment extends Model
     protected $fillable = [
         'patient_type', 'patient_id', 'diagnosis',
         'treatment_given', 'medication_given', 'treated_by',
-        'treated_at', 'notes', 'status',
+        'treated_at', 'notes', 'status', 'follow_up_date',
     ];
 
     protected function casts(): array
     {
         return [
             'treated_at' => 'datetime',
+            'follow_up_date' => 'date:Y-m-d',
         ];
     }
 
