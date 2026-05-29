@@ -9,6 +9,7 @@ use App\Http\Controllers\MaritimeDocumentController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\OfflineQueueController;
+use App\Http\Controllers\CsvDataController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -53,6 +54,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     // Offline Queue Sync
     Route::post('/api/offline-queue/sync', [OfflineQueueController::class , 'sync'])->name('offline-queue.sync');
+
+    // CSV Data endpoints
+    Route::get('/api/csv-patients', [CsvDataController::class, 'searchPatient'])->name('csv.patients.search');
+    Route::get('/api/csv-dss', [CsvDataController::class, 'getDss'])->name('csv.dss');
 });
 
 require __DIR__ . '/auth.php';

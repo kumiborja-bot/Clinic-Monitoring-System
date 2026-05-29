@@ -95,8 +95,7 @@ const resendCode = () => {
 
         <div class="text-center mb-6">
             <!-- Mail Icon -->
-            <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full"
-                 style="background: linear-gradient(135deg, #0f1b35, #1b2a4a);">
+            <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#132639]">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
                      stroke="#d4a017" stroke-width="1.5">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -146,10 +145,10 @@ const resendCode = () => {
             <!-- Submit Button -->
             <div class="mt-6">
                 <PrimaryButton
-                    class="w-full justify-center py-3 text-base"
+                    class="w-full justify-center py-3 text-base bg-[#132639] hover:bg-[#0E4362]"
                     :class="{ 'opacity-25': form.processing }"
                     :disabled="form.processing || digits.join('').length < 6"
-                    style="background: linear-gradient(135deg, #0f1b35, #1b2a4a); border: none;"
+                    style="border: none;"
                 >
                     <span v-if="form.processing" class="flex items-center gap-2">
                         <svg class="h-5 w-5 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

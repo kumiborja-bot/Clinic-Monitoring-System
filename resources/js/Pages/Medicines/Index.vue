@@ -64,16 +64,16 @@ const stockColor = (m) => {
                     <option v-for="c in categories" :key="c" :value="c">{{ c }}</option>
                 </select>
             </div>
-            <div class="flex items-center gap-2">
-                <Link :href="route('medicines.logs')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-navy-700 bg-navy-50 hover:bg-navy-100 transition-colors">
+            <div class="flex flex-wrap items-center gap-2">
+                <Link :href="route('medicines.logs')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-white bg-[#095D86] hover:bg-[#0E4362] transition-colors">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
                     Medicine Log Book
                 </Link>
-                <Link :href="route('medicines.dispense.form')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-navy-800 shadow-sm hover:shadow-md transition-all" style="background: linear-gradient(135deg, #f0c040, #d4a017);">
+                <Link :href="route('medicines.dispense.form')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white shadow-sm hover:shadow-md transition-all bg-[#F0A500] hover:bg-[#F4B842]">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                     Dispense
                 </Link>
-                <Link :href="route('medicines.create')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white shadow-sm hover:shadow-md transition-all" style="background: linear-gradient(135deg, #1b2a4a, #2d4a7a);">
+                <Link :href="route('medicines.create')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white shadow-sm hover:shadow-md transition-all bg-[#132639] hover:bg-[#0E4362]">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
                     Add Medicine
                 </Link>
@@ -109,8 +109,12 @@ const stockColor = (m) => {
                                 <td class="px-4 py-3 text-xs" :class="m.expiry_date && new Date(m.expiry_date) < new Date() ? 'text-red-500 font-bold' : 'text-gray-500'">{{ m.expiry_date ? formatDate(m.expiry_date) : '-' }}</td>
                                 <td class="px-4 py-3 text-center">
                                     <div class="flex items-center justify-center gap-1">
-                                        <Link :href="route('medicines.edit', m.id)" class="p-1.5 rounded-lg hover:bg-amber-50 text-amber-600 transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg></Link>
-                                        <button @click="deleteMedicine(m.id)" class="p-1.5 rounded-lg hover:bg-red-50 text-red-500 transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg></button>
+                                        <Link :href="route('medicines.edit', m.id)" class="px-2 py-1 text-xs font-semibold rounded hover:bg-[#F0A500] hover:text-white text-[#F0A500] border border-[#F0A500] transition-colors" title="Edit">
+                                            Edit
+                                        </Link>
+                                        <button @click="deleteMedicine(m.id)" class="px-2 py-1 text-xs font-semibold rounded hover:bg-red-600 hover:text-white text-red-500 border border-red-500 transition-colors" title="Delete">
+                                            Delete
+                                        </button>
                                     </div>
                                 </td>
                             </tr>

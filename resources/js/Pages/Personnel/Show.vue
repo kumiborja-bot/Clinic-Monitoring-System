@@ -14,7 +14,7 @@ const bmiColor = (c) => ({ 'Underweight': 'bg-yellow-100 text-yellow-800', 'Norm
         <template #header>Personnel Profile</template>
 
         <div class="bg-white rounded-xl shadow-sm border border-gray-100 mb-6 overflow-hidden">
-            <div class="h-24" style="background: linear-gradient(135deg, #0f1b35, #1b2a4a, #2d4a7a);"></div>
+            <div class="h-24 bg-[#132639]"></div>
             <div class="px-6 pb-6 mt-8">
                 <div class="flex flex-col sm:flex-row sm:items-end gap-4">
                     <div class="w-16 h-16 rounded-xl bg-mustard-500 text-white flex items-center justify-center text-2xl font-bold shadow-lg ring-4 ring-white">{{ personnel.name?.charAt(0) }}</div>
@@ -22,7 +22,7 @@ const bmiColor = (c) => ({ 'Underweight': 'bg-yellow-100 text-yellow-800', 'Norm
                         <h2 class="text-xl font-bold text-gray-800">{{ personnel.name }}</h2>
                         <p class="text-sm text-gray-500">{{ personnel.employee_id }} · {{ personnel.department?.code }} · {{ personnel.position || 'No Position' }}</p>
                     </div>
-                    <Link :href="route('personnel.edit', personnel.id)" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white rounded-lg" style="background: linear-gradient(135deg, #d4a017, #f0c040);">
+                    <Link :href="route('personnel.edit', personnel.id)" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white rounded-lg bg-[#F0A500] hover:bg-[#F4B842]">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
                         Edit
                     </Link>

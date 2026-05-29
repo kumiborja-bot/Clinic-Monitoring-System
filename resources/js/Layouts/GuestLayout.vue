@@ -3,8 +3,7 @@ import { Link } from '@inertiajs/vue3';
 </script>
 
 <template>
-    <div class="flex min-h-screen flex-col items-center justify-center px-4"
-         style="background: linear-gradient(135deg, #0f1b35 0%, #1b2a4a 40%, #2d4a7a 100%);">
+    <div class="flex min-h-screen flex-col items-center justify-center px-4 bg-[#132639]">
         <!-- Logo and School Name -->
         <div class="mb-6 text-center">
             <Link href="/">

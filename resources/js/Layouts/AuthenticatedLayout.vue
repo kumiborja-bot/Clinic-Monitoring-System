@@ -34,8 +34,7 @@ const isActive = (routeName) => {
         <!-- Sidebar -->
         <aside
             :class="[showSidebar ? 'w-64' : 'w-20', 'hidden lg:flex']"
-            class="fixed inset-y-0 left-0 z-30 flex-col bg-navy-900 text-white transition-all duration-300 ease-in-out"
-            style="background: linear-gradient(180deg, #0f1b35 0%, #1b2a4a 100%);"
+            class="fixed inset-y-0 left-0 z-30 flex-col bg-[#132639] text-white transition-all duration-300 ease-in-out"
         >
             <!-- Logo -->
             <div class="flex items-center px-4 border-b border-white/10" :class="showSidebar ? 'py-4' : 'py-3'">
@@ -83,8 +82,7 @@ const isActive = (routeName) => {
         <!-- Mobile sidebar overlay -->
         <div v-if="showMobileMenu" class="fixed inset-0 bg-black/60 z-40 lg:hidden" @click="showMobileMenu = false"></div>
         <aside v-if="showMobileMenu"
-            class="fixed inset-y-0 left-0 z-50 w-64 flex flex-col lg:hidden text-white transition-transform duration-300"
-            style="background: linear-gradient(180deg, #0f1b35 0%, #1b2a4a 100%);">
+            class="fixed inset-y-0 left-0 z-50 w-64 flex flex-col lg:hidden text-white transition-transform duration-300 bg-[#132639]">
             <div class="flex items-center justify-between py-4 px-4 border-b border-white/10">
                 <div class="flex items-center gap-3">
                     <img src="/images/logo.jpg" alt="MMACI Logo" class="w-12 h-12 rounded-full object-cover flex-shrink-0" />
@@ -130,8 +128,7 @@ const isActive = (routeName) => {
                     <Dropdown align="right" width="48">
                         <template #trigger>
                             <button class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-800 transition-colors">
-                                <div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold"
-                                     style="background: linear-gradient(135deg, #1b2a4a 0%, #2d4a7a 100%);">
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold bg-[#095D86]">
                                     {{ user.name.charAt(0).toUpperCase() }}
                                 </div>
                                 <span class="hidden md:inline">{{ user.name }}</span>
