@@ -13,10 +13,10 @@ const props = defineProps({
     recentTreatments: Array,
     lowStockMedicines: Array,
     departments: Array,
-    selectedDepartment: [Number, String],
+    filters: Object,
 });
 
-const selectedDept = ref(props.selectedDepartment || '');
+const selectedDept = ref(props.filters?.department_id || '');
 const illnessChart = ref(null);
 const medicineChart = ref(null);
 
@@ -32,7 +32,7 @@ onMounted(() => {
             data: {
                 labels: props.commonIllnesses.map(i => i.diagnosis),
                 datasets: [{
-                    data: props.commonIllnesses.map(i => i.count),
+                    data: props.commonIllnesses.map(i => i.total),
                     backgroundColor: ['#1b2a4a', '#d4a017', '#2d4a7a', '#f0c040', '#3b5a9f', '#b8860b', '#5973ae', '#9a6f09', '#778cbd', '#674a0f'],
                     borderWidth: 0,
                 }],

@@ -14,6 +14,23 @@ class StudentController extends Controller
     {
         $query = Student::with(['department', 'course', 'medicalRecord']);
 
+        if ($request->filled('type')) {
+            $type = $request->type;
+            if ($type === 'college') {
+                $query->whereHas('department', function ($q) {
+                    $q->where('code', '!=', 'BSED');
+                });
+            } elseif ($type === 'senior_high') {
+                $query->whereHas('course', function ($q) {
+                    $q->where('name', 'like', '%Senior High%');
+                });
+            } elseif ($type === 'junior_high') {
+                $query->whereHas('course', function ($q) {
+                    $q->where('name', 'like', '%Junior High%');
+                });
+            }
+        }
+
         if ($request->filled('department_id')) {
             $query->where('department_id', $request->department_id);
         }
@@ -37,7 +54,7 @@ class StudentController extends Controller
         return Inertia::render('Students/Index', [
             'students' => $students,
             'departments' => Department::with('courses')->get(),
-            'filters' => $request->only(['search', 'department_id', 'bmi_category']),
+            'filters' => $request->only(['search', 'department_id', 'bmi_category', 'type']),
         ]);
     }
 
@@ -201,5 +218,37 @@ class StudentController extends Controller
     public function getCourses(Department $department)
     {
         return response()->json($department->courses);
+    }
+
+    public function importCsv(Request $request)
+    {
+        $request->validate([
+            'file' => 'required|file|mimes:csv,txt|max:10240',
+        ]);
+
+        $file = $request->file('file');
+        $tempPath = $file->getRealPath();
+
+        $importService = app(\App\Services\StudentImportService::class);
+        $result = $importService->importFromPath($tempPath);
+
+        if ($result['success']) {
+            return redirect()->back()->with('success', "Import completed! Imported {$result['imported_count']} students.");
+        }
+
+        return redirect()->back()->with('error', $result['message']);
+    }
+
+    public function importLocal()
+    {
+        $filePath = 'C:\\Users\\Inonazarene\\Desktop\\MEDICAL\\cleaned_students.csv';
+        $importService = app(\App\Services\StudentImportService::class);
+        $result = $importService->importFromPath($filePath);
+
+        if ($result['success']) {
+            return redirect()->back()->with('success', "Local import completed! Imported {$result['imported_count']} students.");
+        }
+
+        return redirect()->back()->with('error', $result['message']);
     }
 }

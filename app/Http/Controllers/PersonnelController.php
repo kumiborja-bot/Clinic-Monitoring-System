@@ -103,7 +103,7 @@ class PersonnelController extends Controller
 
     public function show(Personnel $personnel)
     {
-        $personnel->load(['department', 'medicalRecord', 'treatments.treatedBy', 'medicineLogs.medicine']);
+        $personnel->load(['department', 'medicalRecord', 'treatments.treatedBy', 'medicineLogs.medicine', 'personnelDocuments']);
 
         return Inertia::render('Personnel/Show', [
             'personnel' => $personnel,

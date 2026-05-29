@@ -39,22 +39,6 @@ class CsvDataController extends Controller
 
     public function getDss(Request $request)
     {
-        $path = storage_path('app/csv/dss.csv');
-        if (!file_exists($path)) {
-            return response()->json([]);
-        }
-
-        $data = [];
-        if (($handle = fopen($path, 'r')) !== false) {
-            $headers = fgetcsv($handle);
-            while (($row = fgetcsv($handle)) !== false) {
-                if (count($headers) == count($row)) {
-                    $data[] = array_combine($headers, $row);
-                }
-            }
-            fclose($handle);
-        }
-
-        return response()->json($data);
+        return response()->json(\App\Models\DssRecord::all());
     }
 }

@@ -47,4 +47,9 @@ class Personnel extends Model
     {
         return $this->morphMany(MedicineLog::class, 'patient');
     }
+
+    public function personnelDocuments(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(PersonnelDocument::class);
+    }
 }

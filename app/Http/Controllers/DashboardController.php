@@ -21,8 +21,10 @@ class DashboardController extends Controller
         // Stats
         $studentsCount = Student::when($departmentId, fn ($q) => $q->where('department_id', $departmentId))->count();
         $personnelCount = Personnel::when($departmentId, fn ($q) => $q->where('department_id', $departmentId))->count();
-        $treatmentsCount = Treatment::count();
         $medicinesCount = Medicine::count();
+        
+        // Treatments Today
+        $treatmentsTodayCount = Treatment::whereDate('treated_at', \Carbon\Carbon::today())->count();
 
         // Common illnesses (top 10 diagnoses)
         $commonIllnesses = Treatment::select('diagnosis', DB::raw('count(*) as total'))
@@ -61,10 +63,10 @@ class DashboardController extends Controller
 
         return Inertia::render('Dashboard', [
             'stats' => [
-                'students' => $studentsCount,
-                'personnel' => $personnelCount,
-                'treatments' => $treatmentsCount,
-                'medicines' => $medicinesCount,
+                'totalStudents' => $studentsCount,
+                'totalPersonnel' => $personnelCount,
+                'totalMedicines' => $medicinesCount,
+                'treatmentsToday' => $treatmentsTodayCount,
             ],
             'commonIllnesses' => $commonIllnesses,
             'topMedicines' => $topMedicines,

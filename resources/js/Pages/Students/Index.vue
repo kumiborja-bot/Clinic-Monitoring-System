@@ -1,6 +1,6 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head, Link, router } from '@inertiajs/vue3';
+import { Head, Link, router, useForm } from '@inertiajs/vue3';
 import { ref, watch } from 'vue';
 
 const props = defineProps({
@@ -12,13 +12,24 @@ const props = defineProps({
 const search = ref(props.filters?.search || '');
 const departmentId = ref(props.filters?.department_id || '');
 const bmiCategory = ref(props.filters?.bmi_category || '');
+const type = ref(props.filters?.type || '');
 
 const applyFilters = () => {
     router.get(route('students.index'), {
         search: search.value || undefined,
         department_id: departmentId.value || undefined,
         bmi_category: bmiCategory.value || undefined,
+        type: type.value || undefined,
     }, { preserveState: true, preserveScroll: true });
+};
+
+const setType = (newType) => {
+    type.value = newType;
+    // Reset department filter when switching classifications to avoid empty results
+    if (newType && newType !== 'college') {
+        departmentId.value = '';
+    }
+    applyFilters();
 };
 
 let searchTimeout;
@@ -42,6 +53,32 @@ const deleteStudent = (id) => {
         router.delete(route('students.destroy', id));
     }
 };
+
+const fileInput = ref(null);
+const importForm = useForm({
+    file: null
+});
+
+const triggerFileInput = () => {
+    fileInput.value.click();
+};
+
+const handleFileUpload = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+        importForm.file = file;
+        importForm.post(route('students.import-csv'), {
+            preserveScroll: true,
+            onSuccess: () => {
+                importForm.reset();
+            },
+            onError: (errors) => {
+                alert(errors.file || 'An error occurred during import.');
+            }
+        });
+    }
+};
+
 </script>
 
 <template>
@@ -73,11 +110,47 @@ const deleteStudent = (id) => {
                     <option value="Obese">Obese</option>
                 </select>
             </div>
-            <Link :href="route('students.create')"
-                class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white bg-[#F0A500] hover:bg-[#F4B842] shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
-                Add Student
-            </Link>
+            <div class="flex flex-wrap items-center gap-2">
+                <!-- Hidden File Input -->
+                <input type="file" ref="fileInput" @change="handleFileUpload" accept=".csv" class="hidden" />
+
+                <!-- Import CSV button (Dynamic File Upload) -->
+                <button @click="triggerFileInput" :disabled="importForm.processing"
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-navy-800 bg-navy-100 hover:bg-navy-200 transition-all duration-200 disabled:opacity-50">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                    Import CSV
+                </button>
+
+                <Link :href="route('students.create')"
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white bg-[#F0A500] hover:bg-[#F4B842] shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                    Add Student
+                </Link>
+            </div>
+        </div>
+
+        <!-- Classification Tabs -->
+        <div class="mb-6 flex gap-1 bg-white rounded-lg p-1 shadow-sm border border-gray-100 w-fit">
+            <button @click="setType('')"
+                :class="type === '' ? 'bg-[#132639] text-white shadow-sm' : 'text-gray-500 hover:text-gray-700'"
+                class="px-4 py-2 text-sm font-semibold rounded-md transition-all">
+                All Students
+            </button>
+            <button @click="setType('college')"
+                :class="type === 'college' ? 'bg-[#132639] text-white shadow-sm' : 'text-gray-500 hover:text-gray-700'"
+                class="px-4 py-2 text-sm font-semibold rounded-md transition-all">
+                College
+            </button>
+            <button @click="setType('senior_high')"
+                :class="type === 'senior_high' ? 'bg-[#132639] text-white shadow-sm' : 'text-gray-500 hover:text-gray-700'"
+                class="px-4 py-2 text-sm font-semibold rounded-md transition-all">
+                Senior High
+            </button>
+            <button @click="setType('junior_high')"
+                :class="type === 'junior_high' ? 'bg-[#132639] text-white shadow-sm' : 'text-gray-500 hover:text-gray-700'"
+                class="px-4 py-2 text-sm font-semibold rounded-md transition-all">
+                Junior High
+            </button>
         </div>
 
         <!-- Table -->
