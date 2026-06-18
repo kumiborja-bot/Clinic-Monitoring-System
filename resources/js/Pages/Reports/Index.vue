@@ -58,7 +58,12 @@ const generateDept = () => {
                             <label class="block text-xs font-semibold text-gray-600 mb-1">Department</label>
                             <select v-model="treatmentForm.department_id" class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500">
                                 <option value="">All Departments</option>
-                                <option v-for="dept in departments" :key="dept.id" :value="dept.id">{{ dept.code }} - {{ dept.name }}</option>
+                                <optgroup label="Academic Departments (Students)">
+                                    <option v-for="dept in departments.filter(d => !d.type || d.type === 'student')" :key="dept.id" :value="dept.id">{{ dept.code }} - {{ dept.name }}</option>
+                                </optgroup>
+                                <optgroup label="Non-Academic Departments (Personnel)">
+                                    <option v-for="dept in departments.filter(d => d.type === 'personnel')" :key="dept.id" :value="dept.id">{{ dept.code }} - {{ dept.name }}</option>
+                                </optgroup>
                             </select>
                         </div>
                     </div>
@@ -106,7 +111,12 @@ const generateDept = () => {
                         <label class="block text-xs font-semibold text-gray-600 mb-1">Department *</label>
                         <select v-model="deptForm.department_id" required class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500">
                             <option value="">Select Department</option>
-                            <option v-for="dept in departments" :key="dept.id" :value="dept.id">{{ dept.code }} - {{ dept.full_name }}</option>
+                            <optgroup label="Academic Departments (Students)">
+                                <option v-for="dept in departments.filter(d => !d.type || d.type === 'student')" :key="dept.id" :value="dept.id">{{ dept.code }} - {{ dept.full_name }}</option>
+                            </optgroup>
+                            <optgroup label="Non-Academic Departments (Personnel)">
+                                <option v-for="dept in departments.filter(d => d.type === 'personnel')" :key="dept.id" :value="dept.id">{{ dept.code }} - {{ dept.full_name }}</option>
+                            </optgroup>
                         </select>
                     </div>
                     <button type="submit" :disabled="deptForm.processing"

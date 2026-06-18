@@ -32,6 +32,11 @@ const selectedDisplayText = computed(() => {
     return `${p.name} (${idLabel})${dept ? ' — ' + dept : ''}`;
 });
 
+// Filter departments by patient type
+const filteredDepartments = computed(() => {
+    return props.departments.filter(d => !d.type || d.type === props.patientType);
+});
+
 // Filter patients by search query and department
 const filteredPatients = computed(() => {
     let list = props.patients;
@@ -106,7 +111,7 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
                     class="w-full text-xs rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500 bg-gray-50"
                 >
                     <option value="">All Departments</option>
-                    <option v-for="dept in departments" :key="dept.id" :value="dept.id">
+                    <option v-for="dept in filteredDepartments" :key="dept.id" :value="dept.id">
                         {{ dept.name }} ({{ dept.code }})
                     </option>
                 </select>

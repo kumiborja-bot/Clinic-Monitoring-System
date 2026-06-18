@@ -435,6 +435,7 @@ class StudentImportService
             [
                 'name' => $deptCode,
                 'full_name' => self::getDepartmentFullName($deptCode),
+                'type' => 'student',
             ]
         );
 

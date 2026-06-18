@@ -30,7 +30,7 @@ class PersonnelController extends Controller
 
         return Inertia::render('Personnel/Index', [
             'personnel' => $personnel,
-            'departments' => Department::all(),
+            'departments' => Department::where('type', 'personnel')->get(),
             'filters' => $request->only(['search', 'department_id']),
         ]);
     }
@@ -38,7 +38,7 @@ class PersonnelController extends Controller
     public function create()
     {
         return Inertia::render('Personnel/Create', [
-            'departments' => Department::all(),
+            'departments' => Department::where('type', 'personnel')->get(),
         ]);
     }
 
@@ -121,7 +121,7 @@ class PersonnelController extends Controller
 
         return Inertia::render('Personnel/Edit', [
             'personnel' => $personnel,
-            'departments' => Department::all(),
+            'departments' => Department::where('type', 'personnel')->get(),
         ]);
     }
 
@@ -189,5 +189,24 @@ class PersonnelController extends Controller
     {
         $personnel->delete();
         return redirect()->route('personnel.index')->with('success', 'Personnel deleted successfully.');
+    }
+
+    public function importCsv(Request $request)
+    {
+        $request->validate([
+            'file' => 'required|file|mimes:csv,txt|max:10240',
+        ]);
+
+        $file = $request->file('file');
+        $tempPath = $file->getRealPath();
+
+        $importService = app(\App\Services\PersonnelImportService::class);
+        $result = $importService->importFromPath($tempPath);
+
+        if ($result['success']) {
+            return redirect()->back()->with('success', "Import completed! Imported {$result['imported_count']} personnel.");
+        }
+
+        return redirect()->back()->with('error', $result['message']);
     }
 }

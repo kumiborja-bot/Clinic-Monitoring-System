@@ -99,7 +99,7 @@ class MedicineController extends Controller
             ->with('department:id,name,code')->get(),
             'personnel' => Personnel::select('id', 'name', 'employee_id', 'department_id')
             ->with('department:id,name,code')->get(),
-            'departments' => Department::select('id', 'name', 'code')->get(),
+            'departments' => Department::select('id', 'name', 'code', 'type')->get(),
         ]);
     }
 

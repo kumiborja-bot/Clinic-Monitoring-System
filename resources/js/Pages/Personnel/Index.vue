@@ -1,6 +1,6 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head, Link, router } from '@inertiajs/vue3';
+import { Head, Link, router, useForm } from '@inertiajs/vue3';
 import { ref, watch } from 'vue';
 
 const props = defineProps({
@@ -27,6 +27,31 @@ const deletePersonnel = (id) => {
         router.delete(route('personnel.destroy', id));
     }
 };
+
+const fileInput = ref(null);
+const importForm = useForm({
+    file: null
+});
+
+const triggerFileInput = () => {
+    fileInput.value.click();
+};
+
+const handleFileUpload = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+        importForm.file = file;
+        importForm.post(route('personnel.import-csv'), {
+            preserveScroll: true,
+            onSuccess: () => {
+                importForm.reset();
+            },
+            onError: (errors) => {
+                alert(errors.file || 'An error occurred during import.');
+            }
+        });
+    }
+};
 </script>
 
 <template>
@@ -45,10 +70,22 @@ const deletePersonnel = (id) => {
                     <option v-for="dept in departments" :key="dept.id" :value="dept.id">{{ dept.code }}</option>
                 </select>
             </div>
-            <Link :href="route('personnel.create')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white bg-[#F0A500] hover:bg-[#F4B842] shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
-                Add Personnel
-            </Link>
+            <div class="flex flex-wrap items-center gap-2">
+                <!-- Hidden File Input -->
+                <input type="file" ref="fileInput" @change="handleFileUpload" accept=".csv" class="hidden" />
+
+                <!-- Import CSV button (Dynamic File Upload) -->
+                <button @click="triggerFileInput" :disabled="importForm.processing"
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-navy-800 bg-navy-100 hover:bg-navy-200 transition-all duration-200 disabled:opacity-50">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                    Import CSV
+                </button>
+
+                <Link :href="route('personnel.create')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white bg-[#F0A500] hover:bg-[#F4B842] shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                    Add Personnel
+                </Link>
+            </div>
         </div>
 
         <div class="grid grid-cols-1 gap-6">

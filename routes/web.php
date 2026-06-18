@@ -29,6 +29,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/api/departments/{department}/courses', [StudentController::class , 'getCourses'])->name('departments.courses');
 
     // Personnel
+    Route::post('/personnel/import-csv', [PersonnelController::class, 'importCsv'])->name('personnel.import-csv');
     Route::resource('personnel', PersonnelController::class);
 
     // Medicines

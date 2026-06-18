@@ -53,7 +53,7 @@ class StudentController extends Controller
 
         return Inertia::render('Students/Index', [
             'students' => $students,
-            'departments' => Department::with('courses')->get(),
+            'departments' => Department::where('type', 'student')->with('courses')->get(),
             'filters' => $request->only(['search', 'department_id', 'bmi_category', 'type']),
         ]);
     }
@@ -61,7 +61,7 @@ class StudentController extends Controller
     public function create()
     {
         return Inertia::render('Students/Create', [
-            'departments' => Department::with('courses')->get(),
+            'departments' => Department::where('type', 'student')->with('courses')->get(),
         ]);
     }
 
@@ -147,7 +147,7 @@ class StudentController extends Controller
 
         return Inertia::render('Students/Edit', [
             'student' => $student,
-            'departments' => Department::with('courses')->get(),
+            'departments' => Department::where('type', 'student')->with('courses')->get(),
         ]);
     }
 
