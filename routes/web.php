@@ -3,6 +3,7 @@
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\PersonnelController;
+use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\PersonnelDocumentController;
 use App\Http\Controllers\MedicineController;
 use App\Http\Controllers\TreatmentController;
@@ -31,6 +32,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // Personnel
     Route::post('/personnel/import-csv', [PersonnelController::class, 'importCsv'])->name('personnel.import-csv');
     Route::resource('personnel', PersonnelController::class);
+
+    // Departments
+    Route::resource('departments', DepartmentController::class);
 
     // Medicines
     Route::get('/medicines/dispense', [MedicineController::class , 'dispenseForm'])->name('medicines.dispense.form');
