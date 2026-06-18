@@ -46,7 +46,7 @@ const isActive = (routeName) => {
                     <img src="/images/logo.jpg" alt="MMACI Logo" class="flex-shrink-0 rounded-full object-cover" :class="showSidebar ? 'w-12 h-12' : 'w-10 h-10'" />
                     <div v-if="showSidebar" class="transition-opacity duration-200 min-w-0">
                         <h1 class="text-xs font-bold leading-tight text-mustard-400 uppercase tracking-wide">Merchant Marine Academy of Caraga, Inc.</h1>
-                        <p class="text-[10px] text-gray-400 mt-0.5">Clinic Health Monitoring System</p>
+                        <p class="text-[10px] text-gray-400 mt-0.5">Health Monitoring System</p>
                     </div>
                 </div>
             </div>
