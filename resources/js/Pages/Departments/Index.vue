@@ -36,9 +36,11 @@ const deleteDepartment = (id) => {
 </script>
 
 <template>
-    <Head title="Department Master" />
+    <Head :title="filters.type === 'student' ? 'Student Departments' : (filters.type === 'personnel' ? 'Personnel Departments' : 'Departments')" />
     <AuthenticatedLayout>
-        <template #header>Department Master</template>
+        <template #header>
+            {{ filters.type === 'student' ? 'Student Department Master' : (filters.type === 'personnel' ? 'Personnel Department Master' : 'Department Master') }}
+        </template>
 
         <div class="mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div class="flex flex-wrap items-center gap-3">
@@ -54,10 +56,16 @@ const deleteDepartment = (id) => {
                     <option value="personnel">Personnel (Administrative)</option>
                 </select>
             </div>
-            <Link :href="route('departments.create')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white bg-[#F0A500] hover:bg-[#F4B842] shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
-                Add Department
-            </Link>
+            <div class="flex items-center gap-2">
+                <Link :href="route('master-data.index')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-gray-700 bg-gray-100 hover:bg-gray-200 transition-all duration-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                    Back to Master Data
+                </Link>
+                <Link :href="route('departments.create', { type: filters.type })" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white bg-[#F0A500] hover:bg-[#F4B842] shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                    Add Department
+                </Link>
+            </div>
         </div>
 
         <div class="grid grid-cols-1 gap-6">

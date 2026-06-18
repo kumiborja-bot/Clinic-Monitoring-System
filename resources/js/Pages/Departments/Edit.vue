@@ -1,6 +1,6 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head, useForm } from '@inertiajs/vue3';
+import { Head, useForm, Link } from '@inertiajs/vue3';
 
 const props = defineProps({
     department: Object,
@@ -57,7 +57,7 @@ const submit = () => {
                 </div>
             </div>
             <div class="flex items-center justify-end gap-3 mt-6">
-                <a :href="route('departments.index')" class="px-5 py-2.5 text-sm font-medium text-gray-600 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors">Cancel</a>
+                <Link :href="route('departments.index', { type: props.department.type })" class="px-5 py-2.5 text-sm font-medium text-gray-600 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors">Cancel</Link>
                 <button type="submit" :disabled="form.processing" class="px-6 py-2.5 text-sm font-bold text-white rounded-lg shadow-sm hover:shadow-md disabled:opacity-50 transition-all bg-[#132639] hover:bg-[#0E4362]">
                     {{ form.processing ? 'Saving...' : 'Update Department' }}
                 </button>

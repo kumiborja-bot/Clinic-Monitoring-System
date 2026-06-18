@@ -14,6 +14,7 @@ use App\Http\Controllers\OfflineQueueController;
 use App\Http\Controllers\CsvDataController;
 use App\Http\Controllers\DssRecordController;
 use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
 
 Route::get('/', function () {
     return redirect()->route('login');
@@ -35,6 +36,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     // Departments
     Route::resource('departments', DepartmentController::class);
+
+    // Master Data Hub
+    Route::get('/master-data', function () {
+        return Inertia::render('MasterData/Index');
+    })->name('master-data.index');
 
     // Medicines
     Route::get('/medicines/dispense', [MedicineController::class , 'dispenseForm'])->name('medicines.dispense.form');

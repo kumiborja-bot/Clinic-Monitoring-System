@@ -28,9 +28,11 @@ class DepartmentController extends Controller
         ]);
     }
 
-    public function create()
+    public function create(Request $request)
     {
-        return Inertia::render('Departments/Create');
+        return Inertia::render('Departments/Create', [
+            'default_type' => $request->type ?? 'student'
+        ]);
     }
 
     public function store(Request $request)
@@ -46,7 +48,7 @@ class DepartmentController extends Controller
 
         Department::create($validated);
 
-        return redirect()->route('departments.index')->with('success', 'Department created successfully.');
+        return redirect()->route('departments.index', ['type' => $validated['type']])->with('success', 'Department created successfully.');
     }
 
     public function edit(Department $department)
@@ -69,7 +71,7 @@ class DepartmentController extends Controller
 
         $department->update($validated);
 
-        return redirect()->route('departments.index')->with('success', 'Department updated successfully.');
+        return redirect()->route('departments.index', ['type' => $validated['type']])->with('success', 'Department updated successfully.');
     }
 
     public function destroy(Department $department)
