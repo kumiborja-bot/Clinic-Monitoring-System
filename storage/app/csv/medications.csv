@@ -1,0 +1,501 @@
+id,name,description,category,unit,stock_quantity,reorder_level,expiry_date
+1,Biogesic,Paracetamol 500mg,Pain Relief,Tablet,10,10,2027-09-11
+2,Alaxan,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2028-04-20
+3,Ponstan,Mefenamic Acid,Pain Relief,Capsule,10,10,2027-07-11
+4,Advil,Ibuprofen,Pain Relief,Tablet,10,10,2027-02-22
+5,Calpol,Paracetamol Suspension,Pain Relief,Bottle,10,10,2028-01-22
+6,Amoxicillin,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2027-05-22
+7,Cefalexin,Antibiotic,Antibiotic,Capsule,10,10,2028-04-05
+8,Solmux,Carbocisteine,Cough & Cold,Capsule,10,10,2027-04-07
+9,Lagundi,Herbal cough relief,Cough & Cold,Bottle,10,10,2028-05-26
+10,Decolgen,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-06-21
+11,Neozep,Decongestant,Cough & Cold,Tablet,10,10,2027-04-10
+12,Robitussin,Cough syrup,Cough & Cold,Bottle,10,10,2028-02-13
+13,Omeprazole,Acid reducer,Gastrointestinal,Capsule,10,10,2026-12-31
+14,Domperidone,Anti-nausea,Gastrointestinal,Tablet,10,10,2028-04-03
+15,Cetirizine,Allergy relief,Antihistamine,Tablet,10,10,2028-02-14
+16,Ascof,Lagundi tablet,Cough & Cold,Tablet,10,10,2028-01-11
+17,Tuseran,Cough and cold,Cough & Cold,Capsule,10,10,2028-02-01
+18,Tempra,Paracetamol,Pain Relief,Suspension,10,10,2027-08-10
+19,RiteMed Paracetamol,Generic Paracetamol,Pain Relief,Tablet,10,10,2028-02-15
+20,Multivitamins,Daily supplement,Vitamins,Tablet,10,10,2027-04-23
+21,Vitamin C,Ascorbic Acid,Vitamins,Tablet,10,10,2028-01-16
+22,Salbutamol,Asthma relief,Respiratory,Sachet,10,10,2027-08-05
+23,Loperamide,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2027-01-31
+24,Metformin,Diabetes medication,Diabetes,Tablet,10,10,2028-04-12
+25,Losartan,Blood pressure,Cardiovascular,Tablet,10,10,2028-04-13
+26,Amlodipine,Hypertension,Cardiovascular,Tablet,10,10,2028-03-29
+27,Biogesic Pediatric,Paracetamol 500mg,Pain Relief,Tablet,10,10,2027-02-02
+28,Alaxan Generic,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2027-02-15
+29,Ponstan 500mg,Mefenamic Acid,Pain Relief,Capsule,10,10,2028-05-09
+30,Advil 500mg,Ibuprofen,Pain Relief,Tablet,10,10,2027-09-16
+31,Calpol 250mg,Paracetamol Suspension,Pain Relief,Bottle,10,10,2027-01-23
+32,Amoxicillin Pediatric,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2028-05-05
+33,Cefalexin 250mg,Antibiotic,Antibiotic,Capsule,10,10,2027-04-28
+34,Solmux 500mg,Carbocisteine,Cough & Cold,Capsule,10,10,2028-02-08
+35,Lagundi RiteMed,Herbal cough relief,Cough & Cold,Bottle,10,10,2027-09-29
+36,Decolgen 250mg,Cold and flu relief,Cough & Cold,Tablet,10,10,2028-03-29
+37,Neozep Pediatric,Decongestant,Cough & Cold,Tablet,10,10,2027-08-25
+38,Robitussin Pediatric,Cough syrup,Cough & Cold,Bottle,10,10,2027-07-12
+39,Omeprazole 250mg,Acid reducer,Gastrointestinal,Capsule,10,10,2028-01-31
+40,Domperidone Generic,Anti-nausea,Gastrointestinal,Tablet,10,10,2028-04-02
+41,Cetirizine RiteMed,Allergy relief,Antihistamine,Tablet,10,10,2028-02-01
+42,Ascof 500mg,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-02-16
+43,Tuseran Generic,Cough and cold,Cough & Cold,Capsule,10,10,2027-11-15
+44,Tempra Generic,Paracetamol,Pain Relief,Suspension,10,10,2026-11-29
+45,RiteMed Paracetamol Pediatric,Generic Paracetamol,Pain Relief,Tablet,10,10,2027-11-17
+46,Multivitamins 250mg,Daily supplement,Vitamins,Tablet,10,10,2027-06-13
+47,Vitamin C Pediatric,Ascorbic Acid,Vitamins,Tablet,10,10,2026-12-07
+48,Salbutamol 250mg,Asthma relief,Respiratory,Sachet,10,10,2027-09-14
+49,Loperamide RiteMed,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2028-05-04
+50,Metformin 500mg,Diabetes medication,Diabetes,Tablet,10,10,2027-05-07
+51,Losartan 500mg,Blood pressure,Cardiovascular,Tablet,10,10,2027-11-02
+52,Amlodipine Pediatric,Hypertension,Cardiovascular,Tablet,10,10,2027-01-19
+53,Biogesic 500mg,Paracetamol 500mg,Pain Relief,Tablet,10,10,2027-07-29
+54,Alaxan Pediatric,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2027-06-15
+55,Ponstan Pediatric,Mefenamic Acid,Pain Relief,Capsule,10,10,2027-08-16
+56,Advil Generic,Ibuprofen,Pain Relief,Tablet,10,10,2028-02-26
+57,Calpol Generic,Paracetamol Suspension,Pain Relief,Bottle,10,10,2027-02-05
+58,Amoxicillin 250mg,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2026-12-25
+59,Cefalexin 250mg,Antibiotic,Antibiotic,Capsule,10,10,2027-06-10
+60,Solmux Generic,Carbocisteine,Cough & Cold,Capsule,10,10,2028-04-04
+61,Lagundi 250mg,Herbal cough relief,Cough & Cold,Bottle,10,10,2027-06-04
+62,Decolgen Pediatric,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-09-19
+63,Neozep Pediatric,Decongestant,Cough & Cold,Tablet,10,10,2027-04-07
+64,Robitussin 500mg,Cough syrup,Cough & Cold,Bottle,10,10,2027-10-27
+65,Omeprazole RiteMed,Acid reducer,Gastrointestinal,Capsule,10,10,2028-01-22
+66,Domperidone 500mg,Anti-nausea,Gastrointestinal,Tablet,10,10,2028-05-14
+67,Cetirizine Pediatric,Allergy relief,Antihistamine,Tablet,10,10,2028-02-22
+68,Ascof Generic,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-04-24
+69,Tuseran 500mg,Cough and cold,Cough & Cold,Capsule,10,10,2027-10-30
+70,Tempra 500mg,Paracetamol,Pain Relief,Suspension,10,10,2027-01-17
+71,RiteMed Paracetamol 500mg,Generic Paracetamol,Pain Relief,Tablet,10,10,2028-02-04
+72,Multivitamins 250mg,Daily supplement,Vitamins,Tablet,10,10,2027-10-31
+73,Vitamin C Pediatric,Ascorbic Acid,Vitamins,Tablet,10,10,2028-03-17
+74,Salbutamol Pediatric,Asthma relief,Respiratory,Sachet,10,10,2028-04-17
+75,Loperamide Pediatric,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2028-04-22
+76,Metformin Pediatric,Diabetes medication,Diabetes,Tablet,10,10,2027-03-03
+77,Losartan Generic,Blood pressure,Cardiovascular,Tablet,10,10,2027-05-27
+78,Amlodipine Pediatric,Hypertension,Cardiovascular,Tablet,10,10,2027-12-26
+79,Biogesic Pediatric,Paracetamol 500mg,Pain Relief,Tablet,10,10,2027-05-13
+80,Alaxan Pediatric,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2028-04-23
+81,Ponstan Generic,Mefenamic Acid,Pain Relief,Capsule,10,10,2027-01-12
+82,Advil 500mg,Ibuprofen,Pain Relief,Tablet,10,10,2027-11-21
+83,Calpol 250mg,Paracetamol Suspension,Pain Relief,Bottle,10,10,2027-03-13
+84,Amoxicillin 250mg,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2026-11-26
+85,Cefalexin 250mg,Antibiotic,Antibiotic,Capsule,10,10,2027-08-10
+86,Solmux Generic,Carbocisteine,Cough & Cold,Capsule,10,10,2027-08-15
+87,Lagundi RiteMed,Herbal cough relief,Cough & Cold,Bottle,10,10,2027-04-14
+88,Decolgen RiteMed,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-11-03
+89,Neozep Generic,Decongestant,Cough & Cold,Tablet,10,10,2027-06-03
+90,Robitussin Generic,Cough syrup,Cough & Cold,Bottle,10,10,2027-01-02
+91,Omeprazole Pediatric,Acid reducer,Gastrointestinal,Capsule,10,10,2027-12-11
+92,Domperidone RiteMed,Anti-nausea,Gastrointestinal,Tablet,10,10,2027-02-02
+93,Cetirizine Generic,Allergy relief,Antihistamine,Tablet,10,10,2027-12-11
+94,Ascof 500mg,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-10-19
+95,Tuseran Generic,Cough and cold,Cough & Cold,Capsule,10,10,2028-05-02
+96,Tempra Generic,Paracetamol,Pain Relief,Suspension,10,10,2028-05-13
+97,RiteMed Paracetamol 250mg,Generic Paracetamol,Pain Relief,Tablet,10,10,2028-05-16
+98,Multivitamins Generic,Daily supplement,Vitamins,Tablet,10,10,2027-12-13
+99,Vitamin C RiteMed,Ascorbic Acid,Vitamins,Tablet,10,10,2027-05-16
+100,Salbutamol 250mg,Asthma relief,Respiratory,Sachet,10,10,2027-09-09
+101,Loperamide 250mg,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2028-05-27
+102,Metformin Pediatric,Diabetes medication,Diabetes,Tablet,10,10,2028-01-23
+103,Losartan RiteMed,Blood pressure,Cardiovascular,Tablet,10,10,2027-09-02
+104,Amlodipine RiteMed,Hypertension,Cardiovascular,Tablet,10,10,2028-02-20
+105,Biogesic RiteMed,Paracetamol 500mg,Pain Relief,Tablet,10,10,2027-04-01
+106,Alaxan 500mg,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2028-04-12
+107,Ponstan RiteMed,Mefenamic Acid,Pain Relief,Capsule,10,10,2027-02-01
+108,Advil 250mg,Ibuprofen,Pain Relief,Tablet,10,10,2026-12-05
+109,Calpol Generic,Paracetamol Suspension,Pain Relief,Bottle,10,10,2027-03-09
+110,Amoxicillin 500mg,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2027-07-05
+111,Cefalexin RiteMed,Antibiotic,Antibiotic,Capsule,10,10,2028-01-03
+112,Solmux Pediatric,Carbocisteine,Cough & Cold,Capsule,10,10,2028-05-13
+113,Lagundi Generic,Herbal cough relief,Cough & Cold,Bottle,10,10,2027-12-22
+114,Decolgen Generic,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-04-12
+115,Neozep Pediatric,Decongestant,Cough & Cold,Tablet,10,10,2027-03-13
+116,Robitussin 250mg,Cough syrup,Cough & Cold,Bottle,10,10,2028-03-12
+117,Omeprazole 250mg,Acid reducer,Gastrointestinal,Capsule,10,10,2027-08-22
+118,Domperidone Generic,Anti-nausea,Gastrointestinal,Tablet,10,10,2027-02-16
+119,Cetirizine Pediatric,Allergy relief,Antihistamine,Tablet,10,10,2028-05-24
+120,Ascof 250mg,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-11-08
+121,Tuseran RiteMed,Cough and cold,Cough & Cold,Capsule,10,10,2027-07-23
+122,Tempra 500mg,Paracetamol,Pain Relief,Suspension,10,10,2026-12-08
+123,RiteMed Paracetamol Pediatric,Generic Paracetamol,Pain Relief,Tablet,10,10,2027-11-02
+124,Multivitamins Pediatric,Daily supplement,Vitamins,Tablet,10,10,2027-08-19
+125,Vitamin C Generic,Ascorbic Acid,Vitamins,Tablet,10,10,2027-03-03
+126,Salbutamol RiteMed,Asthma relief,Respiratory,Sachet,10,10,2028-05-27
+127,Loperamide RiteMed,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2028-04-16
+128,Metformin Generic,Diabetes medication,Diabetes,Tablet,10,10,2028-03-25
+129,Losartan Generic,Blood pressure,Cardiovascular,Tablet,10,10,2027-11-20
+130,Amlodipine 500mg,Hypertension,Cardiovascular,Tablet,10,10,2027-07-28
+131,Biogesic Generic,Paracetamol 500mg,Pain Relief,Tablet,10,10,2026-12-07
+132,Alaxan 500mg,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2027-06-13
+133,Ponstan Generic,Mefenamic Acid,Pain Relief,Capsule,10,10,2027-03-24
+134,Advil 500mg,Ibuprofen,Pain Relief,Tablet,10,10,2026-12-16
+135,Calpol 250mg,Paracetamol Suspension,Pain Relief,Bottle,10,10,2027-10-22
+136,Amoxicillin Generic,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2028-01-28
+137,Cefalexin 500mg,Antibiotic,Antibiotic,Capsule,10,10,2026-12-26
+138,Solmux 250mg,Carbocisteine,Cough & Cold,Capsule,10,10,2028-03-14
+139,Lagundi Generic,Herbal cough relief,Cough & Cold,Bottle,10,10,2028-02-28
+140,Decolgen RiteMed,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-11-11
+141,Neozep 500mg,Decongestant,Cough & Cold,Tablet,10,10,2027-02-24
+142,Robitussin Generic,Cough syrup,Cough & Cold,Bottle,10,10,2028-01-25
+143,Omeprazole 250mg,Acid reducer,Gastrointestinal,Capsule,10,10,2027-10-18
+144,Domperidone RiteMed,Anti-nausea,Gastrointestinal,Tablet,10,10,2027-03-11
+145,Cetirizine Generic,Allergy relief,Antihistamine,Tablet,10,10,2028-01-15
+146,Ascof RiteMed,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-11-20
+147,Tuseran Pediatric,Cough and cold,Cough & Cold,Capsule,10,10,2028-01-26
+148,Tempra RiteMed,Paracetamol,Pain Relief,Suspension,10,10,2027-08-05
+149,RiteMed Paracetamol RiteMed,Generic Paracetamol,Pain Relief,Tablet,10,10,2027-10-06
+150,Multivitamins 500mg,Daily supplement,Vitamins,Tablet,10,10,2027-02-01
+151,Vitamin C 250mg,Ascorbic Acid,Vitamins,Tablet,10,10,2026-12-11
+152,Salbutamol Generic,Asthma relief,Respiratory,Sachet,10,10,2027-06-18
+153,Loperamide RiteMed,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2027-05-10
+154,Metformin Pediatric,Diabetes medication,Diabetes,Tablet,10,10,2028-04-23
+155,Losartan 500mg,Blood pressure,Cardiovascular,Tablet,10,10,2028-02-07
+156,Amlodipine 250mg,Hypertension,Cardiovascular,Tablet,10,10,2028-02-19
+157,Biogesic 250mg,Paracetamol 500mg,Pain Relief,Tablet,10,10,2027-03-18
+158,Alaxan RiteMed,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2026-12-05
+159,Ponstan Pediatric,Mefenamic Acid,Pain Relief,Capsule,10,10,2027-10-28
+160,Advil Generic,Ibuprofen,Pain Relief,Tablet,10,10,2027-04-05
+161,Calpol 250mg,Paracetamol Suspension,Pain Relief,Bottle,10,10,2027-08-21
+162,Amoxicillin Generic,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2026-12-15
+163,Cefalexin 250mg,Antibiotic,Antibiotic,Capsule,10,10,2027-05-31
+164,Solmux RiteMed,Carbocisteine,Cough & Cold,Capsule,10,10,2028-05-09
+165,Lagundi RiteMed,Herbal cough relief,Cough & Cold,Bottle,10,10,2027-11-06
+166,Decolgen 250mg,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-09-23
+167,Neozep 500mg,Decongestant,Cough & Cold,Tablet,10,10,2027-12-19
+168,Robitussin Pediatric,Cough syrup,Cough & Cold,Bottle,10,10,2027-04-04
+169,Omeprazole Pediatric,Acid reducer,Gastrointestinal,Capsule,10,10,2027-08-25
+170,Domperidone 250mg,Anti-nausea,Gastrointestinal,Tablet,10,10,2028-01-31
+171,Cetirizine 250mg,Allergy relief,Antihistamine,Tablet,10,10,2028-01-25
+172,Ascof Pediatric,Lagundi tablet,Cough & Cold,Tablet,10,10,2028-05-26
+173,Tuseran Generic,Cough and cold,Cough & Cold,Capsule,10,10,2026-12-30
+174,Tempra 250mg,Paracetamol,Pain Relief,Suspension,10,10,2027-06-04
+175,RiteMed Paracetamol 500mg,Generic Paracetamol,Pain Relief,Tablet,10,10,2027-12-22
+176,Multivitamins Generic,Daily supplement,Vitamins,Tablet,10,10,2028-03-11
+177,Vitamin C 250mg,Ascorbic Acid,Vitamins,Tablet,10,10,2027-02-26
+178,Salbutamol 500mg,Asthma relief,Respiratory,Sachet,10,10,2027-12-30
+179,Loperamide Generic,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2027-02-27
+180,Metformin Pediatric,Diabetes medication,Diabetes,Tablet,10,10,2027-06-25
+181,Losartan 250mg,Blood pressure,Cardiovascular,Tablet,10,10,2027-03-18
+182,Amlodipine 500mg,Hypertension,Cardiovascular,Tablet,10,10,2027-10-13
+183,Biogesic 500mg,Paracetamol 500mg,Pain Relief,Tablet,10,10,2027-12-20
+184,Alaxan 250mg,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2028-03-09
+185,Ponstan Generic,Mefenamic Acid,Pain Relief,Capsule,10,10,2028-05-08
+186,Advil 250mg,Ibuprofen,Pain Relief,Tablet,10,10,2028-05-13
+187,Calpol Pediatric,Paracetamol Suspension,Pain Relief,Bottle,10,10,2027-05-01
+188,Amoxicillin Generic,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2028-02-03
+189,Cefalexin Generic,Antibiotic,Antibiotic,Capsule,10,10,2027-04-14
+190,Solmux Pediatric,Carbocisteine,Cough & Cold,Capsule,10,10,2027-05-18
+191,Lagundi RiteMed,Herbal cough relief,Cough & Cold,Bottle,10,10,2027-03-18
+192,Decolgen 500mg,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-05-01
+193,Neozep 250mg,Decongestant,Cough & Cold,Tablet,10,10,2027-04-29
+194,Robitussin Pediatric,Cough syrup,Cough & Cold,Bottle,10,10,2028-02-06
+195,Omeprazole RiteMed,Acid reducer,Gastrointestinal,Capsule,10,10,2027-02-17
+196,Domperidone Pediatric,Anti-nausea,Gastrointestinal,Tablet,10,10,2027-03-26
+197,Cetirizine Generic,Allergy relief,Antihistamine,Tablet,10,10,2027-11-15
+198,Ascof RiteMed,Lagundi tablet,Cough & Cold,Tablet,10,10,2026-12-22
+199,Tuseran RiteMed,Cough and cold,Cough & Cold,Capsule,10,10,2026-12-20
+200,Tempra Generic,Paracetamol,Pain Relief,Suspension,10,10,2028-03-22
+201,RiteMed Paracetamol 500mg,Generic Paracetamol,Pain Relief,Tablet,10,10,2028-01-18
+202,Multivitamins Generic,Daily supplement,Vitamins,Tablet,10,10,2027-07-31
+203,Vitamin C Pediatric,Ascorbic Acid,Vitamins,Tablet,10,10,2028-03-25
+204,Salbutamol RiteMed,Asthma relief,Respiratory,Sachet,10,10,2026-12-11
+205,Loperamide Generic,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2027-08-08
+206,Metformin Pediatric,Diabetes medication,Diabetes,Tablet,10,10,2028-05-10
+207,Losartan RiteMed,Blood pressure,Cardiovascular,Tablet,10,10,2027-03-09
+208,Amlodipine RiteMed,Hypertension,Cardiovascular,Tablet,10,10,2028-01-01
+209,Biogesic 500mg,Paracetamol 500mg,Pain Relief,Tablet,10,10,2027-03-25
+210,Alaxan 500mg,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2028-05-20
+211,Ponstan Pediatric,Mefenamic Acid,Pain Relief,Capsule,10,10,2027-02-08
+212,Advil Pediatric,Ibuprofen,Pain Relief,Tablet,10,10,2026-11-25
+213,Calpol Generic,Paracetamol Suspension,Pain Relief,Bottle,10,10,2028-03-31
+214,Amoxicillin Generic,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2027-02-18
+215,Cefalexin Generic,Antibiotic,Antibiotic,Capsule,10,10,2027-06-01
+216,Solmux 500mg,Carbocisteine,Cough & Cold,Capsule,10,10,2027-04-03
+217,Lagundi RiteMed,Herbal cough relief,Cough & Cold,Bottle,10,10,2028-05-05
+218,Decolgen Generic,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-10-09
+219,Neozep 500mg,Decongestant,Cough & Cold,Tablet,10,10,2028-02-09
+220,Robitussin Generic,Cough syrup,Cough & Cold,Bottle,10,10,2027-03-20
+221,Omeprazole 250mg,Acid reducer,Gastrointestinal,Capsule,10,10,2027-12-17
+222,Domperidone Generic,Anti-nausea,Gastrointestinal,Tablet,10,10,2027-09-28
+223,Cetirizine Generic,Allergy relief,Antihistamine,Tablet,10,10,2027-11-04
+224,Ascof 250mg,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-12-17
+225,Tuseran Pediatric,Cough and cold,Cough & Cold,Capsule,10,10,2027-07-23
+226,Tempra 250mg,Paracetamol,Pain Relief,Suspension,10,10,2027-05-20
+227,RiteMed Paracetamol 250mg,Generic Paracetamol,Pain Relief,Tablet,10,10,2027-05-10
+228,Multivitamins 500mg,Daily supplement,Vitamins,Tablet,10,10,2028-02-22
+229,Vitamin C RiteMed,Ascorbic Acid,Vitamins,Tablet,10,10,2027-12-12
+230,Salbutamol Generic,Asthma relief,Respiratory,Sachet,10,10,2027-10-05
+231,Loperamide 500mg,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2028-02-18
+232,Metformin 250mg,Diabetes medication,Diabetes,Tablet,10,10,2028-01-27
+233,Losartan 500mg,Blood pressure,Cardiovascular,Tablet,10,10,2027-09-04
+234,Amlodipine 500mg,Hypertension,Cardiovascular,Tablet,10,10,2027-10-20
+235,Biogesic RiteMed,Paracetamol 500mg,Pain Relief,Tablet,10,10,2027-02-02
+236,Alaxan 250mg,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2026-12-29
+237,Ponstan 250mg,Mefenamic Acid,Pain Relief,Capsule,10,10,2027-05-10
+238,Advil 500mg,Ibuprofen,Pain Relief,Tablet,10,10,2027-08-31
+239,Calpol RiteMed,Paracetamol Suspension,Pain Relief,Bottle,10,10,2027-11-08
+240,Amoxicillin RiteMed,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2027-01-23
+241,Cefalexin Generic,Antibiotic,Antibiotic,Capsule,10,10,2027-05-09
+242,Solmux 250mg,Carbocisteine,Cough & Cold,Capsule,10,10,2027-08-16
+243,Lagundi Pediatric,Herbal cough relief,Cough & Cold,Bottle,10,10,2028-02-15
+244,Decolgen Pediatric,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-05-07
+245,Neozep Pediatric,Decongestant,Cough & Cold,Tablet,10,10,2026-12-03
+246,Robitussin Generic,Cough syrup,Cough & Cold,Bottle,10,10,2027-10-15
+247,Omeprazole Generic,Acid reducer,Gastrointestinal,Capsule,10,10,2028-01-30
+248,Domperidone Generic,Anti-nausea,Gastrointestinal,Tablet,10,10,2026-12-29
+249,Cetirizine 250mg,Allergy relief,Antihistamine,Tablet,10,10,2028-02-17
+250,Ascof Pediatric,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-03-17
+251,Tuseran 250mg,Cough and cold,Cough & Cold,Capsule,10,10,2027-06-23
+252,Tempra Generic,Paracetamol,Pain Relief,Suspension,10,10,2027-02-08
+253,RiteMed Paracetamol RiteMed,Generic Paracetamol,Pain Relief,Tablet,10,10,2027-07-14
+254,Multivitamins Generic,Daily supplement,Vitamins,Tablet,10,10,2026-12-30
+255,Vitamin C Pediatric,Ascorbic Acid,Vitamins,Tablet,10,10,2027-12-16
+256,Salbutamol 250mg,Asthma relief,Respiratory,Sachet,10,10,2028-03-30
+257,Loperamide 250mg,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2027-08-10
+258,Metformin Pediatric,Diabetes medication,Diabetes,Tablet,10,10,2027-10-19
+259,Losartan 500mg,Blood pressure,Cardiovascular,Tablet,10,10,2027-09-04
+260,Amlodipine Pediatric,Hypertension,Cardiovascular,Tablet,10,10,2027-03-29
+261,Biogesic RiteMed,Paracetamol 500mg,Pain Relief,Tablet,10,10,2027-11-13
+262,Alaxan 250mg,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2027-06-22
+263,Ponstan RiteMed,Mefenamic Acid,Pain Relief,Capsule,10,10,2028-05-17
+264,Advil RiteMed,Ibuprofen,Pain Relief,Tablet,10,10,2027-05-31
+265,Calpol Generic,Paracetamol Suspension,Pain Relief,Bottle,10,10,2027-10-31
+266,Amoxicillin 250mg,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2028-02-01
+267,Cefalexin 500mg,Antibiotic,Antibiotic,Capsule,10,10,2027-08-29
+268,Solmux 250mg,Carbocisteine,Cough & Cold,Capsule,10,10,2027-09-09
+269,Lagundi 250mg,Herbal cough relief,Cough & Cold,Bottle,10,10,2027-02-28
+270,Decolgen Pediatric,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-07-12
+271,Neozep Generic,Decongestant,Cough & Cold,Tablet,10,10,2028-01-25
+272,Robitussin 250mg,Cough syrup,Cough & Cold,Bottle,10,10,2028-03-28
+273,Omeprazole 250mg,Acid reducer,Gastrointestinal,Capsule,10,10,2027-05-02
+274,Domperidone RiteMed,Anti-nausea,Gastrointestinal,Tablet,10,10,2027-05-21
+275,Cetirizine 250mg,Allergy relief,Antihistamine,Tablet,10,10,2027-07-07
+276,Ascof Generic,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-08-17
+277,Tuseran RiteMed,Cough and cold,Cough & Cold,Capsule,10,10,2028-03-04
+278,Tempra Generic,Paracetamol,Pain Relief,Suspension,10,10,2027-07-10
+279,RiteMed Paracetamol 250mg,Generic Paracetamol,Pain Relief,Tablet,10,10,2027-10-13
+280,Multivitamins 500mg,Daily supplement,Vitamins,Tablet,10,10,2028-02-25
+281,Vitamin C 500mg,Ascorbic Acid,Vitamins,Tablet,10,10,2028-02-01
+282,Salbutamol Generic,Asthma relief,Respiratory,Sachet,10,10,2027-12-30
+283,Loperamide Generic,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2028-03-08
+284,Metformin RiteMed,Diabetes medication,Diabetes,Tablet,10,10,2027-03-25
+285,Losartan RiteMed,Blood pressure,Cardiovascular,Tablet,10,10,2027-01-12
+286,Amlodipine RiteMed,Hypertension,Cardiovascular,Tablet,10,10,2027-02-04
+287,Biogesic Pediatric,Paracetamol 500mg,Pain Relief,Tablet,10,10,2026-12-20
+288,Alaxan 500mg,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2027-09-26
+289,Ponstan RiteMed,Mefenamic Acid,Pain Relief,Capsule,10,10,2027-08-30
+290,Advil Pediatric,Ibuprofen,Pain Relief,Tablet,10,10,2027-03-28
+291,Calpol Pediatric,Paracetamol Suspension,Pain Relief,Bottle,10,10,2027-05-08
+292,Amoxicillin 250mg,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2027-07-11
+293,Cefalexin RiteMed,Antibiotic,Antibiotic,Capsule,10,10,2026-12-19
+294,Solmux 250mg,Carbocisteine,Cough & Cold,Capsule,10,10,2027-03-25
+295,Lagundi Pediatric,Herbal cough relief,Cough & Cold,Bottle,10,10,2028-02-20
+296,Decolgen 250mg,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-09-16
+297,Neozep 500mg,Decongestant,Cough & Cold,Tablet,10,10,2027-12-08
+298,Robitussin 500mg,Cough syrup,Cough & Cold,Bottle,10,10,2028-03-04
+299,Omeprazole RiteMed,Acid reducer,Gastrointestinal,Capsule,10,10,2028-02-22
+300,Domperidone Generic,Anti-nausea,Gastrointestinal,Tablet,10,10,2028-04-30
+301,Cetirizine RiteMed,Allergy relief,Antihistamine,Tablet,10,10,2027-06-17
+302,Ascof 500mg,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-10-17
+303,Tuseran RiteMed,Cough and cold,Cough & Cold,Capsule,10,10,2028-04-08
+304,Tempra 250mg,Paracetamol,Pain Relief,Suspension,10,10,2027-06-13
+305,RiteMed Paracetamol Generic,Generic Paracetamol,Pain Relief,Tablet,10,10,2027-10-25
+306,Multivitamins 250mg,Daily supplement,Vitamins,Tablet,10,10,2027-11-16
+307,Vitamin C Pediatric,Ascorbic Acid,Vitamins,Tablet,10,10,2027-09-27
+308,Salbutamol 250mg,Asthma relief,Respiratory,Sachet,10,10,2027-07-25
+309,Loperamide Generic,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2028-01-18
+310,Metformin Generic,Diabetes medication,Diabetes,Tablet,10,10,2027-07-26
+311,Losartan 500mg,Blood pressure,Cardiovascular,Tablet,10,10,2027-11-18
+312,Amlodipine RiteMed,Hypertension,Cardiovascular,Tablet,10,10,2027-03-07
+313,Biogesic Pediatric,Paracetamol 500mg,Pain Relief,Tablet,10,10,2026-12-25
+314,Alaxan Pediatric,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2027-07-15
+315,Ponstan 250mg,Mefenamic Acid,Pain Relief,Capsule,10,10,2027-04-15
+316,Advil RiteMed,Ibuprofen,Pain Relief,Tablet,10,10,2027-01-21
+317,Calpol Pediatric,Paracetamol Suspension,Pain Relief,Bottle,10,10,2027-03-17
+318,Amoxicillin 250mg,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2027-03-18
+319,Cefalexin 250mg,Antibiotic,Antibiotic,Capsule,10,10,2028-05-05
+320,Solmux Pediatric,Carbocisteine,Cough & Cold,Capsule,10,10,2027-02-09
+321,Lagundi Pediatric,Herbal cough relief,Cough & Cold,Bottle,10,10,2028-01-05
+322,Decolgen Generic,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-12-02
+323,Neozep Generic,Decongestant,Cough & Cold,Tablet,10,10,2027-05-14
+324,Robitussin 500mg,Cough syrup,Cough & Cold,Bottle,10,10,2027-06-25
+325,Omeprazole Pediatric,Acid reducer,Gastrointestinal,Capsule,10,10,2027-01-31
+326,Domperidone 250mg,Anti-nausea,Gastrointestinal,Tablet,10,10,2027-03-10
+327,Cetirizine Generic,Allergy relief,Antihistamine,Tablet,10,10,2028-04-08
+328,Ascof Generic,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-12-04
+329,Tuseran 500mg,Cough and cold,Cough & Cold,Capsule,10,10,2027-01-17
+330,Tempra Generic,Paracetamol,Pain Relief,Suspension,10,10,2026-11-26
+331,RiteMed Paracetamol Pediatric,Generic Paracetamol,Pain Relief,Tablet,10,10,2027-03-18
+332,Multivitamins 250mg,Daily supplement,Vitamins,Tablet,10,10,2027-06-07
+333,Vitamin C RiteMed,Ascorbic Acid,Vitamins,Tablet,10,10,2027-10-24
+334,Salbutamol Generic,Asthma relief,Respiratory,Sachet,10,10,2027-05-01
+335,Loperamide RiteMed,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2027-06-04
+336,Metformin 500mg,Diabetes medication,Diabetes,Tablet,10,10,2028-05-12
+337,Losartan 250mg,Blood pressure,Cardiovascular,Tablet,10,10,2027-10-06
+338,Amlodipine Pediatric,Hypertension,Cardiovascular,Tablet,10,10,2027-05-12
+339,Biogesic RiteMed,Paracetamol 500mg,Pain Relief,Tablet,10,10,2028-04-18
+340,Alaxan 500mg,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2027-03-24
+341,Ponstan Generic,Mefenamic Acid,Pain Relief,Capsule,10,10,2028-03-03
+342,Advil RiteMed,Ibuprofen,Pain Relief,Tablet,10,10,2027-10-17
+343,Calpol 250mg,Paracetamol Suspension,Pain Relief,Bottle,10,10,2027-05-08
+344,Amoxicillin 500mg,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2028-01-03
+345,Cefalexin RiteMed,Antibiotic,Antibiotic,Capsule,10,10,2027-11-24
+346,Solmux 500mg,Carbocisteine,Cough & Cold,Capsule,10,10,2026-12-29
+347,Lagundi 500mg,Herbal cough relief,Cough & Cold,Bottle,10,10,2027-12-05
+348,Decolgen Generic,Cold and flu relief,Cough & Cold,Tablet,10,10,2026-12-26
+349,Neozep RiteMed,Decongestant,Cough & Cold,Tablet,10,10,2027-01-02
+350,Robitussin Generic,Cough syrup,Cough & Cold,Bottle,10,10,2027-04-13
+351,Omeprazole RiteMed,Acid reducer,Gastrointestinal,Capsule,10,10,2027-06-21
+352,Domperidone 500mg,Anti-nausea,Gastrointestinal,Tablet,10,10,2027-08-13
+353,Cetirizine Generic,Allergy relief,Antihistamine,Tablet,10,10,2028-02-11
+354,Ascof Generic,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-05-10
+355,Tuseran 250mg,Cough and cold,Cough & Cold,Capsule,10,10,2027-12-27
+356,Tempra 500mg,Paracetamol,Pain Relief,Suspension,10,10,2027-07-17
+357,RiteMed Paracetamol 500mg,Generic Paracetamol,Pain Relief,Tablet,10,10,2027-10-26
+358,Multivitamins RiteMed,Daily supplement,Vitamins,Tablet,10,10,2027-01-05
+359,Vitamin C RiteMed,Ascorbic Acid,Vitamins,Tablet,10,10,2027-06-15
+360,Salbutamol RiteMed,Asthma relief,Respiratory,Sachet,10,10,2027-07-05
+361,Loperamide Pediatric,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2027-03-08
+362,Metformin RiteMed,Diabetes medication,Diabetes,Tablet,10,10,2028-04-07
+363,Losartan Pediatric,Blood pressure,Cardiovascular,Tablet,10,10,2027-01-07
+364,Amlodipine RiteMed,Hypertension,Cardiovascular,Tablet,10,10,2027-11-16
+365,Biogesic 500mg,Paracetamol 500mg,Pain Relief,Tablet,10,10,2027-02-14
+366,Alaxan Pediatric,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2028-05-25
+367,Ponstan 250mg,Mefenamic Acid,Pain Relief,Capsule,10,10,2028-01-04
+368,Advil 250mg,Ibuprofen,Pain Relief,Tablet,10,10,2027-08-19
+369,Calpol 500mg,Paracetamol Suspension,Pain Relief,Bottle,10,10,2027-08-30
+370,Amoxicillin RiteMed,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2027-01-08
+371,Cefalexin RiteMed,Antibiotic,Antibiotic,Capsule,10,10,2027-05-19
+372,Solmux RiteMed,Carbocisteine,Cough & Cold,Capsule,10,10,2026-12-18
+373,Lagundi Pediatric,Herbal cough relief,Cough & Cold,Bottle,10,10,2027-04-09
+374,Decolgen Generic,Cold and flu relief,Cough & Cold,Tablet,10,10,2026-12-11
+375,Neozep Pediatric,Decongestant,Cough & Cold,Tablet,10,10,2027-09-13
+376,Robitussin Generic,Cough syrup,Cough & Cold,Bottle,10,10,2028-02-13
+377,Omeprazole 250mg,Acid reducer,Gastrointestinal,Capsule,10,10,2026-12-15
+378,Domperidone Pediatric,Anti-nausea,Gastrointestinal,Tablet,10,10,2027-11-03
+379,Cetirizine Generic,Allergy relief,Antihistamine,Tablet,10,10,2028-03-16
+380,Ascof 250mg,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-05-09
+381,Tuseran Generic,Cough and cold,Cough & Cold,Capsule,10,10,2028-03-19
+382,Tempra Generic,Paracetamol,Pain Relief,Suspension,10,10,2027-03-11
+383,RiteMed Paracetamol 250mg,Generic Paracetamol,Pain Relief,Tablet,10,10,2027-06-18
+384,Multivitamins 500mg,Daily supplement,Vitamins,Tablet,10,10,2027-06-30
+385,Vitamin C RiteMed,Ascorbic Acid,Vitamins,Tablet,10,10,2028-02-28
+386,Salbutamol Generic,Asthma relief,Respiratory,Sachet,10,10,2027-10-05
+387,Loperamide 500mg,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2028-05-06
+388,Metformin 500mg,Diabetes medication,Diabetes,Tablet,10,10,2027-03-16
+389,Losartan Pediatric,Blood pressure,Cardiovascular,Tablet,10,10,2028-02-24
+390,Amlodipine 250mg,Hypertension,Cardiovascular,Tablet,10,10,2028-01-15
+391,Biogesic RiteMed,Paracetamol 500mg,Pain Relief,Tablet,10,10,2028-02-04
+392,Alaxan Pediatric,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2027-12-24
+393,Ponstan RiteMed,Mefenamic Acid,Pain Relief,Capsule,10,10,2028-03-27
+394,Advil RiteMed,Ibuprofen,Pain Relief,Tablet,10,10,2027-04-17
+395,Calpol Generic,Paracetamol Suspension,Pain Relief,Bottle,10,10,2027-05-05
+396,Amoxicillin Generic,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2027-11-05
+397,Cefalexin 250mg,Antibiotic,Antibiotic,Capsule,10,10,2028-04-10
+398,Solmux RiteMed,Carbocisteine,Cough & Cold,Capsule,10,10,2028-04-09
+399,Lagundi RiteMed,Herbal cough relief,Cough & Cold,Bottle,10,10,2028-02-24
+400,Decolgen Generic,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-01-13
+401,Neozep Pediatric,Decongestant,Cough & Cold,Tablet,10,10,2027-09-13
+402,Robitussin 500mg,Cough syrup,Cough & Cold,Bottle,10,10,2027-10-07
+403,Omeprazole RiteMed,Acid reducer,Gastrointestinal,Capsule,10,10,2027-10-22
+404,Domperidone Pediatric,Anti-nausea,Gastrointestinal,Tablet,10,10,2027-10-01
+405,Cetirizine Generic,Allergy relief,Antihistamine,Tablet,10,10,2027-01-22
+406,Ascof Pediatric,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-01-29
+407,Tuseran Generic,Cough and cold,Cough & Cold,Capsule,10,10,2028-05-15
+408,Tempra RiteMed,Paracetamol,Pain Relief,Suspension,10,10,2027-11-17
+409,RiteMed Paracetamol 500mg,Generic Paracetamol,Pain Relief,Tablet,10,10,2027-08-23
+410,Multivitamins 250mg,Daily supplement,Vitamins,Tablet,10,10,2027-11-12
+411,Vitamin C RiteMed,Ascorbic Acid,Vitamins,Tablet,10,10,2028-01-25
+412,Salbutamol Pediatric,Asthma relief,Respiratory,Sachet,10,10,2027-01-06
+413,Loperamide Generic,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2027-11-09
+414,Metformin 500mg,Diabetes medication,Diabetes,Tablet,10,10,2028-01-01
+415,Losartan RiteMed,Blood pressure,Cardiovascular,Tablet,10,10,2027-01-03
+416,Amlodipine Pediatric,Hypertension,Cardiovascular,Tablet,10,10,2027-07-14
+417,Biogesic 250mg,Paracetamol 500mg,Pain Relief,Tablet,10,10,2027-03-20
+418,Alaxan 500mg,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2027-06-30
+419,Ponstan 500mg,Mefenamic Acid,Pain Relief,Capsule,10,10,2027-01-06
+420,Advil Pediatric,Ibuprofen,Pain Relief,Tablet,10,10,2027-08-25
+421,Calpol RiteMed,Paracetamol Suspension,Pain Relief,Bottle,10,10,2028-05-23
+422,Amoxicillin 500mg,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2027-07-17
+423,Cefalexin 250mg,Antibiotic,Antibiotic,Capsule,10,10,2027-08-14
+424,Solmux 500mg,Carbocisteine,Cough & Cold,Capsule,10,10,2028-05-07
+425,Lagundi 250mg,Herbal cough relief,Cough & Cold,Bottle,10,10,2027-08-25
+426,Decolgen 250mg,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-12-27
+427,Neozep 500mg,Decongestant,Cough & Cold,Tablet,10,10,2027-06-03
+428,Robitussin Generic,Cough syrup,Cough & Cold,Bottle,10,10,2028-02-01
+429,Omeprazole 500mg,Acid reducer,Gastrointestinal,Capsule,10,10,2027-04-04
+430,Domperidone Generic,Anti-nausea,Gastrointestinal,Tablet,10,10,2027-11-02
+431,Cetirizine 250mg,Allergy relief,Antihistamine,Tablet,10,10,2027-09-18
+432,Ascof Generic,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-11-08
+433,Tuseran 500mg,Cough and cold,Cough & Cold,Capsule,10,10,2027-04-03
+434,Tempra RiteMed,Paracetamol,Pain Relief,Suspension,10,10,2027-05-05
+435,RiteMed Paracetamol 500mg,Generic Paracetamol,Pain Relief,Tablet,10,10,2027-08-25
+436,Multivitamins Generic,Daily supplement,Vitamins,Tablet,10,10,2027-09-10
+437,Vitamin C 250mg,Ascorbic Acid,Vitamins,Tablet,10,10,2028-02-01
+438,Salbutamol 250mg,Asthma relief,Respiratory,Sachet,10,10,2027-11-05
+439,Loperamide 500mg,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2028-02-28
+440,Metformin 250mg,Diabetes medication,Diabetes,Tablet,10,10,2028-05-04
+441,Losartan RiteMed,Blood pressure,Cardiovascular,Tablet,10,10,2027-04-21
+442,Amlodipine 500mg,Hypertension,Cardiovascular,Tablet,10,10,2028-02-10
+443,Biogesic 250mg,Paracetamol 500mg,Pain Relief,Tablet,10,10,2027-06-13
+444,Alaxan Pediatric,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2027-07-07
+445,Ponstan 500mg,Mefenamic Acid,Pain Relief,Capsule,10,10,2027-02-08
+446,Advil RiteMed,Ibuprofen,Pain Relief,Tablet,10,10,2027-03-25
+447,Calpol 250mg,Paracetamol Suspension,Pain Relief,Bottle,10,10,2026-12-16
+448,Amoxicillin 500mg,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2027-05-18
+449,Cefalexin 250mg,Antibiotic,Antibiotic,Capsule,10,10,2026-12-08
+450,Solmux 250mg,Carbocisteine,Cough & Cold,Capsule,10,10,2027-11-17
+451,Lagundi RiteMed,Herbal cough relief,Cough & Cold,Bottle,10,10,2028-02-26
+452,Decolgen RiteMed,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-03-02
+453,Neozep Pediatric,Decongestant,Cough & Cold,Tablet,10,10,2028-02-16
+454,Robitussin RiteMed,Cough syrup,Cough & Cold,Bottle,10,10,2027-04-26
+455,Omeprazole Pediatric,Acid reducer,Gastrointestinal,Capsule,10,10,2027-06-30
+456,Domperidone 500mg,Anti-nausea,Gastrointestinal,Tablet,10,10,2027-11-07
+457,Cetirizine Generic,Allergy relief,Antihistamine,Tablet,10,10,2027-12-03
+458,Ascof RiteMed,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-07-30
+459,Tuseran 250mg,Cough and cold,Cough & Cold,Capsule,10,10,2027-03-13
+460,Tempra Generic,Paracetamol,Pain Relief,Suspension,10,10,2028-02-15
+461,RiteMed Paracetamol RiteMed,Generic Paracetamol,Pain Relief,Tablet,10,10,2027-05-20
+462,Multivitamins 250mg,Daily supplement,Vitamins,Tablet,10,10,2027-05-02
+463,Vitamin C RiteMed,Ascorbic Acid,Vitamins,Tablet,10,10,2028-03-16
+464,Salbutamol Pediatric,Asthma relief,Respiratory,Sachet,10,10,2027-05-04
+465,Loperamide Pediatric,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2028-04-12
+466,Metformin 500mg,Diabetes medication,Diabetes,Tablet,10,10,2028-05-24
+467,Losartan 250mg,Blood pressure,Cardiovascular,Tablet,10,10,2028-02-20
+468,Amlodipine 250mg,Hypertension,Cardiovascular,Tablet,10,10,2028-02-22
+469,Biogesic Pediatric,Paracetamol 500mg,Pain Relief,Tablet,10,10,2028-05-09
+470,Alaxan 250mg,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2027-08-21
+471,Ponstan Generic,Mefenamic Acid,Pain Relief,Capsule,10,10,2027-06-17
+472,Advil Pediatric,Ibuprofen,Pain Relief,Tablet,10,10,2027-05-03
+473,Calpol Generic,Paracetamol Suspension,Pain Relief,Bottle,10,10,2028-04-27
+474,Amoxicillin Pediatric,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2027-08-01
+475,Cefalexin 500mg,Antibiotic,Antibiotic,Capsule,10,10,2028-04-04
+476,Solmux Pediatric,Carbocisteine,Cough & Cold,Capsule,10,10,2027-03-06
+477,Lagundi Pediatric,Herbal cough relief,Cough & Cold,Bottle,10,10,2027-08-28
+478,Decolgen RiteMed,Cold and flu relief,Cough & Cold,Tablet,10,10,2027-08-05
+479,Neozep Generic,Decongestant,Cough & Cold,Tablet,10,10,2028-01-27
+480,Robitussin 500mg,Cough syrup,Cough & Cold,Bottle,10,10,2027-01-15
+481,Omeprazole Generic,Acid reducer,Gastrointestinal,Capsule,10,10,2028-02-07
+482,Domperidone Generic,Anti-nausea,Gastrointestinal,Tablet,10,10,2027-03-20
+483,Cetirizine Pediatric,Allergy relief,Antihistamine,Tablet,10,10,2027-12-07
+484,Ascof Pediatric,Lagundi tablet,Cough & Cold,Tablet,10,10,2027-07-01
+485,Tuseran 500mg,Cough and cold,Cough & Cold,Capsule,10,10,2027-03-04
+486,Tempra Pediatric,Paracetamol,Pain Relief,Suspension,10,10,2026-11-27
+487,RiteMed Paracetamol Generic,Generic Paracetamol,Pain Relief,Tablet,10,10,2027-11-24
+488,Multivitamins Pediatric,Daily supplement,Vitamins,Tablet,10,10,2028-05-28
+489,Vitamin C Pediatric,Ascorbic Acid,Vitamins,Tablet,10,10,2028-01-07
+490,Salbutamol RiteMed,Asthma relief,Respiratory,Sachet,10,10,2027-07-28
+491,Loperamide 500mg,Anti-diarrheal,Gastrointestinal,Tablet,10,10,2027-03-15
+492,Metformin Generic,Diabetes medication,Diabetes,Tablet,10,10,2027-11-25
+493,Losartan 500mg,Blood pressure,Cardiovascular,Tablet,10,10,2027-02-20
+494,Amlodipine 250mg,Hypertension,Cardiovascular,Tablet,10,10,2027-06-19
+495,Biogesic Pediatric,Paracetamol 500mg,Pain Relief,Tablet,10,10,2028-04-25
+496,Alaxan Pediatric,Ibuprofen + Paracetamol,Pain Relief,Tablet,10,10,2027-10-07
+497,Ponstan Generic,Mefenamic Acid,Pain Relief,Capsule,10,10,2027-05-03
+498,Advil Pediatric,Ibuprofen,Pain Relief,Tablet,10,10,2027-04-06
+499,Calpol RiteMed,Paracetamol Suspension,Pain Relief,Bottle,10,10,2027-01-18
+500,Amoxicillin RiteMed,Broad spectrum antibiotic,Antibiotic,Capsule,10,10,2027-06-26

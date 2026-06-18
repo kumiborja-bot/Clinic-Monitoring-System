@@ -1,0 +1,790 @@
+diagnosis,suggestion,follow_up,medication,duration_unit,duration_value
+Heartburn in Children,Apply cold or warm compress as needed,Yes - if no improvement after 2-8 days,Antacid,days,2
+Eczema in Adults,Rest well and stay hydrated,No,Antacid,,
+Severe Dengue,Elevate the affected area and rest,Yes - if no improvement after 4-7 days,Cough Syrup,days,4
+Severe Ear Infection,Elevate the affected area and rest,No,Cough Syrup,,
+Mild Strep Throat,Apply cold or warm compress as needed,No,Biogesic,,
+Lactose Intolerance,Follow a light diet and avoid spicy food,Yes - if no improvement after 2-7 days,Antacid,days,2
+Severe Palpitations,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-7 days,Paracetamol,days,3
+Dengue in Children,Elevate the affected area and rest,No,Pain Reliever,,
+Gastritis in Children,Avoid known triggers and allergens,No,Cough Syrup,,
+Bad Breath in Children,Elevate the affected area and rest,Yes - if no improvement after 4-9 days,Omeprazole,days,4
+Osteoporosis in Adults,Rest well and stay hydrated,Yes - if no improvement after 5-8 days,Ibuprofen,days,5
+Nosebleed in Adults,Elevate the affected area and rest,No,Biogesic,,
+Chickenpox,Avoid known triggers and allergens,No,Paracetamol,,
+Mild Hair Loss,Use over-the-counter medication as directed,No,Biogesic,,
+Arthritis in Adults,Rest well and stay hydrated,Yes - if no improvement after 3-10 days,Loratadine,days,3
+Severe Ankle Sprain,Avoid known triggers and allergens,No,Pain Reliever,,
+Mild Panic Attack,Rest well and stay hydrated,No,Paracetamol,,
+Severe Menstrual Cramps,Avoid known triggers and allergens,Yes - if no improvement after 4-10 days,Antacid,days,4
+Cold Sore in Adults,Use over-the-counter medication as directed,Yes - if no improvement after 4-9 days,Paracetamol,days,4
+Severe Cold Sore,Rest well and stay hydrated,No,Pain Reliever,,
+Migraine in Adults,Practice good hygiene and get plenty of rest,No,Biogesic,,
+Severe Allergic Rhinitis,Rest well and stay hydrated,No,Antacid,,
+Mild Knee Pain,Elevate the affected area and rest,No,Antacid,,
+Mild Insect Bite,Avoid known triggers and allergens,No,Antacid,,
+Stomach Ulcer,Follow a light diet and avoid spicy food,No,Pain Reliever,,
+Severe Motion Sickness,Avoid known triggers and allergens,Yes - if no improvement after 3-10 days,Antacid,days,3
+Laryngitis,Follow a light diet and avoid spicy food,Yes - if no improvement after 4-7 days,Cough Syrup,days,4
+IBS in Adults,Rest well and stay hydrated,Yes - if no improvement after 4-8 days,Amoxicillin,days,4
+Dry Eyes in Adults,Elevate the affected area and rest,Yes - if no improvement after 5-10 days,Amoxicillin,days,5
+Colic in Children,Rest well and stay hydrated,No,Paracetamol,,
+Psoriasis,Avoid known triggers and allergens,Yes - if no improvement after 4-11 days,Paracetamol,days,4
+Impetigo in Adults,Follow a light diet and avoid spicy food,No,Biogesic,,
+Ankle Sprain in Adults,Apply cold or warm compress as needed,Yes - if no improvement after 3-8 days,Cough Syrup,days,3
+Mild Back Pain,Follow a light diet and avoid spicy food,No,Antacid,,
+High Fever,Use over-the-counter medication as directed,Yes - if no improvement after 2-7 days,Ibuprofen,days,2
+Conjunctivitis,Use over-the-counter medication as directed,Yes - if no improvement after 5-8 days,Antacid,days,5
+Severe Tension Headache,Elevate the affected area and rest,Yes - if no improvement after 3-8 days,Paracetamol,days,3
+COVID Symptoms in Children,Practice good hygiene and get plenty of rest,Yes - if no improvement after 4-11 days,Antacid,days,4
+Mild Nausea,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-7 days,Omeprazole,days,3
+Minor Cut in Children,Follow a light diet and avoid spicy food,Yes - if no improvement after 5-9 days,Paracetamol,days,5
+Boils in Adults,Use over-the-counter medication as directed,Yes - if no improvement after 2-9 days,Antacid,days,2
+Severe Strep Throat,Practice good hygiene and get plenty of rest,Yes - if no improvement after 4-10 days,Cough Syrup,days,4
+Severe Food Allergy,Avoid known triggers and allergens,Yes - if no improvement after 5-12 days,Cough Syrup,days,5
+Lactose Intolerance in Children,Rest well and stay hydrated,Yes - if no improvement after 5-11 days,Omeprazole,days,5
+Mild Tinnitus,Rest well and stay hydrated,No,Antacid,,
+Mild Shoulder Pain,Rest well and stay hydrated,No,Antacid,,
+Skin Rash in Children,Practice good hygiene and get plenty of rest,No,Paracetamol,,
+Psoriasis in Adults,Use over-the-counter medication as directed,Yes - if no improvement after 3-7 days,Antacid,days,3
+Sprain in Children,Follow a light diet and avoid spicy food,No,Paracetamol,,
+Severe Sinusitis,Use over-the-counter medication as directed,Yes - if no improvement after 5-12 days,Cough Syrup,days,5
+Gout in Children,Follow a light diet and avoid spicy food,Yes - if no improvement after 2-9 days,Paracetamol,days,2
+Mild Heat Rash,Apply cold or warm compress as needed,Yes - if no improvement after 5-11 days,Ibuprofen,days,5
+Sore Throat in Children,Follow a light diet and avoid spicy food,Yes - if no improvement after 4-10 days,Antacid,days,4
+Severe PMS,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-10 days,Cough Syrup,days,3
+Frozen Shoulder in Children,Use over-the-counter medication as directed,No,Pain Reliever,,
+Severe Bladder Infection,Use over-the-counter medication as directed,No,Paracetamol,,
+Insomnia in Children,Practice good hygiene and get plenty of rest,Yes - if no improvement after 5-12 days,Antacid,days,5
+Conjunctivitis in Children,Apply cold or warm compress as needed,Yes - if no improvement after 5-11 days,Cough Syrup,days,5
+Mild Hangover,Follow a light diet and avoid spicy food,No,Paracetamol,,
+Sore Throat in Adults,Avoid known triggers and allergens,No,Paracetamol,,
+Chikungunya in Adults,Practice good hygiene and get plenty of rest,No,Cough Syrup,,
+Neck Pain in Children,Apply cold or warm compress as needed,Yes - if no improvement after 4-11 days,Antacid,days,4
+Mild Neck Pain,Apply cold or warm compress as needed,No,Biogesic,,
+Severe Frozen Shoulder,Apply cold or warm compress as needed,Yes - if no improvement after 2-6 days,Antacid,days,2
+Bruise in Adults,Practice good hygiene and get plenty of rest,No,Pain Reliever,,
+Minor Burn in Adults,Elevate the affected area and rest,Yes - if no improvement after 2-9 days,Loratadine,days,2
+Mild Bronchitis,Use over-the-counter medication as directed,Yes - if no improvement after 2-6 days,Omeprazole,days,2
+Dry Cough in Adults,Avoid known triggers and allergens,No,Pain Reliever,,
+Mild Shortness of Breath,Apply cold or warm compress as needed,No,Paracetamol,,
+Fatigue in Children,Apply cold or warm compress as needed,No,Antacid,,
+Hypertension,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-7 days,Cough Syrup,days,3
+Sprain,Follow a light diet and avoid spicy food,Yes - if no improvement after 4-11 days,Ibuprofen,days,4
+Mild Stomachache,Apply cold or warm compress as needed,No,Biogesic,,
+Shoulder Pain in Adults,Follow a light diet and avoid spicy food,No,Cough Syrup,,
+Sleep Apnea,Apply cold or warm compress as needed,Yes - if no improvement after 5-8 days,Antacid,days,5
+Athletes Foot,Practice good hygiene and get plenty of rest,No,Biogesic,,
+Productive Cough in Adults,Practice good hygiene and get plenty of rest,No,Cough Syrup,,
+Sinusitis,Avoid known triggers and allergens,No,Pain Reliever,,
+Mild Tonsillitis,Apply cold or warm compress as needed,Yes - if no improvement after 3-7 days,Paracetamol,days,3
+Allergic Rhinitis in Children,Use over-the-counter medication as directed,Yes - if no improvement after 3-9 days,Loratadine,days,3
+Insect Bite in Adults,Apply cold or warm compress as needed,Yes - if no improvement after 5-8 days,Antacid,days,5
+Mild Fever,Apply cold or warm compress as needed,No,Paracetamol,,
+Stomachache in Children,Avoid known triggers and allergens,No,Antacid,,
+Fever in Adults,Follow a light diet and avoid spicy food,No,Pain Reliever,,
+Severe GERD,Elevate the affected area and rest,Yes - if no improvement after 4-9 days,Loratadine,days,4
+Gastritis,Elevate the affected area and rest,No,Cough Syrup,,
+Mild RSV,Avoid known triggers and allergens,No,Paracetamol,,
+Severe Seborrheic Dermatitis,Elevate the affected area and rest,Yes - if no improvement after 5-9 days,Loratadine,days,5
+Severe Gastritis,Practice good hygiene and get plenty of rest,Yes - if no improvement after 4-11 days,Amoxicillin,days,4
+Shingles in Children,Use over-the-counter medication as directed,Yes - if no improvement after 4-9 days,Ibuprofen,days,4
+Severe Cluster Headache,Use over-the-counter medication as directed,Yes - if no improvement after 2-7 days,Cough Syrup,days,2
+Mild Gout,Avoid known triggers and allergens,No,Pain Reliever,,
+Kidney Infection,Use over-the-counter medication as directed,No,Antacid,,
+Heartburn in Adults,Avoid known triggers and allergens,Yes - if no improvement after 4-10 days,Amoxicillin,days,4
+Vertigo in Children,Rest well and stay hydrated,No,Antacid,,
+Mild Laryngitis,Elevate the affected area and rest,No,Cough Syrup,,
+Constipation in Children in Children,Use over-the-counter medication as directed,Yes - if no improvement after 3-9 days,Amoxicillin,days,3
+Mild Common Cold,Elevate the affected area and rest,Yes - if no improvement after 3-7 days,Omeprazole,days,3
+Severe Shoulder Pain,Rest well and stay hydrated,No,Biogesic,,
+Sinusitis in Adults,Use over-the-counter medication as directed,No,Biogesic,,
+Tonsillitis in Children,Rest well and stay hydrated,No,Biogesic,,
+Wrist Sprain,Apply cold or warm compress as needed,No,Paracetamol,,
+Mild Frozen Shoulder,Avoid known triggers and allergens,Yes - if no improvement after 5-12 days,Amoxicillin,days,5
+Bladder Infection,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-8 days,Loratadine,days,3
+Severe Dehydration,Apply cold or warm compress as needed,Yes - if no improvement after 2-8 days,Loratadine,days,2
+Impetigo,Practice good hygiene and get plenty of rest,No,Antacid,,
+Malaria Symptoms in Adults,Avoid known triggers and allergens,No,Biogesic,,
+Mild Low Grade Fever,Elevate the affected area and rest,Yes - if no improvement after 5-11 days,Paracetamol,days,5
+Severe Wrist Sprain,Apply cold or warm compress as needed,Yes - if no improvement after 3-7 days,Cough Syrup,days,3
+Mild Anaphylaxis Mild,Rest well and stay hydrated,No,Pain Reliever,,
+Asthma in Children,Elevate the affected area and rest,Yes - if no improvement after 4-9 days,Cough Syrup,days,4
+Fungal Nail Infection,Apply cold or warm compress as needed,Yes - if no improvement after 3-10 days,Antacid,days,3
+Hand Foot and Mouth Disease,Follow a light diet and avoid spicy food,No,Antacid,,
+Mild Hypothyroidism,Avoid known triggers and allergens,Yes - if no improvement after 4-10 days,Ibuprofen,days,4
+Cough in Adults,Elevate the affected area and rest,Yes - if no improvement after 5-8 days,Amoxicillin,days,5
+Heat Exhaustion,Apply cold or warm compress as needed,Yes - if no improvement after 2-6 days,Amoxicillin,days,2
+Anaphylaxis Mild in Adults,Use over-the-counter medication as directed,Yes - if no improvement after 3-7 days,Cough Syrup,days,3
+Motion Sickness in Adults,Use over-the-counter medication as directed,Yes - if no improvement after 2-5 days,Amoxicillin,days,2
+Hangover in Adults,Follow a light diet and avoid spicy food,Yes - if no improvement after 2-5 days,Antacid,days,2
+Mild Tennis Elbow,Use over-the-counter medication as directed,Yes - if no improvement after 4-9 days,Ibuprofen,days,4
+Wrist Sprain in Adults,Follow a light diet and avoid spicy food,No,Biogesic,,
+Bronchitis in Children,Practice good hygiene and get plenty of rest,No,Paracetamol,,
+Dry Cough,Practice good hygiene and get plenty of rest,No,Cough Syrup,,
+Vomiting in Adults,Rest well and stay hydrated,No,Antacid,,
+Hemorrhoids,Apply cold or warm compress as needed,Yes - if no improvement after 4-8 days,Cough Syrup,days,4
+Hypertension in Children,Rest well and stay hydrated,No,Antacid,,
+Celiac Disease in Adults,Use over-the-counter medication as directed,Yes - if no improvement after 3-10 days,Ibuprofen,days,3
+Wisdom Tooth Pain,Rest well and stay hydrated,No,Pain Reliever,,
+Mild Tension Headache,Practice good hygiene and get plenty of rest,No,Cough Syrup,,
+Shingles in Adults,Practice good hygiene and get plenty of rest,Yes - if no improvement after 5-9 days,Amoxicillin,days,5
+Wisdom Tooth Pain in Adults,Avoid known triggers and allergens,No,Pain Reliever,,
+Mild Sprain,Use over-the-counter medication as directed,Yes - if no improvement after 4-8 days,Cough Syrup,days,4
+Muscle Strain,Rest well and stay hydrated,No,Pain Reliever,,
+Hyperthyroidism in Children,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-7 days,Loratadine,days,2
+Mild Dehydration,Avoid known triggers and allergens,Yes - if no improvement after 4-11 days,Omeprazole,days,4
+Dandruff in Adults,Rest well and stay hydrated,No,Paracetamol,,
+Mild Contact Dermatitis,Follow a light diet and avoid spicy food,No,Paracetamol,,
+Severe Allergic Reaction,Elevate the affected area and rest,No,Cough Syrup,,
+Vertigo in Adults,Avoid known triggers and allergens,Yes - if no improvement after 3-7 days,Loratadine,days,3
+Heat Exhaustion in Adults,Rest well and stay hydrated,No,Biogesic,,
+Seborrheic Dermatitis in Adults,Rest well and stay hydrated,Yes - if no improvement after 3-6 days,Cough Syrup,days,3
+Frozen Shoulder in Adults,Follow a light diet and avoid spicy food,Yes - if no improvement after 4-10 days,Cough Syrup,days,4
+Teething Pain in Adults,Use over-the-counter medication as directed,No,Antacid,,
+Common Cold in Children,Avoid known triggers and allergens,Yes - if no improvement after 2-9 days,Amoxicillin,days,2
+Severe Insect Bite,Avoid known triggers and allergens,Yes - if no improvement after 4-11 days,Amoxicillin,days,4
+Severe Canker Sore,Use over-the-counter medication as directed,No,Antacid,,
+Dry Skin in Adults,Rest well and stay hydrated,No,Biogesic,,
+Common Cold,Avoid known triggers and allergens,No,Biogesic,,
+Severe Tonsillitis,Use over-the-counter medication as directed,No,Antacid,,
+Mild Indigestion,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-9 days,Paracetamol,days,2
+Vitamin Deficiency in Adults,Elevate the affected area and rest,Yes - if no improvement after 3-9 days,Antacid,days,3
+Chronic Fatigue in Children,Apply cold or warm compress as needed,Yes - if no improvement after 4-11 days,Amoxicillin,days,4
+Blurred Vision in Adults,Practice good hygiene and get plenty of rest,No,Cough Syrup,,
+Anxiety in Children,Avoid known triggers and allergens,Yes - if no improvement after 2-9 days,Ibuprofen,days,2
+Severe Celiac Disease,Use over-the-counter medication as directed,Yes - if no improvement after 5-10 days,Ibuprofen,days,5
+Sore Muscles,Use over-the-counter medication as directed,Yes - if no improvement after 4-9 days,Paracetamol,days,4
+Mild Dry Eyes,Rest well and stay hydrated,Yes - if no improvement after 3-9 days,Loratadine,days,3
+Severe Impetigo,Follow a light diet and avoid spicy food,Yes - if no improvement after 2-5 days,Loratadine,days,2
+Mild Dizziness,Use over-the-counter medication as directed,Yes - if no improvement after 3-9 days,Ibuprofen,days,3
+Chronic Diarrhea in Adults,Use over-the-counter medication as directed,Yes - if no improvement after 5-9 days,Loratadine,days,5
+Motion Sickness,Elevate the affected area and rest,Yes - if no improvement after 2-5 days,Loratadine,days,2
+Severe Insomnia,Avoid known triggers and allergens,No,Cough Syrup,,
+Athletes Foot in Adults,Apply cold or warm compress as needed,No,Biogesic,,
+Dizziness in Adults,Rest well and stay hydrated,No,Pain Reliever,,
+Neck Pain in Adults,Avoid known triggers and allergens,No,Cough Syrup,,
+Severe Sunburn,Practice good hygiene and get plenty of rest,Yes - if no improvement after 5-12 days,Amoxicillin,days,5
+Severe Dry Cough,Rest well and stay hydrated,No,Biogesic,,
+Eczema in Children,Apply cold or warm compress as needed,Yes - if no improvement after 3-7 days,Paracetamol,days,3
+Severe Dandruff,Apply cold or warm compress as needed,No,Cough Syrup,,
+Shortness of Breath,Avoid known triggers and allergens,No,Pain Reliever,,
+Severe Bronchitis,Rest well and stay hydrated,No,Paracetamol,,
+Measles,Rest well and stay hydrated,Yes - if no improvement after 3-6 days,Ibuprofen,days,3
+Chronic Diarrhea in Children,Follow a light diet and avoid spicy food,No,Antacid,,
+Hypoglycemia,Follow a light diet and avoid spicy food,Yes - if no improvement after 5-12 days,Omeprazole,days,5
+Mild Carpal Tunnel Syndrome,Apply cold or warm compress as needed,Yes - if no improvement after 2-7 days,Amoxicillin,days,2
+Mild Cold Sore,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-8 days,Ibuprofen,days,3
+Sunburn,Follow a light diet and avoid spicy food,No,Pain Reliever,,
+Pinworm in Children,Practice good hygiene and get plenty of rest,No,Cough Syrup,,
+Severe Hair Loss,Practice good hygiene and get plenty of rest,No,Cough Syrup,,
+Skin Rash in Adults,Apply cold or warm compress as needed,Yes - if no improvement after 4-11 days,Cough Syrup,days,4
+Pneumonia in Children,Use over-the-counter medication as directed,No,Cough Syrup,,
+IBS in Children,Rest well and stay hydrated,Yes - if no improvement after 5-8 days,Ibuprofen,days,5
+Bladder Infection in Children,Apply cold or warm compress as needed,No,Pain Reliever,,
+Anxiety in Adults,Rest well and stay hydrated,No,Cough Syrup,,
+Minor Cut in Adults,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-8 days,Paracetamol,days,3
+COVID Symptoms in Adults,Use over-the-counter medication as directed,Yes - if no improvement after 4-10 days,Paracetamol,days,4
+Mild High Blood Sugar,Apply cold or warm compress as needed,No,Biogesic,,
+UTI in Adults,Use over-the-counter medication as directed,No,Pain Reliever,,
+Severe Nausea,Avoid known triggers and allergens,No,Pain Reliever,,
+Severe Sleep Apnea,Practice good hygiene and get plenty of rest,Yes - if no improvement after 4-10 days,Amoxicillin,days,4
+Mild Diarrhea,Follow a light diet and avoid spicy food,No,Cough Syrup,,
+Cellulitis in Adults,Avoid known triggers and allergens,Yes - if no improvement after 2-6 days,Ibuprofen,days,2
+Lower Back Pain in Children,Elevate the affected area and rest,No,Antacid,,
+Blurred Vision in Children,Elevate the affected area and rest,No,Paracetamol,,
+Cellulitis,Avoid known triggers and allergens,Yes - if no improvement after 4-9 days,Loratadine,days,4
+Leg Cramps,Avoid known triggers and allergens,Yes - if no improvement after 3-6 days,Loratadine,days,3
+Sore Throat,Rest well and stay hydrated,No,Antacid,,
+Pneumonia in Adults,Elevate the affected area and rest,Yes - if no improvement after 5-11 days,Antacid,days,5
+Kidney Infection in Adults,Avoid known triggers and allergens,No,Pain Reliever,,
+Vitamin Deficiency,Use over-the-counter medication as directed,No,Paracetamol,,
+Mild Influenza,Elevate the affected area and rest,Yes - if no improvement after 5-11 days,Loratadine,days,5
+Gastritis in Adults,Avoid known triggers and allergens,No,Biogesic,,
+Seasonal Allergies,Elevate the affected area and rest,Yes - if no improvement after 2-8 days,Omeprazole,days,2
+Mild Herniated Disc,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-6 days,Ibuprofen,days,3
+Stress in Adults,Rest well and stay hydrated,Yes - if no improvement after 2-9 days,Amoxicillin,days,2
+Gout,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-9 days,Loratadine,days,2
+Mild Constipation in Children,Apply cold or warm compress as needed,No,Pain Reliever,,
+Mild Hip Pain,Apply cold or warm compress as needed,No,Paracetamol,,
+Hypertension in Adults,Rest well and stay hydrated,Yes - if no improvement after 2-8 days,Loratadine,days,2
+Allergic Reaction,Practice good hygiene and get plenty of rest,No,Paracetamol,,
+Diarrhea,Use over-the-counter medication as directed,No,Biogesic,,
+Mild Productive Cough,Rest well and stay hydrated,No,Paracetamol,,
+Anemia in Children,Use over-the-counter medication as directed,Yes - if no improvement after 4-7 days,Ibuprofen,days,4
+Cough in Children,Apply cold or warm compress as needed,Yes - if no improvement after 4-8 days,Amoxicillin,days,4
+Stomach Ulcer in Children,Follow a light diet and avoid spicy food,No,Paracetamol,,
+Mild Osteoarthritis,Follow a light diet and avoid spicy food,Yes - if no improvement after 4-11 days,Antacid,days,4
+Chronic Fatigue,Follow a light diet and avoid spicy food,No,Biogesic,,
+Food Poisoning in Adults,Practice good hygiene and get plenty of rest,No,Antacid,,
+Urticaria in Children,Rest well and stay hydrated,Yes - if no improvement after 5-11 days,Omeprazole,days,5
+Severe Panic Attack,Follow a light diet and avoid spicy food,No,Biogesic,,
+Severe IBS,Avoid known triggers and allergens,No,Pain Reliever,,
+Mild Hyperthyroidism,Follow a light diet and avoid spicy food,No,Cough Syrup,,
+Ear Infection,Rest well and stay hydrated,Yes - if no improvement after 3-7 days,Paracetamol,days,3
+Mild Malaria Symptoms,Elevate the affected area and rest,No,Antacid,,
+Mild COVID Symptoms,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-10 days,Amoxicillin,days,3
+Cluster Headache,Avoid known triggers and allergens,Yes - if no improvement after 4-9 days,Amoxicillin,days,4
+Severe COVID Symptoms,Use over-the-counter medication as directed,No,Pain Reliever,,
+Severe Knee Pain,Elevate the affected area and rest,Yes - if no improvement after 5-12 days,Paracetamol,days,5
+Tinnitus in Children,Avoid known triggers and allergens,No,Cough Syrup,,
+Severe Measles,Practice good hygiene and get plenty of rest,No,Pain Reliever,,
+Severe Heat Rash,Rest well and stay hydrated,No,Biogesic,,
+Nausea in Adults,Avoid known triggers and allergens,No,Antacid,,
+Anxiety,Use over-the-counter medication as directed,Yes - if no improvement after 5-9 days,Omeprazole,days,5
+Stomachache in Adults,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-8 days,Omeprazole,days,3
+Bronchitis in Adults,Use over-the-counter medication as directed,Yes - if no improvement after 4-10 days,Cough Syrup,days,4
+Severe Shingles,Avoid known triggers and allergens,Yes - if no improvement after 4-8 days,Ibuprofen,days,4
+Mild Skin Rash,Apply cold or warm compress as needed,No,Antacid,,
+Hiccups in Children,Avoid known triggers and allergens,Yes - if no improvement after 5-11 days,Amoxicillin,days,5
+Mild Stomach Ulcer,Apply cold or warm compress as needed,Yes - if no improvement after 2-7 days,Loratadine,days,2
+Back Pain,Rest well and stay hydrated,No,Antacid,,
+Severe Diarrhea,Use over-the-counter medication as directed,No,Cough Syrup,,
+Swollen Glands in Children,Use over-the-counter medication as directed,Yes - if no improvement after 5-11 days,Loratadine,days,5
+Mild Chikungunya,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-10 days,Antacid,days,3
+Blurred Vision,Elevate the affected area and rest,Yes - if no improvement after 4-10 days,Cough Syrup,days,4
+Fatigue,Avoid known triggers and allergens,Yes - if no improvement after 4-7 days,Omeprazole,days,4
+Mild Pneumonia,Follow a light diet and avoid spicy food,Yes - if no improvement after 5-9 days,Cough Syrup,days,5
+Mild Allergic Reaction,Use over-the-counter medication as directed,No,Antacid,,
+Mild IBS,Apply cold or warm compress as needed,No,Pain Reliever,,
+Tinnitus in Adults,Follow a light diet and avoid spicy food,No,Paracetamol,,
+Osteoarthritis,Avoid known triggers and allergens,No,Cough Syrup,,
+Mild Motion Sickness,Follow a light diet and avoid spicy food,No,Cough Syrup,,
+Severe Hiccups,Use over-the-counter medication as directed,Yes - if no improvement after 2-6 days,Loratadine,days,2
+Indigestion in Children,Rest well and stay hydrated,Yes - if no improvement after 5-12 days,Antacid,days,5
+Pneumonia,Elevate the affected area and rest,Yes - if no improvement after 5-10 days,Cough Syrup,days,5
+Back Pain in Children,Avoid known triggers and allergens,No,Pain Reliever,,
+Severe Carpal Tunnel Syndrome,Practice good hygiene and get plenty of rest,No,Antacid,,
+Canker Sore in Adults,Rest well and stay hydrated,No,Biogesic,,
+Severe Ringworm,Use over-the-counter medication as directed,No,Biogesic,,
+Constipation,Use over-the-counter medication as directed,Yes - if no improvement after 4-8 days,Loratadine,days,4
+Mild Eye Strain,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-6 days,Antacid,days,3
+Fungal Nail Infection in Children,Follow a light diet and avoid spicy food,Yes - if no improvement after 4-8 days,Paracetamol,days,4
+Hyperthyroidism in Adults,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-9 days,Omeprazole,days,2
+Mild Sore Throat,Avoid known triggers and allergens,Yes - if no improvement after 2-9 days,Cough Syrup,days,2
+Constipation in Adults,Practice good hygiene and get plenty of rest,Yes - if no improvement after 4-11 days,Amoxicillin,days,4
+Palpitations,Follow a light diet and avoid spicy food,No,Antacid,,
+Chronic Fatigue in Adults,Use over-the-counter medication as directed,No,Paracetamol,,
+Fever,Elevate the affected area and rest,Yes - if no improvement after 3-6 days,Cough Syrup,days,3
+Food Allergy in Adults,Use over-the-counter medication as directed,No,Pain Reliever,,
+Severe Acne Vulgaris,Elevate the affected area and rest,No,Paracetamol,,
+Tension Headache in Children,Follow a light diet and avoid spicy food,No,Biogesic,,
+Mild GERD,Avoid known triggers and allergens,No,Paracetamol,,
+Mild Fungal Nail Infection,Apply cold or warm compress as needed,No,Cough Syrup,,
+Mild Scabies,Avoid known triggers and allergens,Yes - if no improvement after 5-10 days,Loratadine,days,5
+Urticaria,Avoid known triggers and allergens,Yes - if no improvement after 3-6 days,Loratadine,days,3
+COVID Symptoms,Elevate the affected area and rest,No,Paracetamol,,
+Hypotension,Practice good hygiene and get plenty of rest,No,Biogesic,,
+Severe Athletes Foot,Practice good hygiene and get plenty of rest,No,Pain Reliever,,
+Pinworm in Adults,Follow a light diet and avoid spicy food,No,Biogesic,,
+Vomiting,Practice good hygiene and get plenty of rest,No,Pain Reliever,,
+Severe Skin Rash,Use over-the-counter medication as directed,Yes - if no improvement after 4-11 days,Cough Syrup,days,4
+Bad Breath in Adults,Elevate the affected area and rest,No,Paracetamol,,
+Typhoid Fever in Adults,Avoid known triggers and allergens,Yes - if no improvement after 4-10 days,Loratadine,days,4
+GERD in Children,Apply cold or warm compress as needed,Yes - if no improvement after 4-8 days,Paracetamol,days,4
+Severe Anaphylaxis Mild,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-9 days,Amoxicillin,days,3
+Vitamin Deficiency in Children,Avoid known triggers and allergens,No,Paracetamol,,
+Mild Heartburn,Avoid known triggers and allergens,Yes - if no improvement after 5-9 days,Cough Syrup,days,5
+Mild Psoriasis,Practice good hygiene and get plenty of rest,No,Cough Syrup,,
+Mild Pinworm,Apply cold or warm compress as needed,No,Cough Syrup,,
+Heartburn,Use over-the-counter medication as directed,Yes - if no improvement after 2-8 days,Loratadine,days,2
+Mild Chronic Diarrhea,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-7 days,Cough Syrup,days,3
+Hives,Apply cold or warm compress as needed,No,Antacid,,
+Hair Loss in Children,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-6 days,Ibuprofen,days,3
+Hair Loss in Adults,Practice good hygiene and get plenty of rest,No,Antacid,,
+Mild Canker Sore,Use over-the-counter medication as directed,Yes - if no improvement after 2-9 days,Paracetamol,days,2
+Dandruff in Children,Practice good hygiene and get plenty of rest,No,Biogesic,,
+Constipation in Children,Rest well and stay hydrated,No,Cough Syrup,,
+Ringworm in Children,Elevate the affected area and rest,No,Cough Syrup,,
+Severe Wisdom Tooth Pain,Avoid known triggers and allergens,No,Biogesic,,
+UTI,Avoid known triggers and allergens,No,Cough Syrup,,
+Celiac Disease in Children,Follow a light diet and avoid spicy food,Yes - if no improvement after 2-8 days,Cough Syrup,days,2
+Severe Minor Cut,Follow a light diet and avoid spicy food,No,Antacid,,
+Severe Conjunctivitis,Follow a light diet and avoid spicy food,No,Paracetamol,,
+Frozen Shoulder,Apply cold or warm compress as needed,No,Pain Reliever,,
+High Blood Sugar in Adults,Avoid known triggers and allergens,Yes - if no improvement after 4-8 days,Omeprazole,days,4
+Hypothyroidism,Avoid known triggers and allergens,Yes - if no improvement after 4-7 days,Paracetamol,days,4
+Anemia,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-10 days,Antacid,days,3
+Herniated Disc in Adults,Elevate the affected area and rest,No,Pain Reliever,,
+Plantar Fasciitis in Adults,Elevate the affected area and rest,Yes - if no improvement after 4-9 days,Ibuprofen,days,4
+Mild Sinusitis,Avoid known triggers and allergens,No,Biogesic,,
+Bloating in Adults,Avoid known triggers and allergens,Yes - if no improvement after 2-5 days,Paracetamol,days,2
+Ankle Sprain,Follow a light diet and avoid spicy food,No,Biogesic,,
+Severe Common Cold,Use over-the-counter medication as directed,No,Antacid,,
+Mild Bladder Infection,Apply cold or warm compress as needed,No,Paracetamol,,
+Sore Muscles in Adults,Rest well and stay hydrated,No,Antacid,,
+Severe Hypotension,Rest well and stay hydrated,Yes - if no improvement after 4-7 days,Antacid,days,4
+Minor Burn,Practice good hygiene and get plenty of rest,No,Cough Syrup,,
+Nausea in Children,Use over-the-counter medication as directed,Yes - if no improvement after 5-10 days,Ibuprofen,days,5
+Kidney Infection in Children,Follow a light diet and avoid spicy food,No,Paracetamol,,
+Mild Earache,Practice good hygiene and get plenty of rest,Yes - if no improvement after 5-8 days,Omeprazole,days,5
+Severe Hemorrhoids,Rest well and stay hydrated,Yes - if no improvement after 2-6 days,Antacid,days,2
+Lower Back Pain in Adults,Elevate the affected area and rest,No,Antacid,,
+Mild Dandruff,Rest well and stay hydrated,Yes - if no improvement after 2-6 days,Omeprazole,days,2
+Stress,Rest well and stay hydrated,No,Cough Syrup,,
+Herniated Disc in Children,Practice good hygiene and get plenty of rest,Yes - if no improvement after 4-8 days,Cough Syrup,days,4
+Severe Alopecia,Elevate the affected area and rest,Yes - if no improvement after 5-9 days,Loratadine,days,5
+Mild Bad Breath,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-9 days,Cough Syrup,days,3
+Abdominal Pain,Rest well and stay hydrated,Yes - if no improvement after 3-10 days,Paracetamol,days,3
+Wrist Sprain in Children,Apply cold or warm compress as needed,No,Cough Syrup,,
+Knee Pain in Children,Follow a light diet and avoid spicy food,No,Biogesic,,
+Itchy Scalp in Adults,Use over-the-counter medication as directed,No,Pain Reliever,,
+Acne Vulgaris,Elevate the affected area and rest,Yes - if no improvement after 5-10 days,Paracetamol,days,5
+Bronchitis,Use over-the-counter medication as directed,Yes - if no improvement after 4-10 days,Amoxicillin,days,4
+Lice,Avoid known triggers and allergens,No,Biogesic,,
+Severe Boils,Practice good hygiene and get plenty of rest,No,Antacid,,
+Mild Dry Skin,Use over-the-counter medication as directed,No,Cough Syrup,,
+UTI in Children,Apply cold or warm compress as needed,No,Biogesic,,
+Mild Chest Pain,Rest well and stay hydrated,No,Biogesic,,
+Lactose Intolerance in Adults,Rest well and stay hydrated,Yes - if no improvement after 3-10 days,Antacid,days,3
+Mild Kidney Infection,Elevate the affected area and rest,Yes - if no improvement after 2-7 days,Cough Syrup,days,2
+Mild Jet Lag,Avoid known triggers and allergens,No,Pain Reliever,,
+Severe High Fever,Use over-the-counter medication as directed,No,Biogesic,,
+Severe Blurred Vision,Avoid known triggers and allergens,Yes - if no improvement after 5-9 days,Cough Syrup,days,5
+Dehydration,Elevate the affected area and rest,Yes - if no improvement after 3-7 days,Omeprazole,days,3
+Mild Shingles,Rest well and stay hydrated,No,Biogesic,,
+Severe Hypertension,Practice good hygiene and get plenty of rest,No,Antacid,,
+Severe Headache,Practice good hygiene and get plenty of rest,Yes - if no improvement after 5-10 days,Loratadine,days,5
+Mild Food Poisoning,Rest well and stay hydrated,Yes - if no improvement after 5-10 days,Ibuprofen,days,5
+Mild Wrist Sprain,Use over-the-counter medication as directed,No,Cough Syrup,,
+Hypotension in Children,Avoid known triggers and allergens,No,Antacid,,
+Sunburn in Adults,Use over-the-counter medication as directed,No,Biogesic,,
+Severe Abdominal Pain,Practice good hygiene and get plenty of rest,No,Pain Reliever,,
+Cellulitis in Children,Avoid known triggers and allergens,No,Antacid,,
+Mild Cellulitis,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-5 days,Omeprazole,days,2
+RSV,Rest well and stay hydrated,No,Pain Reliever,,
+Lice in Children,Follow a light diet and avoid spicy food,No,Pain Reliever,,
+Dry Skin,Apply cold or warm compress as needed,No,Paracetamol,,
+Mild Nosebleed,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-10 days,Cough Syrup,days,3
+Gas in Children,Elevate the affected area and rest,Yes - if no improvement after 3-6 days,Cough Syrup,days,3
+Chest Pain in Children,Avoid known triggers and allergens,Yes - if no improvement after 5-11 days,Antacid,days,5
+Mild Muscle Strain,Avoid known triggers and allergens,Yes - if no improvement after 3-10 days,Paracetamol,days,3
+Severe Pinworm,Elevate the affected area and rest,Yes - if no improvement after 4-11 days,Omeprazole,days,4
+Menstrual Cramps in Children,Use over-the-counter medication as directed,Yes - if no improvement after 5-12 days,Cough Syrup,days,5
+Eczema,Use over-the-counter medication as directed,Yes - if no improvement after 2-6 days,Loratadine,days,2
+Vertigo,Apply cold or warm compress as needed,No,Cough Syrup,,
+Severe Cramps,Use over-the-counter medication as directed,No,Biogesic,,
+Otitis Media in Children,Use over-the-counter medication as directed,Yes - if no improvement after 3-6 days,Antacid,days,3
+Mild Otitis Media,Elevate the affected area and rest,Yes - if no improvement after 5-11 days,Omeprazole,days,5
+Mild Hemorrhoids,Apply cold or warm compress as needed,No,Biogesic,,
+Severe Vitamin Deficiency,Use over-the-counter medication as directed,Yes - if no improvement after 3-9 days,Antacid,days,3
+Mild Fatigue,Follow a light diet and avoid spicy food,No,Antacid,,
+Heat Rash,Elevate the affected area and rest,No,Biogesic,,
+Mild Colic,Apply cold or warm compress as needed,No,Paracetamol,,
+Mild Abdominal Pain,Elevate the affected area and rest,No,Biogesic,,
+Ringworm in Adults,Apply cold or warm compress as needed,Yes - if no improvement after 2-7 days,Loratadine,days,2
+Headache in Adults,Apply cold or warm compress as needed,Yes - if no improvement after 3-6 days,Loratadine,days,3
+Mild PMS,Follow a light diet and avoid spicy food,No,Antacid,,
+Hypothyroidism in Adults,Follow a light diet and avoid spicy food,Yes - if no improvement after 2-5 days,Omeprazole,days,2
+Wisdom Tooth Pain in Children,Elevate the affected area and rest,No,Cough Syrup,,
+Canker Sore,Practice good hygiene and get plenty of rest,No,Pain Reliever,,
+Heat Rash in Children,Avoid known triggers and allergens,Yes - if no improvement after 3-8 days,Omeprazole,days,3
+Rheumatoid Arthritis in Adults,Avoid known triggers and allergens,Yes - if no improvement after 5-12 days,Loratadine,days,5
+Mild Chronic Fatigue,Avoid known triggers and allergens,No,Pain Reliever,,
+Sciatica,Apply cold or warm compress as needed,Yes - if no improvement after 4-7 days,Loratadine,days,4
+Mild Sunburn,Apply cold or warm compress as needed,Yes - if no improvement after 4-10 days,Paracetamol,days,4
+Scabies,Use over-the-counter medication as directed,Yes - if no improvement after 5-11 days,Paracetamol,days,5
+Ear Infection in Children,Rest well and stay hydrated,No,Cough Syrup,,
+Sleep Apnea in Children,Rest well and stay hydrated,No,Biogesic,,
+Mild Ringworm,Avoid known triggers and allergens,No,Antacid,,
+Chikungunya,Follow a light diet and avoid spicy food,No,Biogesic,,
+Food Allergy,Avoid known triggers and allergens,No,Pain Reliever,,
+Mild Rheumatoid Arthritis,Elevate the affected area and rest,Yes - if no improvement after 4-8 days,Amoxicillin,days,4
+Migraine in Children,Follow a light diet and avoid spicy food,No,Biogesic,,
+Severe High Blood Sugar,Elevate the affected area and rest,Yes - if no improvement after 4-9 days,Antacid,days,4
+Mild Stress,Apply cold or warm compress as needed,Yes - if no improvement after 5-11 days,Amoxicillin,days,5
+Typhoid Fever,Apply cold or warm compress as needed,No,Antacid,,
+Minor Cut,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-8 days,Omeprazole,days,3
+Cluster Headache in Adults,Use over-the-counter medication as directed,Yes - if no improvement after 5-12 days,Loratadine,days,5
+Rheumatoid Arthritis in Children,Practice good hygiene and get plenty of rest,Yes - if no improvement after 4-11 days,Antacid,days,4
+Acute Bronchitis,Rest well and stay hydrated,No,Biogesic,,
+Mild Osteoporosis,Elevate the affected area and rest,No,Cough Syrup,,
+Sciatica in Adults,Practice good hygiene and get plenty of rest,No,Biogesic,,
+Severe Kidney Infection,Use over-the-counter medication as directed,Yes - if no improvement after 4-8 days,Omeprazole,days,4
+Hand Foot and Mouth Disease in Children,Follow a light diet and avoid spicy food,No,Pain Reliever,,
+Severe Back Pain,Rest well and stay hydrated,No,Biogesic,,
+Mild Lower Back Pain,Use over-the-counter medication as directed,Yes - if no improvement after 3-10 days,Cough Syrup,days,3
+Dehydration in Adults,Elevate the affected area and rest,Yes - if no improvement after 2-5 days,Amoxicillin,days,2
+Tonsillitis,Apply cold or warm compress as needed,Yes - if no improvement after 2-7 days,Amoxicillin,days,2
+Heat Exhaustion in Children,Use over-the-counter medication as directed,No,Biogesic,,
+Dengue,Rest well and stay hydrated,No,Biogesic,,
+Severe Otitis Media,Practice good hygiene and get plenty of rest,No,Cough Syrup,,
+Conjunctivitis in Adults,Avoid known triggers and allergens,Yes - if no improvement after 5-9 days,Paracetamol,days,5
+Mild Chickenpox,Rest well and stay hydrated,Yes - if no improvement after 5-9 days,Omeprazole,days,5
+Mild Vomiting,Avoid known triggers and allergens,Yes - if no improvement after 3-9 days,Loratadine,days,3
+Knee Pain in Adults,Follow a light diet and avoid spicy food,Yes - if no improvement after 2-6 days,Amoxicillin,days,2
+Severe Stress,Use over-the-counter medication as directed,No,Pain Reliever,,
+Severe Minor Burn,Elevate the affected area and rest,Yes - if no improvement after 4-10 days,Cough Syrup,days,4
+Mild Acute Bronchitis,Elevate the affected area and rest,No,Antacid,,
+Mild Bruise,Avoid known triggers and allergens,No,Pain Reliever,,
+Mild Anxiety,Use over-the-counter medication as directed,No,Pain Reliever,,
+Severe Sore Throat,Elevate the affected area and rest,Yes - if no improvement after 4-9 days,Paracetamol,days,4
+Severe Constipation in Children,Rest well and stay hydrated,No,Paracetamol,,
+Acute Bronchitis in Children,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-10 days,Ibuprofen,days,3
+Alopecia,Elevate the affected area and rest,No,Cough Syrup,,
+Severe Bloating,Rest well and stay hydrated,Yes - if no improvement after 3-10 days,Ibuprofen,days,3
+Severe Stomachache,Use over-the-counter medication as directed,Yes - if no improvement after 3-6 days,Ibuprofen,days,3
+Severe Swollen Glands,Use over-the-counter medication as directed,No,Paracetamol,,
+Severe Lower Back Pain,Follow a light diet and avoid spicy food,No,Biogesic,,
+Bruise,Avoid known triggers and allergens,Yes - if no improvement after 4-11 days,Antacid,days,4
+Productive Cough in Children,Avoid known triggers and allergens,No,Biogesic,,
+Severe Toothache,Use over-the-counter medication as directed,No,Antacid,,
+Chikungunya in Children,Rest well and stay hydrated,No,Antacid,,
+Mild Urticaria,Apply cold or warm compress as needed,Yes - if no improvement after 2-9 days,Ibuprofen,days,2
+Palpitations in Adults,Follow a light diet and avoid spicy food,No,Pain Reliever,,
+Gas in Adults,Avoid known triggers and allergens,Yes - if no improvement after 2-7 days,Cough Syrup,days,2
+Plantar Fasciitis,Use over-the-counter medication as directed,No,Cough Syrup,,
+Mild Headache,Avoid known triggers and allergens,No,Cough Syrup,,
+Severe Anxiety,Follow a light diet and avoid spicy food,No,Antacid,,
+Severe Eczema,Apply cold or warm compress as needed,Yes - if no improvement after 3-10 days,Ibuprofen,days,3
+Anaphylaxis Mild,Rest well and stay hydrated,Yes - if no improvement after 2-5 days,Loratadine,days,2
+Hip Pain,Follow a light diet and avoid spicy food,No,Cough Syrup,,
+Mild Sciatica,Elevate the affected area and rest,No,Pain Reliever,,
+Anaphylaxis Mild in Children,Practice good hygiene and get plenty of rest,No,Paracetamol,,
+Severe Influenza,Avoid known triggers and allergens,No,Pain Reliever,,
+Severe Lactose Intolerance,Rest well and stay hydrated,Yes - if no improvement after 3-10 days,Antacid,days,3
+Severe Cough,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-7 days,Loratadine,days,2
+Severe Arthritis,Follow a light diet and avoid spicy food,Yes - if no improvement after 4-7 days,Omeprazole,days,4
+Severe Bad Breath,Elevate the affected area and rest,No,Antacid,,
+RSV in Adults,Elevate the affected area and rest,Yes - if no improvement after 5-8 days,Omeprazole,days,5
+Laryngitis in Children,Avoid known triggers and allergens,No,Antacid,,
+Migraine,Apply cold or warm compress as needed,Yes - if no improvement after 3-8 days,Ibuprofen,days,3
+Typhoid Fever in Children,Apply cold or warm compress as needed,No,Cough Syrup,,
+Hiccups,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-9 days,Cough Syrup,days,2
+Mild Hypotension,Apply cold or warm compress as needed,No,Antacid,,
+Hives in Adults,Rest well and stay hydrated,Yes - if no improvement after 4-8 days,Ibuprofen,days,4
+Insomnia in Adults,Elevate the affected area and rest,Yes - if no improvement after 2-5 days,Paracetamol,days,2
+Severe Dry Eyes,Follow a light diet and avoid spicy food,No,Paracetamol,,
+Bladder Infection in Adults,Avoid known triggers and allergens,Yes - if no improvement after 4-11 days,Amoxicillin,days,4
+High Blood Sugar,Rest well and stay hydrated,No,Cough Syrup,,
+Severe Vertigo,Rest well and stay hydrated,No,Pain Reliever,,
+Severe Leg Cramps,Use over-the-counter medication as directed,Yes - if no improvement after 5-8 days,Amoxicillin,days,5
+Sciatica in Children,Rest well and stay hydrated,Yes - if no improvement after 2-6 days,Cough Syrup,days,2
+Ankle Sprain in Children,Use over-the-counter medication as directed,Yes - if no improvement after 2-9 days,Amoxicillin,days,2
+Diarrhea in Adults,Follow a light diet and avoid spicy food,No,Cough Syrup,,
+Tennis Elbow in Children,Use over-the-counter medication as directed,Yes - if no improvement after 2-7 days,Antacid,days,2
+Bad Breath,Practice good hygiene and get plenty of rest,Yes - if no improvement after 5-11 days,Omeprazole,days,5
+Mild Cough,Follow a light diet and avoid spicy food,Yes - if no improvement after 5-8 days,Omeprazole,days,5
+Tinnitus,Rest well and stay hydrated,No,Biogesic,,
+Asthma in Adults,Avoid known triggers and allergens,Yes - if no improvement after 5-8 days,Loratadine,days,5
+Cough,Avoid known triggers and allergens,Yes - if no improvement after 4-10 days,Amoxicillin,days,4
+Severe Asthma,Apply cold or warm compress as needed,Yes - if no improvement after 2-6 days,Loratadine,days,2
+Menstrual Cramps in Adults,Apply cold or warm compress as needed,Yes - if no improvement after 5-9 days,Omeprazole,days,5
+Cramps in Adults,Rest well and stay hydrated,Yes - if no improvement after 4-10 days,Antacid,days,4
+Alopecia in Children,Use over-the-counter medication as directed,Yes - if no improvement after 3-9 days,Amoxicillin,days,3
+Measles in Children,Apply cold or warm compress as needed,No,Paracetamol,,
+Sunburn in Children,Follow a light diet and avoid spicy food,Yes - if no improvement after 5-12 days,Loratadine,days,5
+Food Allergy in Children,Practice good hygiene and get plenty of rest,Yes - if no improvement after 4-7 days,Ibuprofen,days,4
+Mild High Fever,Elevate the affected area and rest,Yes - if no improvement after 4-7 days,Paracetamol,days,4
+Mild Lice,Follow a light diet and avoid spicy food,No,Antacid,,
+Severe RSV,Practice good hygiene and get plenty of rest,No,Pain Reliever,,
+Mild Conjunctivitis,Use over-the-counter medication as directed,No,Paracetamol,,
+Dehydration in Children,Apply cold or warm compress as needed,Yes - if no improvement after 5-12 days,Amoxicillin,days,5
+Osteoporosis,Rest well and stay hydrated,Yes - if no improvement after 3-10 days,Amoxicillin,days,3
+Diarrhea in Children,Rest well and stay hydrated,Yes - if no improvement after 5-10 days,Amoxicillin,days,5
+Lower Back Pain,Apply cold or warm compress as needed,Yes - if no improvement after 4-10 days,Omeprazole,days,4
+Shortness of Breath in Children,Avoid known triggers and allergens,Yes - if no improvement after 4-8 days,Omeprazole,days,4
+Severe Heat Exhaustion,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-6 days,Antacid,days,2
+Mild Seborrheic Dermatitis,Apply cold or warm compress as needed,Yes - if no improvement after 3-6 days,Omeprazole,days,3
+Shoulder Pain,Elevate the affected area and rest,No,Biogesic,,
+Leg Cramps in Children,Elevate the affected area and rest,Yes - if no improvement after 4-7 days,Antacid,days,4
+Acute Bronchitis in Adults,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-10 days,Paracetamol,days,3
+Severe Cellulitis,Avoid known triggers and allergens,No,Pain Reliever,,
+Herniated Disc,Follow a light diet and avoid spicy food,No,Cough Syrup,,
+Hypotension in Adults,Rest well and stay hydrated,No,Cough Syrup,,
+Tonsillitis in Adults,Rest well and stay hydrated,No,Paracetamol,,
+Toothache,Follow a light diet and avoid spicy food,No,Antacid,,
+Severe Indigestion,Apply cold or warm compress as needed,No,Antacid,,
+Abdominal Pain in Adults,Rest well and stay hydrated,Yes - if no improvement after 2-9 days,Antacid,days,2
+Knee Pain,Elevate the affected area and rest,Yes - if no improvement after 4-10 days,Cough Syrup,days,4
+Mild Acne Vulgaris,Follow a light diet and avoid spicy food,No,Paracetamol,,
+Carpal Tunnel Syndrome in Adults,Use over-the-counter medication as directed,Yes - if no improvement after 3-7 days,Omeprazole,days,3
+Mild Alopecia,Elevate the affected area and rest,No,Paracetamol,,
+Severe Earache,Apply cold or warm compress as needed,Yes - if no improvement after 5-10 days,Antacid,days,5
+Severe Shortness of Breath,Avoid known triggers and allergens,Yes - if no improvement after 3-9 days,Omeprazole,days,3
+Shingles,Use over-the-counter medication as directed,No,Pain Reliever,,
+Mild Typhoid Fever,Avoid known triggers and allergens,No,Paracetamol,,
+Mild Boils,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-7 days,Cough Syrup,days,3
+Sprain in Adults,Elevate the affected area and rest,Yes - if no improvement after 4-8 days,Omeprazole,days,4
+Osteoarthritis in Children,Practice good hygiene and get plenty of rest,No,Antacid,,
+Cold Sore,Follow a light diet and avoid spicy food,Yes - if no improvement after 5-12 days,Amoxicillin,days,5
+Bee Sting,Rest well and stay hydrated,Yes - if no improvement after 5-12 days,Omeprazole,days,5
+Severe Hypothyroidism,Apply cold or warm compress as needed,Yes - if no improvement after 5-10 days,Omeprazole,days,5
+Chronic Diarrhea,Follow a light diet and avoid spicy food,Yes - if no improvement after 4-8 days,Loratadine,days,4
+Severe Chest Pain,Apply cold or warm compress as needed,No,Pain Reliever,,
+Mild Sleep Apnea,Apply cold or warm compress as needed,No,Cough Syrup,,
+Mild Cramps,Follow a light diet and avoid spicy food,No,Paracetamol,,
+Strep Throat in Children,Elevate the affected area and rest,Yes - if no improvement after 5-11 days,Ibuprofen,days,5
+Insect Bite,Rest well and stay hydrated,No,Cough Syrup,,
+Arthritis,Follow a light diet and avoid spicy food,Yes - if no improvement after 4-8 days,Loratadine,days,4
+Osteoporosis in Children,Apply cold or warm compress as needed,Yes - if no improvement after 3-10 days,Omeprazole,days,3
+Severe Constipation,Elevate the affected area and rest,Yes - if no improvement after 4-7 days,Ibuprofen,days,4
+Gout in Adults,Rest well and stay hydrated,No,Biogesic,,
+Allergic Rhinitis,Practice good hygiene and get plenty of rest,Yes - if no improvement after 5-10 days,Antacid,days,5
+Severe Seasonal Allergies,Avoid known triggers and allergens,No,Cough Syrup,,
+Heat Rash in Adults,Apply cold or warm compress as needed,Yes - if no improvement after 2-5 days,Paracetamol,days,2
+Severe Fever,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-10 days,Omeprazole,days,3
+Dizziness in Children,Elevate the affected area and rest,No,Paracetamol,,
+Mild Palpitations,Follow a light diet and avoid spicy food,Yes - if no improvement after 4-7 days,Loratadine,days,4
+Seasonal Allergies in Children,Avoid known triggers and allergens,Yes - if no improvement after 4-10 days,Loratadine,days,4
+Severe Stomach Ulcer,Elevate the affected area and rest,No,Pain Reliever,,
+Severe Chronic Fatigue,Apply cold or warm compress as needed,No,Cough Syrup,,
+Contact Dermatitis in Adults,Follow a light diet and avoid spicy food,No,Pain Reliever,,
+Earache in Children,Rest well and stay hydrated,No,Antacid,,
+Psoriasis in Children,Avoid known triggers and allergens,No,Antacid,,
+Headache,Follow a light diet and avoid spicy food,Yes - if no improvement after 4-8 days,Ibuprofen,days,4
+Itchy Scalp in Children,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-9 days,Paracetamol,days,3
+PMS in Adults,Use over-the-counter medication as directed,No,Cough Syrup,,
+Hypoglycemia in Children,Practice good hygiene and get plenty of rest,No,Cough Syrup,,
+Severe Rheumatoid Arthritis,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-9 days,Loratadine,days,2
+Menstrual Cramps,Apply cold or warm compress as needed,Yes - if no improvement after 5-12 days,Ibuprofen,days,5
+Palpitations in Children,Use over-the-counter medication as directed,No,Pain Reliever,,
+Severe Dry Skin,Practice good hygiene and get plenty of rest,Yes - if no improvement after 5-12 days,Loratadine,days,5
+Ear Infection in Adults,Follow a light diet and avoid spicy food,Yes - if no improvement after 2-8 days,Antacid,days,2
+Strep Throat in Adults,Rest well and stay hydrated,No,Paracetamol,,
+Bee Sting in Adults,Practice good hygiene and get plenty of rest,No,Biogesic,,
+Mild Bee Sting,Use over-the-counter medication as directed,No,Antacid,,
+Sleep Apnea in Adults,Use over-the-counter medication as directed,No,Pain Reliever,,
+Toothache in Adults,Elevate the affected area and rest,Yes - if no improvement after 3-10 days,Amoxicillin,days,3
+Leg Cramps in Adults,Elevate the affected area and rest,No,Biogesic,,
+Toothache in Children,Practice good hygiene and get plenty of rest,No,Biogesic,,
+Mild Minor Burn,Elevate the affected area and rest,Yes - if no improvement after 4-9 days,Ibuprofen,days,4
+Shoulder Pain in Children,Practice good hygiene and get plenty of rest,Yes - if no improvement after 4-10 days,Ibuprofen,days,4
+Plantar Fasciitis in Children,Apply cold or warm compress as needed,Yes - if no improvement after 3-7 days,Amoxicillin,days,3
+Dengue in Adults,Apply cold or warm compress as needed,No,Biogesic,,
+Constipation in Children in Adults,Follow a light diet and avoid spicy food,No,Paracetamol,,
+Gas,Apply cold or warm compress as needed,No,Antacid,,
+Seasonal Allergies in Adults,Elevate the affected area and rest,No,Paracetamol,,
+Teething Pain,Use over-the-counter medication as directed,Yes - if no improvement after 2-7 days,Antacid,days,2
+Vomiting in Children,Rest well and stay hydrated,Yes - if no improvement after 4-8 days,Amoxicillin,days,4
+Asthma,Apply cold or warm compress as needed,No,Paracetamol,,
+Chickenpox in Adults,Rest well and stay hydrated,Yes - if no improvement after 2-6 days,Loratadine,days,2
+Hand Foot and Mouth Disease in Adults,Elevate the affected area and rest,No,Cough Syrup,,
+Sinusitis in Children,Apply cold or warm compress as needed,Yes - if no improvement after 4-11 days,Omeprazole,days,4
+Cramps,Apply cold or warm compress as needed,No,Cough Syrup,,
+Severe Hip Pain,Avoid known triggers and allergens,Yes - if no improvement after 5-12 days,Paracetamol,days,5
+Mild Hives,Rest well and stay hydrated,No,Antacid,,
+Impetigo in Children,Elevate the affected area and rest,No,Cough Syrup,,
+Muscle Strain in Adults,Follow a light diet and avoid spicy food,Yes - if no improvement after 5-9 days,Amoxicillin,days,5
+Bruise in Children,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-9 days,Cough Syrup,days,2
+Cramps in Children,Elevate the affected area and rest,Yes - if no improvement after 3-8 days,Loratadine,days,3
+Severe Typhoid Fever,Practice good hygiene and get plenty of rest,Yes - if no improvement after 4-8 days,Cough Syrup,days,4
+Influenza,Elevate the affected area and rest,No,Antacid,,
+GERD in Adults,Follow a light diet and avoid spicy food,Yes - if no improvement after 5-9 days,Loratadine,days,5
+Severe Sciatica,Elevate the affected area and rest,Yes - if no improvement after 2-8 days,Cough Syrup,days,2
+Boils in Children,Elevate the affected area and rest,No,Biogesic,,
+Severe Acid Reflux,Elevate the affected area and rest,No,Antacid,,
+Tension Headache in Adults,Follow a light diet and avoid spicy food,No,Cough Syrup,,
+Acne Vulgaris in Children,Elevate the affected area and rest,No,Cough Syrup,,
+Mild UTI,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-10 days,Amoxicillin,days,3
+Tension Headache,Rest well and stay hydrated,Yes - if no improvement after 5-12 days,Omeprazole,days,5
+Tennis Elbow in Adults,Follow a light diet and avoid spicy food,Yes - if no improvement after 4-7 days,Antacid,days,4
+IBS,Apply cold or warm compress as needed,Yes - if no improvement after 4-11 days,Amoxicillin,days,4
+Sore Muscles in Children,Rest well and stay hydrated,No,Cough Syrup,,
+Severe Hangover,Follow a light diet and avoid spicy food,Yes - if no improvement after 2-5 days,Loratadine,days,2
+Mild Gastritis,Practice good hygiene and get plenty of rest,No,Antacid,,
+Severe Anemia,Rest well and stay hydrated,Yes - if no improvement after 3-6 days,Omeprazole,days,3
+High Fever in Adults,Elevate the affected area and rest,Yes - if no improvement after 4-9 days,Paracetamol,days,4
+Acid Reflux in Children,Elevate the affected area and rest,Yes - if no improvement after 2-5 days,Antacid,days,2
+Earache,Apply cold or warm compress as needed,Yes - if no improvement after 3-10 days,Omeprazole,days,3
+Malaria Symptoms,Practice good hygiene and get plenty of rest,No,Biogesic,,
+Severe Plantar Fasciitis,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-5 days,Ibuprofen,days,2
+Severe Tennis Elbow,Follow a light diet and avoid spicy food,Yes - if no improvement after 4-8 days,Antacid,days,4
+Chest Pain,Avoid known triggers and allergens,No,Antacid,,
+RSV in Children,Use over-the-counter medication as directed,No,Pain Reliever,,
+Mild Dry Cough,Rest well and stay hydrated,Yes - if no improvement after 2-7 days,Ibuprofen,days,2
+Severe Hives,Elevate the affected area and rest,Yes - if no improvement after 2-6 days,Omeprazole,days,2
+Low Grade Fever in Adults,Follow a light diet and avoid spicy food,Yes - if no improvement after 2-8 days,Antacid,days,2
+Boils,Avoid known triggers and allergens,No,Biogesic,,
+Mild Swollen Glands,Follow a light diet and avoid spicy food,No,Pain Reliever,,
+Hypoglycemia in Adults,Avoid known triggers and allergens,Yes - if no improvement after 4-9 days,Omeprazole,days,4
+Severe Food Poisoning,Elevate the affected area and rest,Yes - if no improvement after 2-8 days,Ibuprofen,days,2
+Mild Blurred Vision,Avoid known triggers and allergens,No,Cough Syrup,,
+Acne Vulgaris in Adults,Rest well and stay hydrated,No,Pain Reliever,,
+Alopecia in Adults,Elevate the affected area and rest,Yes - if no improvement after 2-8 days,Omeprazole,days,2
+Mild Vitamin Deficiency,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-6 days,Amoxicillin,days,2
+Mild Cluster Headache,Elevate the affected area and rest,Yes - if no improvement after 5-9 days,Omeprazole,days,5
+Severe Neck Pain,Practice good hygiene and get plenty of rest,No,Biogesic,,
+Severe Osteoporosis,Rest well and stay hydrated,No,Pain Reliever,,
+Cold Sore in Children,Practice good hygiene and get plenty of rest,Yes - if no improvement after 4-11 days,Antacid,days,4
+Hair Loss,Rest well and stay hydrated,No,Paracetamol,,
+Mild Sore Muscles,Apply cold or warm compress as needed,No,Cough Syrup,,
+Shortness of Breath in Adults,Apply cold or warm compress as needed,Yes - if no improvement after 3-6 days,Loratadine,days,3
+Food Poisoning,Rest well and stay hydrated,No,Cough Syrup,,
+Indigestion in Adults,Elevate the affected area and rest,Yes - if no improvement after 4-10 days,Paracetamol,days,4
+Severe Hand Foot and Mouth Disease,Practice good hygiene and get plenty of rest,No,Paracetamol,,
+Severe Malaria Symptoms,Elevate the affected area and rest,Yes - if no improvement after 2-8 days,Antacid,days,2
+Influenza in Children,Apply cold or warm compress as needed,No,Cough Syrup,,
+Common Cold in Adults,Practice good hygiene and get plenty of rest,No,Antacid,,
+Jet Lag in Adults,Elevate the affected area and rest,No,Paracetamol,,
+Carpal Tunnel Syndrome in Children,Use over-the-counter medication as directed,Yes - if no improvement after 3-9 days,Loratadine,days,3
+Severe Lice,Follow a light diet and avoid spicy food,Yes - if no improvement after 5-9 days,Loratadine,days,5
+Jet Lag,Use over-the-counter medication as directed,No,Biogesic,,
+Mild Hand Foot and Mouth Disease,Follow a light diet and avoid spicy food,Yes - if no improvement after 4-10 days,Amoxicillin,days,4
+Earache in Adults,Rest well and stay hydrated,No,Paracetamol,,
+Pinworm,Use over-the-counter medication as directed,No,Pain Reliever,,
+Ringworm,Rest well and stay hydrated,Yes - if no improvement after 2-6 days,Amoxicillin,days,2
+Allergic Reaction in Children,Use over-the-counter medication as directed,Yes - if no improvement after 4-11 days,Antacid,days,4
+Strep Throat,Practice good hygiene and get plenty of rest,No,Antacid,,
+Scabies in Adults,Practice good hygiene and get plenty of rest,No,Antacid,,
+Severe Heartburn,Avoid known triggers and allergens,Yes - if no improvement after 2-6 days,Omeprazole,days,2
+Severe Fungal Nail Infection,Practice good hygiene and get plenty of rest,No,Cough Syrup,,
+Severe Gas,Use over-the-counter medication as directed,No,Biogesic,,
+Nausea,Avoid known triggers and allergens,No,Cough Syrup,,
+Muscle Strain in Children,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-7 days,Omeprazole,days,2
+Mild Hiccups,Avoid known triggers and allergens,No,Antacid,,
+Mild Wisdom Tooth Pain,Use over-the-counter medication as directed,Yes - if no improvement after 5-10 days,Antacid,days,5
+Panic Attack,Elevate the affected area and rest,Yes - if no improvement after 5-9 days,Omeprazole,days,5
+Minor Burn in Children,Follow a light diet and avoid spicy food,Yes - if no improvement after 2-8 days,Antacid,days,2
+High Fever in Children,Follow a light diet and avoid spicy food,No,Cough Syrup,,
+Severe Muscle Strain,Rest well and stay hydrated,Yes - if no improvement after 3-8 days,Loratadine,days,3
+PMS,Rest well and stay hydrated,No,Cough Syrup,,
+Mild Gas,Practice good hygiene and get plenty of rest,No,Biogesic,,
+Severe Fatigue,Follow a light diet and avoid spicy food,Yes - if no improvement after 5-10 days,Ibuprofen,days,5
+Hemorrhoids in Children,Practice good hygiene and get plenty of rest,Yes - if no improvement after 4-11 days,Cough Syrup,days,4
+Mild Hypoglycemia,Practice good hygiene and get plenty of rest,Yes - if no improvement after 5-10 days,Paracetamol,days,5
+Otitis Media in Adults,Follow a light diet and avoid spicy food,Yes - if no improvement after 2-9 days,Loratadine,days,2
+Dry Eyes in Children,Use over-the-counter medication as directed,No,Antacid,,
+Mild Leg Cramps,Elevate the affected area and rest,No,Paracetamol,,
+Skin Rash,Avoid known triggers and allergens,Yes - if no improvement after 3-6 days,Ibuprofen,days,3
+Low Grade Fever,Apply cold or warm compress as needed,No,Cough Syrup,,
+Mild Acid Reflux,Avoid known triggers and allergens,No,Biogesic,,
+Mild Seasonal Allergies,Apply cold or warm compress as needed,No,Cough Syrup,,
+Severe Tinnitus,Rest well and stay hydrated,No,Paracetamol,,
+Teething Pain in Children,Avoid known triggers and allergens,No,Cough Syrup,,
+Abdominal Pain in Children,Follow a light diet and avoid spicy food,No,Biogesic,,
+High Blood Sugar in Children,Use over-the-counter medication as directed,No,Cough Syrup,,
+Severe Low Grade Fever,Practice good hygiene and get plenty of rest,No,Cough Syrup,,
+Severe Productive Cough,Elevate the affected area and rest,Yes - if no improvement after 4-10 days,Amoxicillin,days,4
+Measles in Adults,Avoid known triggers and allergens,No,Cough Syrup,,
+Mild Ear Infection,Avoid known triggers and allergens,Yes - if no improvement after 4-9 days,Antacid,days,4
+Mild Hypertension,Avoid known triggers and allergens,No,Cough Syrup,,
+Mild Constipation,Avoid known triggers and allergens,Yes - if no improvement after 2-7 days,Antacid,days,2
+Severe Herniated Disc,Elevate the affected area and rest,Yes - if no improvement after 4-11 days,Paracetamol,days,4
+Mild Toothache,Use over-the-counter medication as directed,No,Cough Syrup,,
+Osteoarthritis in Adults,Avoid known triggers and allergens,No,Cough Syrup,,
+Mild Athletes Foot,Elevate the affected area and rest,Yes - if no improvement after 3-8 days,Omeprazole,days,3
+Mild Impetigo,Apply cold or warm compress as needed,Yes - if no improvement after 4-9 days,Omeprazole,days,4
+Lice in Adults,Follow a light diet and avoid spicy food,No,Paracetamol,,
+Severe Chronic Diarrhea,Rest well and stay hydrated,Yes - if no improvement after 3-8 days,Antacid,days,3
+Mild Insomnia,Avoid known triggers and allergens,Yes - if no improvement after 3-8 days,Antacid,days,3
+Mild Minor Cut,Use over-the-counter medication as directed,Yes - if no improvement after 5-9 days,Paracetamol,days,5
+Severe Jet Lag,Elevate the affected area and rest,Yes - if no improvement after 4-11 days,Ibuprofen,days,4
+Dry Cough in Children,Rest well and stay hydrated,No,Biogesic,,
+Seborrheic Dermatitis,Use over-the-counter medication as directed,No,Pain Reliever,,
+Stomach Ulcer in Adults,Elevate the affected area and rest,No,Cough Syrup,,
+Neck Pain,Rest well and stay hydrated,Yes - if no improvement after 4-8 days,Cough Syrup,days,4
+Severe Sore Muscles,Apply cold or warm compress as needed,No,Paracetamol,,
+Jet Lag in Children,Elevate the affected area and rest,No,Antacid,,
+PMS in Children,Rest well and stay hydrated,Yes - if no improvement after 2-9 days,Loratadine,days,2
+Severe Eye Strain,Avoid known triggers and allergens,Yes - if no improvement after 4-10 days,Antacid,days,4
+Fever in Children,Elevate the affected area and rest,No,Biogesic,,
+Nosebleed in Children,Practice good hygiene and get plenty of rest,No,Pain Reliever,,
+Hypothyroidism in Children,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-6 days,Paracetamol,days,2
+Severe Contact Dermatitis,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-8 days,Amoxicillin,days,3
+Mild Arthritis,Avoid known triggers and allergens,No,Biogesic,,
+Colic,Elevate the affected area and rest,Yes - if no improvement after 3-7 days,Amoxicillin,days,3
+Athletes Foot in Children,Elevate the affected area and rest,No,Biogesic,,
+Allergic Reaction in Adults,Avoid known triggers and allergens,No,Antacid,,
+Mild Migraine,Rest well and stay hydrated,No,Paracetamol,,
+Urticaria in Adults,Apply cold or warm compress as needed,Yes - if no improvement after 2-8 days,Paracetamol,days,2
+Influenza in Adults,Elevate the affected area and rest,No,Paracetamol,,
+Severe UTI,Elevate the affected area and rest,No,Biogesic,,
+Mild Eczema,Apply cold or warm compress as needed,No,Pain Reliever,,
+Food Poisoning in Children,Rest well and stay hydrated,No,Paracetamol,,
+Chickenpox in Children,Use over-the-counter medication as directed,Yes - if no improvement after 5-11 days,Omeprazole,days,5
+Bloating,Elevate the affected area and rest,Yes - if no improvement after 2-8 days,Antacid,days,2
+Indigestion,Elevate the affected area and rest,No,Paracetamol,,
+Bee Sting in Children,Rest well and stay hydrated,Yes - if no improvement after 5-10 days,Antacid,days,5
+Eye Strain,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-7 days,Omeprazole,days,3
+Nosebleed,Rest well and stay hydrated,No,Paracetamol,,
+Anemia in Adults,Use over-the-counter medication as directed,No,Biogesic,,
+Cluster Headache in Children,Rest well and stay hydrated,Yes - if no improvement after 4-10 days,Cough Syrup,days,4
+Back Pain in Adults,Follow a light diet and avoid spicy food,No,Pain Reliever,,
+Acid Reflux in Adults,Elevate the affected area and rest,Yes - if no improvement after 3-10 days,Amoxicillin,days,3
+Hangover in Children,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-6 days,Omeprazole,days,3
+Severe Hyperthyroidism,Avoid known triggers and allergens,No,Antacid,,
+Chest Pain in Adults,Use over-the-counter medication as directed,Yes - if no improvement after 2-6 days,Loratadine,days,2
+Celiac Disease,Avoid known triggers and allergens,Yes - if no improvement after 5-11 days,Paracetamol,days,5
+Eye Strain in Children,Practice good hygiene and get plenty of rest,No,Cough Syrup,,
+Mild Celiac Disease,Follow a light diet and avoid spicy food,No,Pain Reliever,,
+Dandruff,Practice good hygiene and get plenty of rest,No,Pain Reliever,,
+Colic in Adults,Avoid known triggers and allergens,No,Paracetamol,,
+Mild Heat Exhaustion,Use over-the-counter medication as directed,Yes - if no improvement after 3-6 days,Paracetamol,days,3
+Panic Attack in Children,Elevate the affected area and rest,Yes - if no improvement after 4-11 days,Loratadine,days,4
+Otitis Media,Elevate the affected area and rest,Yes - if no improvement after 4-10 days,Ibuprofen,days,4
+Panic Attack in Adults,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-8 days,Antacid,days,3
+Mild Food Allergy,Practice good hygiene and get plenty of rest,No,Paracetamol,,
+Severe Scabies,Use over-the-counter medication as directed,No,Paracetamol,,
+Mild Asthma,Use over-the-counter medication as directed,No,Antacid,,
+Mild Itchy Scalp,Practice good hygiene and get plenty of rest,No,Paracetamol,,
+Laryngitis in Adults,Use over-the-counter medication as directed,Yes - if no improvement after 3-10 days,Cough Syrup,days,3
+Allergic Rhinitis in Adults,Rest well and stay hydrated,Yes - if no improvement after 2-8 days,Loratadine,days,2
+Dry Skin in Children,Avoid known triggers and allergens,No,Pain Reliever,,
+Mild Menstrual Cramps,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-6 days,Omeprazole,days,2
+Severe Bruise,Elevate the affected area and rest,No,Paracetamol,,
+Severe Itchy Scalp,Follow a light diet and avoid spicy food,No,Pain Reliever,,
+Severe Bee Sting,Apply cold or warm compress as needed,Yes - if no improvement after 5-8 days,Loratadine,days,5
+Malaria Symptoms in Children,Apply cold or warm compress as needed,Yes - if no improvement after 2-9 days,Amoxicillin,days,2
+Severe Urticaria,Practice good hygiene and get plenty of rest,No,Pain Reliever,,
+Severe Chickenpox,Apply cold or warm compress as needed,Yes - if no improvement after 2-8 days,Antacid,days,2
+Severe Gout,Follow a light diet and avoid spicy food,Yes - if no improvement after 2-9 days,Amoxicillin,days,2
+Stress in Children,Avoid known triggers and allergens,Yes - if no improvement after 4-8 days,Amoxicillin,days,4
+Severe Vomiting,Practice good hygiene and get plenty of rest,No,Biogesic,,
+Severe Chikungunya,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-7 days,Loratadine,days,3
+Dry Eyes,Follow a light diet and avoid spicy food,No,Antacid,,
+Severe Osteoarthritis,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-9 days,Antacid,days,2
+Severe Nosebleed,Apply cold or warm compress as needed,No,Antacid,,
+Mild Ankle Sprain,Apply cold or warm compress as needed,Yes - if no improvement after 3-7 days,Loratadine,days,3
+Itchy Scalp,Elevate the affected area and rest,Yes - if no improvement after 5-12 days,Paracetamol,days,5
+Carpal Tunnel Syndrome,Apply cold or warm compress as needed,Yes - if no improvement after 5-8 days,Loratadine,days,5
+Severe Pneumonia,Apply cold or warm compress as needed,Yes - if no improvement after 5-12 days,Loratadine,days,5
+Low Grade Fever in Children,Elevate the affected area and rest,Yes - if no improvement after 5-12 days,Antacid,days,5
+Severe Dizziness,Apply cold or warm compress as needed,Yes - if no improvement after 5-12 days,Cough Syrup,days,5
+Hangover,Rest well and stay hydrated,No,Antacid,,
+Hives in Children,Use over-the-counter medication as directed,Yes - if no improvement after 5-11 days,Amoxicillin,days,5
+Productive Cough,Practice good hygiene and get plenty of rest,Yes - if no improvement after 2-5 days,Paracetamol,days,2
+Hemorrhoids in Adults,Avoid known triggers and allergens,Yes - if no improvement after 2-5 days,Omeprazole,days,2
+Mild Anemia,Elevate the affected area and rest,Yes - if no improvement after 2-9 days,Cough Syrup,days,2
+Motion Sickness in Children,Elevate the affected area and rest,Yes - if no improvement after 4-10 days,Amoxicillin,days,4
+Severe Acute Bronchitis,Elevate the affected area and rest,Yes - if no improvement after 4-9 days,Antacid,days,4
+Mild Vertigo,Rest well and stay hydrated,Yes - if no improvement after 5-8 days,Antacid,days,5
+Severe Colic,Elevate the affected area and rest,No,Pain Reliever,,
+Mild Lactose Intolerance,Apply cold or warm compress as needed,Yes - if no improvement after 4-9 days,Antacid,days,4
+Arthritis in Children,Avoid known triggers and allergens,Yes - if no improvement after 2-8 days,Antacid,days,2
+Severe Psoriasis,Rest well and stay hydrated,No,Paracetamol,,
+Severe Teething Pain,Use over-the-counter medication as directed,Yes - if no improvement after 3-8 days,Antacid,days,3
+Severe Hypoglycemia,Practice good hygiene and get plenty of rest,Yes - if no improvement after 4-10 days,Cough Syrup,days,4
+Headache in Children,Follow a light diet and avoid spicy food,No,Antacid,,
+Eye Strain in Adults,Use over-the-counter medication as directed,Yes - if no improvement after 5-8 days,Amoxicillin,days,5
+Hip Pain in Children,Rest well and stay hydrated,No,Cough Syrup,,
+GERD,Practice good hygiene and get plenty of rest,Yes - if no improvement after 3-7 days,Paracetamol,days,3
+Insect Bite in Children,Avoid known triggers and allergens,No,Pain Reliever,,
+Hiccups in Adults,Elevate the affected area and rest,Yes - if no improvement after 4-10 days,Amoxicillin,days,4
+Mild Allergic Rhinitis,Elevate the affected area and rest,No,Paracetamol,,
+Mild Bloating,Follow a light diet and avoid spicy food,Yes - if no improvement after 3-6 days,Amoxicillin,days,3
+Fungal Nail Infection in Adults,Follow a light diet and avoid spicy food,No,Antacid,,
+Mild Measles,Follow a light diet and avoid spicy food,Yes - if no improvement after 4-8 days,Ibuprofen,days,4
+Acid Reflux,Apply cold or warm compress as needed,No,Biogesic,,
+Contact Dermatitis,Rest well and stay hydrated,No,Biogesic,,
+Swollen Glands,Avoid known triggers and allergens,No,Paracetamol,,
+Severe Migraine,Apply cold or warm compress as needed,Yes - if no improvement after 5-12 days,Ibuprofen,days,5
+Insomnia,Follow a light diet and avoid spicy food,No,Antacid,,
+Severe Sprain,Use over-the-counter medication as directed,Yes - if no improvement after 4-10 days,Paracetamol,days,4
+Tennis Elbow,Use over-the-counter medication as directed,Yes - if no improvement after 2-9 days,Loratadine,days,2
+Severe Laryngitis,Elevate the affected area and rest,Yes - if no improvement after 5-12 days,Amoxicillin,days,5
+Mild Dengue,Use over-the-counter medication as directed,Yes - if no improvement after 4-7 days,Amoxicillin,days,4
+Bloating in Children,Rest well and stay hydrated,Yes - if no improvement after 5-8 days,Paracetamol,days,5
+Fatigue in Adults,Practice good hygiene and get plenty of rest,No,Cough Syrup,,
+Swollen Glands in Adults,Elevate the affected area and rest,No,Paracetamol,,
+Mild Plantar Fasciitis,Rest well and stay hydrated,Yes - if no improvement after 2-7 days,Omeprazole,days,2
+Mild Teething Pain,Practice good hygiene and get plenty of rest,No,Antacid,,
+Hyperthyroidism,Practice good hygiene and get plenty of rest,No,Biogesic,,
+Stomachache,Apply cold or warm compress as needed,No,Antacid,,
+Hip Pain in Adults,Rest well and stay hydrated,Yes - if no improvement after 5-10 days,Loratadine,days,5
+Dizziness,Follow a light diet and avoid spicy food,No,Paracetamol,,
+Rheumatoid Arthritis,Use over-the-counter medication as directed,Yes - if no improvement after 4-11 days,Amoxicillin,days,4
+Seborrheic Dermatitis in Children,Use over-the-counter medication as directed,Yes - if no improvement after 4-10 days,Omeprazole,days,4
+Canker Sore in Children,Practice good hygiene and get plenty of rest,No,Antacid,,
+Contact Dermatitis in Children,Rest well and stay hydrated,Yes - if no improvement after 3-9 days,Paracetamol,days,3
+Scabies in Children,Avoid known triggers and allergens,Yes - if no improvement after 2-9 days,Ibuprofen,days,2
