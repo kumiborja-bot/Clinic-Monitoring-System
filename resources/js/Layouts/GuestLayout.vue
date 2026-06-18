@@ -12,7 +12,7 @@ import { Link } from '@inertiajs/vue3';
             <h1 class="mt-4 text-lg font-bold uppercase tracking-wider" style="color: #d4a017;">
                 Merchant Marine Academy of Caraga, Inc.
             </h1>
-            <p class="mt-1 text-sm text-gray-300">Clinic Health Monitoring System</p>
+            <p class="mt-1 text-sm text-gray-300">Health Monitoring System</p>
         </div>
 
         <!-- Form Card -->
