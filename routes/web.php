@@ -13,6 +13,8 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\OfflineQueueController;
 use App\Http\Controllers\CsvDataController;
 use App\Http\Controllers\DssRecordController;
+use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\PrescriptionController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -78,6 +80,14 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // CSV Data endpoints
     Route::get('/api/csv-patients', [CsvDataController::class, 'searchPatient'])->name('csv.patients.search');
     Route::get('/api/csv-dss', [CsvDataController::class, 'getDss'])->name('csv.dss');
+
+    // Appointments
+    Route::post('/appointments/{appointment}/send-reminder', [AppointmentController::class, 'sendReminder'])->name('appointments.send-reminder');
+    Route::post('/appointments/{appointment}/record-consultation', [AppointmentController::class, 'recordConsultation'])->name('appointments.record-consultation');
+    Route::resource('appointments', AppointmentController::class);
+
+    // Prescriptions
+    Route::resource('prescriptions', PrescriptionController::class)->only(['store', 'destroy']);
 
     // DSS Master Data
     Route::post('/dss/import-csv', [DssRecordController::class, 'importCsv'])->name('dss.import-csv');

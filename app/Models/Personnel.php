@@ -15,7 +15,7 @@ class Personnel extends Model
     protected $table = 'personnel';
 
     protected $fillable = [
-        'employee_id', 'name', 'birthdate', 'address', 'age', 'sex',
+        'employee_id', 'name', 'email', 'birthdate', 'address', 'age', 'sex',
         'civil_status', 'religion', 'department_id', 'position', 'contact_no',
         'emergency_contact_person', 'emergency_contact_relationship',
         'emergency_contact_address', 'emergency_contact_no', 'photo',
@@ -46,6 +46,16 @@ class Personnel extends Model
     public function medicineLogs(): MorphMany
     {
         return $this->morphMany(MedicineLog::class, 'patient');
+    }
+
+    public function appointments(): MorphMany
+    {
+        return $this->morphMany(Appointment::class, 'patient');
+    }
+
+    public function prescriptions(): MorphMany
+    {
+        return $this->morphMany(Prescription::class, 'patient');
     }
 
     public function personnelDocuments(): \Illuminate\Database\Eloquent\Relations\HasMany

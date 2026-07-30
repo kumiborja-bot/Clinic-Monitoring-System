@@ -1,6 +1,7 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import SearchablePatientSelect from '@/Components/SearchablePatientSelect.vue';
+import SearchableMedicineSelect from '@/Components/SearchableMedicineSelect.vue';
 import { Head, useForm, router } from '@inertiajs/vue3';
 import { ref, computed } from 'vue';
 import { useOfflineQueue } from '@/utils/offlineQueue';
@@ -10,6 +11,7 @@ const props = defineProps({
     students: Array,
     personnel: Array,
     departments: Array,
+    medicines: { type: Array, default: () => [] },
 });
 
 const { isOnline, addToQueue } = useOfflineQueue();
@@ -21,6 +23,8 @@ const form = useForm({
     diagnosis: '',
     treatment_given: '',
     medication_given: '',
+    medicine_id: '',
+    medicine_quantity: 1,
     notes: '',
     status: 'completed',
     follow_up_date: '',
@@ -151,9 +155,25 @@ const getDssSuggestion = async () => {
                         <label class="block text-xs font-semibold text-gray-600 mb-1">Treatment Given</label>
                         <textarea v-model="form.treatment_given" rows="2" placeholder="Describe the treatment provided" class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500"></textarea>
                     </div>
+                    <!-- Medicine from Inventory -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-3 bg-blue-50/50 rounded-lg border border-blue-100 overflow-visible">
+                        <div class="md:col-span-2">
+                            <label class="block text-xs font-semibold text-gray-700 mb-1">Medicine from Inventory</label>
+                            <SearchableMedicineSelect
+                                v-model="form.medicine_id"
+                                :medicines="medicines"
+                                placeholder="Search stocked medicine by name or category..."
+                            />
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-700 mb-1">Quantity</label>
+                            <input v-model="form.medicine_quantity" type="number" min="1" class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500" />
+                        </div>
+                    </div>
+
                     <div>
-                        <label class="block text-xs font-semibold text-gray-600 mb-1">Medication Given</label>
-                        <input v-model="form.medication_given" type="text" placeholder="e.g., Biogesic 500mg x 2" class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500" />
+                        <label class="block text-xs font-semibold text-gray-600 mb-1">Medication Notes / Additional Details</label>
+                        <input v-model="form.medication_given" type="text" placeholder="e.g., Additional instructions or non-inventory meds" class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500" />
                     </div>
                     <div>
                         <label class="block text-xs font-semibold text-gray-600 mb-1">Notes</label>

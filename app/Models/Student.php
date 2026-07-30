@@ -14,7 +14,7 @@ class Student extends Model
     use HasFactory;
 
     protected $fillable = [
-        'student_id_number', 'name', 'birthdate', 'address', 'age',
+        'student_id_number', 'name', 'email', 'birthdate', 'address', 'age',
         'sex', 'civil_status', 'religion', 'department_id', 'course_id',
         'year_level', 'contact_no',
         'emergency_contact_person', 'emergency_contact_relationship',
@@ -51,6 +51,16 @@ class Student extends Model
     public function medicineLogs(): MorphMany
     {
         return $this->morphMany(MedicineLog::class, 'patient');
+    }
+
+    public function appointments(): MorphMany
+    {
+        return $this->morphMany(Appointment::class, 'patient');
+    }
+
+    public function prescriptions(): MorphMany
+    {
+        return $this->morphMany(Prescription::class, 'patient');
     }
 
     public function maritimeDocuments(): HasMany
