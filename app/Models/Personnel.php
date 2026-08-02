@@ -62,4 +62,9 @@ class Personnel extends Model
     {
         return $this->hasMany(PersonnelDocument::class);
     }
+
+    public function weightLogs(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(PersonnelWeightLog::class)->orderBy('recorded_date', 'desc');
+    }
 }

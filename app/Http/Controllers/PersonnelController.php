@@ -103,7 +103,7 @@ class PersonnelController extends Controller
 
     public function show(Personnel $personnel)
     {
-        $personnel->load(['department', 'medicalRecord', 'treatments.treatedBy', 'medicineLogs.medicine', 'personnelDocuments']);
+        $personnel->load(['department', 'medicalRecord', 'treatments.treatedBy', 'medicineLogs.medicine', 'personnelDocuments', 'weightLogs']);
 
         // Explicitly map treated_by_user to avoid serialization clash
         foreach ($personnel->treatments as $t) {
@@ -113,6 +113,42 @@ class PersonnelController extends Controller
         return Inertia::render('Personnel/Show', [
             'personnel' => $personnel,
         ]);
+    }
+
+    public function storeWeightLog(Request $request, Personnel $personnel)
+    {
+        $validated = $request->validate([
+            'recorded_date' => 'required|date',
+            'height_cm' => 'required|numeric|gt:0',
+            'weight_kg' => 'required|numeric|gt:0',
+            'remarks' => 'nullable|string|max:255',
+        ]);
+
+        $bmiResult = \App\Models\PersonnelWeightLog::calculateBmi($validated['height_cm'], $validated['weight_kg']);
+        $validated['bmi'] = $bmiResult['bmi'];
+        $validated['bmi_category'] = $bmiResult['category'];
+
+        $personnel->weightLogs()->create($validated);
+
+        // Synchronize latest medical record height/weight/bmi
+        $personnel->medicalRecord()->updateOrCreate(
+            ['recordable_type' => Personnel::class, 'recordable_id' => $personnel->id],
+            [
+                'height_cm' => $validated['height_cm'],
+                'weight_kg' => $validated['weight_kg'],
+                'bmi' => $validated['bmi'],
+                'bmi_category' => $validated['bmi_category'],
+                'examination_date' => $validated['recorded_date'],
+            ]
+        );
+
+        return back()->with('success', 'Monthly weight log added successfully.');
+    }
+
+    public function destroyWeightLog(\App\Models\PersonnelWeightLog $log)
+    {
+        $log->delete();
+        return back()->with('success', 'Weight log deleted.');
     }
 
     public function edit(Personnel $personnel)

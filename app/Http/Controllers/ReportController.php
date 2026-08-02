@@ -16,8 +16,43 @@ class ReportController extends Controller
 {
     public function index()
     {
+        $topDiagnoses = Treatment::select('diagnosis', DB::raw('count(*) as total'))
+            ->whereNotNull('diagnosis')
+            ->groupBy('diagnosis')
+            ->orderByDesc('total')
+            ->limit(7)
+            ->get();
+
+        $treatmentTrends = Treatment::select(DB::raw('DATE(treated_at) as date'), DB::raw('count(*) as total'))
+            ->whereNotNull('treated_at')
+            ->groupBy('date')
+            ->orderBy('date', 'desc')
+            ->limit(10)
+            ->get()
+            ->reverse()
+            ->values();
+
+        $topMedicines = MedicineLog::select('medicine_id', DB::raw('SUM(quantity) as total'))
+            ->groupBy('medicine_id')
+            ->orderByDesc('total')
+            ->limit(7)
+            ->with('medicine:id,name')
+            ->get();
+
+        $allRecords = \App\Models\MedicalRecord::all();
+        $overallBmiStats = [
+            'underweight' => $allRecords->where('bmi_category', 'Underweight')->count(),
+            'normal' => $allRecords->where('bmi_category', 'Normal')->count(),
+            'overweight' => $allRecords->where('bmi_category', 'Overweight')->count(),
+            'obese' => $allRecords->where('bmi_category', 'Obese')->count(),
+        ];
+
         return Inertia::render('Reports/Index', [
             'departments' => Department::all(),
+            'topDiagnoses' => $topDiagnoses,
+            'treatmentTrends' => $treatmentTrends,
+            'topMedicines' => $topMedicines,
+            'overallBmiStats' => $overallBmiStats,
         ]);
     }
 

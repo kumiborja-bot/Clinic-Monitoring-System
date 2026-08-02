@@ -58,10 +58,12 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/maritime-documents/{document}/download', [MaritimeDocumentController::class , 'download'])->name('maritime.download');
     Route::delete('/maritime-documents/{document}', [MaritimeDocumentController::class , 'destroy'])->name('maritime.destroy');
 
-    // Personnel Documents
+    // Personnel Documents & Weight Logs
     Route::post('/personnel/{personnel}/documents', [PersonnelDocumentController::class, 'store'])->name('personnel-documents.store');
     Route::get('/personnel-documents/{document}/download', [PersonnelDocumentController::class, 'download'])->name('personnel-documents.download');
     Route::delete('/personnel-documents/{document}', [PersonnelDocumentController::class, 'destroy'])->name('personnel-documents.destroy');
+    Route::post('/personnel/{personnel}/weight-logs', [PersonnelController::class, 'storeWeightLog'])->name('personnel.weight-logs.store');
+    Route::delete('/personnel-weight-logs/{log}', [PersonnelController::class, 'destroyWeightLog'])->name('personnel.weight-logs.destroy');
 
     // Reports
     Route::get('/reports', [ReportController::class , 'index'])->name('reports.index');

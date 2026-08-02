@@ -1,6 +1,6 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head, Link, useForm } from '@inertiajs/vue3';
+import { Head, Link, useForm, router } from '@inertiajs/vue3';
 import { ref } from 'vue';
 import { formatDate, formatDateTime } from '@/utils/dateFormat';
 import { useOfflineQueue } from '@/utils/offlineQueue';
@@ -47,6 +47,14 @@ const uploadDoc = async () => {
         offlineQueued.value = true;
         docForm.reset();
         setTimeout(() => { offlineQueued.value = false; }, 4000);
+    }
+};
+
+const deleteDoc = (id) => {
+    if (confirm('Are you sure you want to delete this maritime document?')) {
+        router.delete(route('maritime.destroy', id), {
+            preserveScroll: true,
+        });
     }
 };
 </script>
@@ -246,6 +254,7 @@ const uploadDoc = async () => {
                         </div>
                         <div class="flex items-center gap-2">
                             <a :href="route('maritime.download', doc.id)" class="px-3 py-1 text-xs font-medium text-navy-600 bg-navy-50 rounded-lg hover:bg-navy-100">Download</a>
+                            <button @click="deleteDoc(doc.id)" class="px-3 py-1 text-xs font-medium text-red-600 bg-red-50 rounded-lg hover:bg-red-100">Delete</button>
                         </div>
                     </div>
                 </div>

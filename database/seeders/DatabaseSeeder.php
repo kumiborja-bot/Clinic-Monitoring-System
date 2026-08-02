@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
             AdminUserSeeder::class,
             MedicationSeeder::class,
             DssRecordSeeder::class,
+            PersonnelWeightLogSeeder::class,
         ]);
     }
 }
