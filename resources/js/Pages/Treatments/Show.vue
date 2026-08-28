@@ -33,7 +33,7 @@ defineProps({ treatment: Object });
                         </div>
                     </div>
                     <div>
-                        <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Diagnosis</p>
+                        <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Chief Complain</p>
                         <p class="text-sm text-gray-800 bg-red-50 rounded-lg px-4 py-3 border border-red-100">{{ treatment.diagnosis }}</p>
                     </div>
                     <div v-if="treatment.treatment_given">

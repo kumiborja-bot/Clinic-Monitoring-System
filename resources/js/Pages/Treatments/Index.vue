@@ -69,7 +69,7 @@ const isFollowUpDue = (dateStr) => {
                                 <th class="px-4 py-3 text-left font-medium text-xs uppercase">Date</th>
                                 <th class="px-4 py-3 text-left font-medium text-xs uppercase">Patient</th>
                                 <th class="px-4 py-3 text-left font-medium text-xs uppercase">Type</th>
-                                <th class="px-4 py-3 text-left font-medium text-xs uppercase">Diagnosis</th>
+                                <th class="px-4 py-3 text-left font-medium text-xs uppercase">Chief Complain</th>
                                 <th class="px-4 py-3 text-left font-medium text-xs uppercase">Treatment</th>
                                 <th class="px-4 py-3 text-left font-medium text-xs uppercase">Treated By</th>
                                 <th class="px-4 py-3 text-left font-medium text-xs uppercase">Status</th>
