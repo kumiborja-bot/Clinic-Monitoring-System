@@ -19,6 +19,14 @@ class HandleInertiaRequests extends Middleware
      */
     public function version(Request $request): ?string
     {
+        // Include the build even when ASSET_URL is configured. The default
+        // implementation hashes only that fixed URL and misses new bundles.
+        $manifest = public_path('build/manifest.json');
+
+        if (is_file($manifest)) {
+            return hash('xxh128', (string) config('app.asset_url').'|'.hash_file('xxh128', $manifest));
+        }
+
         return parent::version($request);
     }
 
@@ -36,6 +44,9 @@ class HandleInertiaRequests extends Middleware
             ],
             'flash' => [
                 'status' => fn () => $request->session()->get('status'),
+                'success' => fn () => $request->session()->get('success'),
+                'error' => fn () => $request->session()->get('error'),
+                'import_report' => fn () => $request->session()->get('import_report'),
             ],
         ];
     }

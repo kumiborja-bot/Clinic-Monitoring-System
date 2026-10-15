@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Treatment;
 use App\Models\Medicine;
 use App\Models\MedicineLog;
+use App\Models\MedicineStockMovement;
 use App\Models\Student;
 use App\Models\Personnel;
 use App\Models\MedicalRecord;
@@ -258,19 +259,31 @@ class OfflineQueueController extends Controller
         $validator = Validator::make($data, [
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
-            'category' => 'nullable|string|max:100',
+            'supplier' => 'required|string|max:255',
             'unit' => 'required|string|max:50',
             'stock_quantity' => 'required|integer|min:0',
+            'initial_stock_date' => 'required|date|before_or_equal:today',
             'reorder_level' => 'nullable|integer|min:0',
             'expiry_date' => 'nullable|date',
         ]);
 
         $validator->validate();
 
-        Medicine::create(collect($data)->only([
-            'name', 'description', 'category', 'unit',
+        $medicine = Medicine::create(collect($data)->only([
+            'name', 'description', 'supplier', 'unit',
             'stock_quantity', 'reorder_level', 'expiry_date',
         ])->toArray());
+
+        if ($medicine->stock_quantity > 0) {
+            MedicineStockMovement::create([
+                'medicine_id' => $medicine->id,
+                'transaction_date' => $data['initial_stock_date'],
+                'type' => 'in',
+                'quantity' => $medicine->stock_quantity,
+                'supplier' => $medicine->supplier,
+                'notes' => 'Initial medicine stock.',
+            ]);
+        }
 
         return ['message' => 'Medicine synced successfully.'];
     }

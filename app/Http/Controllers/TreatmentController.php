@@ -48,7 +48,7 @@ class TreatmentController extends Controller
             'personnel' => Personnel::select('id', 'name', 'employee_id', 'department_id')
                 ->with('department:id,name,code')->get(),
             'departments' => Department::select('id', 'name', 'code', 'type')->get(),
-            'medicines' => Medicine::select('id', 'name', 'stock_quantity', 'unit', 'category', 'description')
+            'medicines' => Medicine::select('id', 'name', 'stock_quantity', 'unit', 'supplier', 'description')
                 ->where('stock_quantity', '>', 0)
                 ->orderBy('name')
                 ->get(),

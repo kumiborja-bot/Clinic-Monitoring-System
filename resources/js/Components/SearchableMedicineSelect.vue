@@ -11,16 +11,16 @@ const emit = defineEmits(['update:modelValue']);
 
 const isOpen = ref(false);
 const searchQuery = ref('');
-const categoryFilter = ref('');
+const supplierFilter = ref('');
 const containerRef = ref(null);
 const searchInputRef = ref(null);
 
-// Extract unique categories from medicines in stock
-const categories = computed(() => {
+// Extract unique suppliers from medicines in stock
+const suppliers = computed(() => {
     const set = new Set();
     props.medicines.forEach(m => {
-        if (m.category && Number(m.stock_quantity) > 0) {
-            set.add(m.category);
+        if (m.supplier && Number(m.stock_quantity) > 0) {
+            set.add(m.supplier);
         }
     });
     return Array.from(set).sort();
@@ -36,25 +36,25 @@ const selectedMedicine = computed(() => {
 const selectedDisplayText = computed(() => {
     if (!selectedMedicine.value) return '';
     const m = selectedMedicine.value;
-    return `${m.name} (${m.stock_quantity} ${m.unit || 'pcs'} in stock)${m.category ? ' - ' + m.category : ''}`;
+    return `${m.name} (${m.stock_quantity} ${m.unit || 'pcs'} in stock)${m.supplier ? ' - ' + m.supplier : ''}`;
 });
 
-// Filter medicines strictly by stock > 0, category, and search query
+// Filter medicines strictly by stock > 0, supplier, and search query
 const filteredMedicines = computed(() => {
     // Exclude out of stock medicines
     let list = props.medicines.filter(m => Number(m.stock_quantity) > 0);
 
-    if (categoryFilter.value) {
-        list = list.filter(m => m.category === categoryFilter.value);
+    if (supplierFilter.value) {
+        list = list.filter(m => m.supplier === supplierFilter.value);
     }
 
     if (searchQuery.value.trim()) {
         const q = searchQuery.value.toLowerCase().trim();
         list = list.filter(m => {
             const name = (m.name || '').toLowerCase();
-            const cat = (m.category || '').toLowerCase();
+            const supplier = (m.supplier || '').toLowerCase();
             const desc = (m.description || '').toLowerCase();
-            return name.includes(q) || cat.includes(q) || desc.includes(q);
+            return name.includes(q) || supplier.includes(q) || desc.includes(q);
         });
     }
 
@@ -79,7 +79,7 @@ function selectMedicine(medicine) {
 
 function clearSelection() {
     emit('update:modelValue', '');
-    categoryFilter.value = '';
+    supplierFilter.value = '';
     searchQuery.value = '';
 }
 
@@ -118,7 +118,7 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
 
         <!-- Dropdown Panel -->
         <div v-if="isOpen" class="dropdown-panel">
-            <!-- Search & Category Header -->
+            <!-- Search & Supplier Header -->
             <div class="search-wrapper flex flex-col gap-2">
                 <div class="relative flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
@@ -127,19 +127,19 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
                         v-model="searchQuery"
                         type="text"
                         class="search-input"
-                        placeholder="Search medicine name or category..."
+                        placeholder="Search medicine name or supplier..."
                         @keydown.esc="closeDropdown"
                     />
                 </div>
 
-                <div v-if="categories.length > 0" class="flex items-center gap-1.5 pt-1">
-                    <span class="text-[11px] font-semibold text-gray-400 uppercase">Category:</span>
+                <div v-if="suppliers.length > 0" class="flex items-center gap-1.5 pt-1">
+                    <span class="text-[11px] font-semibold text-gray-400 uppercase">Supplier:</span>
                     <select
-                        v-model="categoryFilter"
+                        v-model="supplierFilter"
                         class="text-[11px] py-0.5 px-2 rounded border-gray-200 bg-gray-50 focus:ring-[#095D86]"
                     >
-                        <option value="">All Categories</option>
-                        <option v-for="cat in categories" :key="cat" :value="cat">{{ cat }}</option>
+                        <option value="">All Suppliers</option>
+                        <option v-for="supplier in suppliers" :key="supplier" :value="supplier">{{ supplier }}</option>
                     </select>
                 </div>
             </div>
@@ -159,7 +159,7 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
                             Stock: {{ m.stock_quantity }} {{ m.unit || 'pcs' }}
                         </span>
                     </div>
-                    <span v-if="m.category" class="option-cat">{{ m.category }}</span>
+                    <span v-if="m.supplier" class="option-cat">{{ m.supplier }}</span>
                 </li>
                 <li v-if="filteredMedicines.length === 0" class="no-results">
                     No medicine with available stock found

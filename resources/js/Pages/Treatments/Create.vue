@@ -162,7 +162,7 @@ const getDssSuggestion = async () => {
                             <SearchableMedicineSelect
                                 v-model="form.medicine_id"
                                 :medicines="medicines"
-                                placeholder="Search stocked medicine by name or category..."
+                                placeholder="Search stocked medicine by name or supplier..."
                             />
                         </div>
                         <div>

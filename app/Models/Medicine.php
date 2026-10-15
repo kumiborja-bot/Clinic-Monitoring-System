@@ -11,20 +11,29 @@ class Medicine extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name', 'description', 'category', 'unit',
-        'stock_quantity', 'reorder_level', 'expiry_date',
+        'name',
+        'description',
+        'supplier',
+        'unit',
+        'stock_quantity',
+        'reorder_level',
+        'expiry_date',
     ];
 
-    protected function casts(): array
-    {
-        return [
-            'expiry_date' => 'date',
-        ];
-    }
+    protected $casts = [
+        'stock_quantity' => 'integer',
+        'reorder_level' => 'integer',
+        'expiry_date' => 'date',
+    ];
 
     public function logs(): HasMany
     {
         return $this->hasMany(MedicineLog::class);
+    }
+
+    public function stockMovements(): HasMany
+    {
+        return $this->hasMany(MedicineStockMovement::class);
     }
 
     public function isLowStock(): bool
@@ -39,6 +48,6 @@ class Medicine extends Model
 
     public function totalDispensed(): int
     {
-        return $this->logs()->sum('quantity');
+        return (int) $this->logs()->sum('quantity');
     }
 }

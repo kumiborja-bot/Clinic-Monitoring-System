@@ -83,7 +83,7 @@ class AppointmentController extends Controller
             ->get();
 
         // Medicines inventory list for consultation dispensing (only medicines with stock)
-        $medicines = Medicine::select('id', 'name', 'stock_quantity', 'unit', 'category', 'description')
+        $medicines = Medicine::select('id', 'name', 'stock_quantity', 'unit', 'supplier', 'description')
             ->where('stock_quantity', '>', 0)
             ->orderBy('name')
             ->get();

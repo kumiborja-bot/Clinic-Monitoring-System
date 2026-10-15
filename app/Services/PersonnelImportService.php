@@ -58,10 +58,24 @@ class PersonnelImportService
 
         // Dynamically match headers to database columns
         $headerMap = $this->matchHeadersDynamically($headers);
+        $headerValidation = $this->validateHeaders($headers, $headerMap);
+
+        if (!$headerValidation['success']) {
+            fclose($handle);
+
+            return [
+                'success' => false,
+                'message' => 'CSV import failed because the column headers are invalid.',
+                'imported_count' => 0,
+                'skipped_count' => 0,
+                'errors' => $headerValidation['errors'],
+                'warnings' => $headerValidation['warnings'],
+            ];
+        }
 
         $importedCount = 0;
         $skippedCount = 0;
-        $errors = [];
+        $errors = $headerValidation['warnings'];
         $rowCount = 1;
 
         DB::beginTransaction();
@@ -72,6 +86,12 @@ class PersonnelImportService
                 
                 // Skip empty rows
                 if (empty($row) || (count($row) === 1 && empty($row[0]))) {
+                    continue;
+                }
+
+                if (count($row) !== count($headers)) {
+                    $skippedCount++;
+                    $errors[] = "Row {$rowCount}: Expected " . count($headers) . ' columns but found ' . count($row) . '. Check for missing commas or unclosed quotes.';
                     continue;
                 }
 
@@ -87,20 +107,6 @@ class PersonnelImportService
                     $skippedCount++;
                     $errors[] = "Row {$rowCount}: Skipped due to missing Employee ID.";
                     continue;
-                }
-
-                // Parse birthdate
-                $birthdateStr = $getValue('birthdate');
-                $birthdate = null;
-                $age = null;
-                if (!empty($birthdateStr)) {
-                    try {
-                        // Support common formats
-                        $birthdate = Carbon::parse($birthdateStr)->format('Y-m-d');
-                        $age = Carbon::parse($birthdate)->age;
-                    } catch (\Exception $e) {
-                        Log::warning("Row {$rowCount}: Failed to parse birthdate '{$birthdateStr}'");
-                    }
                 }
 
                 // Map Sex/Gender
@@ -136,22 +142,9 @@ class PersonnelImportService
                     $name = trim($name);
                 }
 
-                // Address
-                $addressParts = array_filter([
-                    $getValue('address_st'),
-                    $getValue('address_city'),
-                    $getValue('address_province'),
-                    $getValue('address_zip')
-                ]);
-                $address = implode(', ', $addressParts);
-                if (empty($address) || $address === ', , ,') {
-                    // Try a single address field if available
-                    $address = $getValue('address') ?: null;
-                }
-
                 // Department
                 $deptNameOrCode = $getValue('department');
-                $departmentId = null;
+                $departmentId = $this->getDefaultDepartmentId();
                 if (!empty($deptNameOrCode)) {
                     $deptCode = strtoupper(trim($deptNameOrCode));
                     // Find by code first
@@ -172,30 +165,24 @@ class PersonnelImportService
                     $departmentId = $dept->id;
                 }
 
-                // Emergency Contact details
-                $emergencyPerson = $getValue('emergency_contact_person') ?: null;
-                $emergencyRelationship = $getValue('emergency_contact_relationship') ?: null;
-                $emergencyAddress = $getValue('emergency_contact_address') ?: null;
-                $emergencyNo = $getValue('emergency_contact_no') ?: null;
-
                 // Update or Create Personnel
                 $personnel = Personnel::updateOrCreate(
                     ['employee_id' => $employeeId],
                     [
                         'name' => $name,
-                        'birthdate' => $birthdate,
-                        'age' => $age,
+                        'birthdate' => null,
+                        'age' => null,
                         'sex' => $sex,
-                        'address' => $address,
-                        'civil_status' => $getValue('civil_status') ?: null,
-                        'religion' => $getValue('religion') ?: null,
+                        'address' => null,
+                        'civil_status' => null,
+                        'religion' => null,
                         'department_id' => $departmentId,
                         'position' => $getValue('position') ?: null,
-                        'contact_no' => $getValue('contact_no') ?: null,
-                        'emergency_contact_person' => $emergencyPerson,
-                        'emergency_contact_relationship' => $emergencyRelationship,
-                        'emergency_contact_address' => $emergencyAddress,
-                        'emergency_contact_no' => $emergencyNo,
+                        'contact_no' => null,
+                        'emergency_contact_person' => null,
+                        'emergency_contact_relationship' => null,
+                        'emergency_contact_address' => null,
+                        'emergency_contact_no' => null,
                     ]
                 );
 
@@ -227,7 +214,8 @@ class PersonnelImportService
                 'message' => "Import completed successfully.",
                 'imported_count' => $importedCount,
                 'skipped_count' => $skippedCount,
-                'errors' => $errors
+                'errors' => $errors,
+                'warnings' => $headerValidation['warnings'],
             ];
 
         } catch (\Exception $e) {
@@ -238,9 +226,65 @@ class PersonnelImportService
                 'success' => false,
                 'message' => "Import failed: " . $e->getMessage(),
                 'imported_count' => 0,
-                'errors' => [$e->getMessage()]
+                'skipped_count' => $skippedCount,
+                'errors' => array_merge($errors, [$e->getMessage()]),
+                'warnings' => $headerValidation['warnings'] ?? [],
             ];
         }
+    }
+
+    /**
+     * Validate that the CSV contains usable personnel columns before importing rows.
+     */
+    private function validateHeaders(array $headers, array $headerMap): array
+    {
+        $errors = [];
+        $warnings = [];
+        $recognizedIndexes = array_filter($headerMap, fn ($index) => $index !== null);
+        $recognizedIndexSet = array_flip(array_values($recognizedIndexes));
+        $unknownHeaders = [];
+
+        foreach ($headers as $index => $header) {
+            if (!isset($recognizedIndexSet[$index])) {
+                $unknownHeaders[] = $header ?: "Column " . ($index + 1);
+            }
+        }
+
+        if ($headerMap['employee_id'] === null) {
+            $errors[] = 'Missing required column: Employee ID. Accepted headers include employee_id, employee id, employee_no, employee no, idno, id_no, or id.';
+        }
+
+        if ($headerMap['name'] === null && $headerMap['lastname'] === null && $headerMap['firstname'] === null) {
+            $errors[] = 'Missing required name column. Use a Name column, or separate Last Name and First Name columns.';
+        }
+
+        if (empty($recognizedIndexes)) {
+            $errors[] = 'No supported personnel columns were found in the CSV header row.';
+        }
+
+        if (!empty($unknownHeaders)) {
+            $warnings[] = 'Unrecognized column header' . (count($unknownHeaders) === 1 ? '' : 's') . ': ' . implode(', ', $unknownHeaders) . '. These columns will be ignored.';
+        }
+
+        return [
+            'success' => empty($errors),
+            'errors' => $errors,
+            'warnings' => $warnings,
+        ];
+    }
+
+    /**
+     * Personnel rows need a department_id, even when CSV department is blank.
+     */
+    private function getDefaultDepartmentId(): int
+    {
+        return Department::firstOrCreate(
+            ['code' => 'UNASSIGNED', 'type' => 'personnel'],
+            [
+                'name' => 'Unassigned',
+                'full_name' => 'Unassigned',
+            ]
+        )->id;
     }
 
     /**
@@ -271,6 +315,7 @@ class PersonnelImportService
             'emergency_contact_address' => null,
             'emergency_contact_no' => null,
             'disability' => null,
+            'bmi' => null,
         ];
 
         foreach ($headers as $index => $header) {
@@ -360,6 +405,10 @@ class PersonnelImportService
             // Match disability
             elseif ($map['disability'] === null && (str_contains($normalized, 'disability') || str_contains($normalized, 'handicap') || str_contains($normalized, 'impairment') || str_contains($normalized, 'condition'))) {
                 $map['disability'] = $index;
+            }
+            // Match display-only BMI column
+            elseif ($map['bmi'] === null && $normalized === 'bmi') {
+                $map['bmi'] = $index;
             }
         }
 

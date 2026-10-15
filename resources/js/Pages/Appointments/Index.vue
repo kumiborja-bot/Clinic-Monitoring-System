@@ -700,7 +700,7 @@ const getStatusBadgeClass = (status) => {
                             <SearchableMedicineSelect
                                 v-model="consultationForm.medicine_id"
                                 :medicines="medicines"
-                                placeholder="Search stocked medicine by name or category..."
+                                placeholder="Search stocked medicine by name or supplier..."
                             />
                         </div>
                         <div>

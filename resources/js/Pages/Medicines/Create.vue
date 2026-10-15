@@ -6,13 +6,16 @@ import { useOfflineQueue } from '@/utils/offlineQueue';
 
 const props = defineProps({ medicine: { type: Object, default: null } });
 const isEdit = computed(() => !!props.medicine);
+const today = new Date();
+const localToday = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
 
 const form = useForm({
     name: props.medicine?.name || '',
     description: props.medicine?.description || '',
-    category: props.medicine?.category || '',
+    supplier: props.medicine?.supplier || '',
     unit: props.medicine?.unit || '',
     stock_quantity: props.medicine?.stock_quantity ?? 0,
+    initial_stock_date: localToday,
     reorder_level: props.medicine?.reorder_level ?? 10,
     expiry_date: props.medicine?.expiry_date ? props.medicine.expiry_date.split('T')[0] : '',
 });
@@ -70,8 +73,9 @@ const submit = async () => {
                     </div>
                     <div class="grid grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs font-semibold text-gray-600 mb-1">Category</label>
-                            <input v-model="form.category" type="text" placeholder="e.g., Analgesic" class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500" />
+                            <label class="block text-xs font-semibold text-gray-600 mb-1">Supplier *</label>
+                            <input v-model="form.supplier" type="text" required maxlength="255" placeholder="Supplier name" class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500" />
+                            <p v-if="form.errors.supplier" class="text-xs text-red-500 mt-1">{{ form.errors.supplier }}</p>
                         </div>
                         <div>
                             <label class="block text-xs font-semibold text-gray-600 mb-1">Unit *</label>
@@ -88,8 +92,10 @@ const submit = async () => {
                     </div>
                     <div class="grid grid-cols-3 gap-4">
                         <div>
-                            <label class="block text-xs font-semibold text-gray-600 mb-1">Stock Quantity *</label>
-                            <input v-model="form.stock_quantity" type="number" min="0" required class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500" />
+                            <label class="block text-xs font-semibold text-gray-600 mb-1">{{ isEdit ? 'Current Stock' : 'Initial Stock Quantity *' }}</label>
+                            <input v-model="form.stock_quantity" type="number" min="0" required :disabled="isEdit" class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500 disabled:bg-gray-100" />
+                            <p v-if="isEdit" class="text-xs text-gray-500 mt-1">Use Stock In or Dispense to change the stock balance.</p>
+                            <p v-if="form.errors.stock_quantity" class="text-xs text-red-500 mt-1">{{ form.errors.stock_quantity }}</p>
                         </div>
                         <div>
                             <label class="block text-xs font-semibold text-gray-600 mb-1">Reorder Level</label>
@@ -99,6 +105,11 @@ const submit = async () => {
                             <label class="block text-xs font-semibold text-gray-600 mb-1">Expiry Date</label>
                             <input v-model="form.expiry_date" type="date" class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500" />
                         </div>
+                    </div>
+                    <div v-if="!isEdit">
+                        <label class="block text-xs font-semibold text-gray-600 mb-1">Initial Stock Date *</label>
+                        <input v-model="form.initial_stock_date" type="date" required :max="localToday" class="w-full text-sm rounded-lg border-gray-200 focus:ring-mustard-500 focus:border-mustard-500" />
+                        <p v-if="form.errors.initial_stock_date" class="text-xs text-red-500 mt-1">{{ form.errors.initial_stock_date }}</p>
                     </div>
                 </div>
             </div>

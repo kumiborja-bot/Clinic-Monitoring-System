@@ -1,7 +1,7 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head, Link, router, useForm } from '@inertiajs/vue3';
-import { ref, watch } from 'vue';
+import { Head, Link, router, useForm, usePage } from '@inertiajs/vue3';
+import { computed, ref, watch } from 'vue';
 
 const props = defineProps({
     personnel: Object,
@@ -11,6 +11,8 @@ const props = defineProps({
 
 const search = ref(props.filters?.search || '');
 const departmentId = ref(props.filters?.department_id || '');
+const page = usePage();
+const importReport = computed(() => page.props.flash?.import_report);
 
 const applyFilters = () => {
     router.get(route('personnel.index'), {
@@ -85,6 +87,32 @@ const handleFileUpload = (event) => {
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
                     Add Personnel
                 </Link>
+            </div>
+        </div>
+
+        <div v-if="importReport?.errors?.length || importReport?.warnings?.length" class="mb-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+            <div class="flex items-start gap-3">
+                <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                </svg>
+                <div class="min-w-0">
+                    <p class="font-semibold">CSV import details</p>
+                    <p class="mt-1 text-xs text-amber-800">
+                        Imported {{ importReport.imported_count || 0 }} personnel.
+                        Skipped {{ importReport.skipped_count || 0 }} row(s).
+                    </p>
+                    <ul class="mt-2 list-disc space-y-1 pl-5">
+                        <li v-for="(error, index) in importReport.errors.slice(0, 10)" :key="index">
+                            {{ error }}
+                        </li>
+                        <li v-for="(warning, index) in importReport.warnings?.slice(0, 10) || []" :key="`warning-${index}`">
+                            {{ warning }}
+                        </li>
+                    </ul>
+                    <p v-if="(importReport.errors?.length || 0) + (importReport.warnings?.length || 0) > 10" class="mt-2 text-xs text-amber-800">
+                        Showing first 10 error(s) and first 10 warning(s).
+                    </p>
+                </div>
             </div>
         </div>
 

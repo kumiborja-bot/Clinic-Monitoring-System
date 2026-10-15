@@ -240,9 +240,18 @@ class PersonnelController extends Controller
         $result = $importService->importFromPath($tempPath);
 
         if ($result['success']) {
-            return redirect()->back()->with('success', "Import completed! Imported {$result['imported_count']} personnel.");
+            $message = "Import completed! Imported {$result['imported_count']} personnel.";
+            if (($result['skipped_count'] ?? 0) > 0 || !empty($result['errors'])) {
+                $message .= " Skipped " . ($result['skipped_count'] ?? 0) . " row(s).";
+            }
+
+            return redirect()->back()
+                ->with('success', $message)
+                ->with('import_report', $result);
         }
 
-        return redirect()->back()->with('error', $result['message']);
+        return redirect()->back()
+            ->with('error', $result['message'])
+            ->with('import_report', $result);
     }
 }
